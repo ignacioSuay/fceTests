@@ -2,7 +2,10 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 // bower:scss
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "fontawesome/scss/font-awesome.scss";
 // endbower
+
+@import "mainView.scss";
 
 body {
     background: #fafafa;
@@ -111,12 +114,4 @@ ul#strength {
     width:20px;
 }
 /* end Password strength bar style */
-
-.mainPic{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background-color: $brand-danger;
-}
 
