@@ -3,9 +3,9 @@
 // Page Contents
 // ---------------------------
 
-body { // adjust for navbar-fixed-top
-  padding-top: $navbar-height;
-}
+//body { // adjust for navbar-fixed-top
+//  padding-top: $navbar-height;
+//}
 
 #features, #impact, #signup {
   padding-top: 36px;
@@ -69,7 +69,8 @@ body { // adjust for navbar-fixed-top
   }
   @media (min-width: $screen-md-min) {
     height: 540px;
-    background: #191919 url('../images/subway-1600x1060.jpg') center center no-repeat;
+//    background: #191919 url('../images/subway-1600x1060.jpg') center center no-repeat;
+    background: #191919 url('../images/beach-690125_1280.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
