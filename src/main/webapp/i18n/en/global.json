@@ -13,9 +13,9 @@
                 "settings": "Settings",
                 "password": "Password",
                 "sessions": "Sessions",
-                "login": "Authenticate",
+                "login": "Login",
                 "logout": "Log out",
-                "register": "Register"
+                "register": "Sign Up"
             },
             "admin": {
                 "main": "Administration",

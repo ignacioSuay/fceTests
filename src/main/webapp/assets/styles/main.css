@@ -8592,7 +8592,7 @@ button.close {
 @media (max-width: 991px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000333}}
   #welcome {
-    background: #191919 url("../images/subway-906x600.jpg") center center no-repeat;
+    background: #191919 url("../images/beach-690125_1280.jpg") center center no-repeat;
   }
 }
 @media (min-width: 768px) {
@@ -8600,16 +8600,16 @@ button.close {
   #welcome {
     height: 480px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000360}}
   #welcome .container {
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000363}}
   #welcome .welcome-message {
     right: 20%;
     bottom: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000366}}
   #welcome .welcome-message strong {
     display: block;
   }
@@ -8624,24 +8624,24 @@ button.close {
     -o-background-size: cover;
     background-size: cover;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000379}}
   #welcome .welcome-message {
     right: 50%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000387}}
 #features .features-item {
   text-align: center;
   padding: 20px;
   height: 270px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000391}}
 #features .features-item .icon {
   font-size: 90px;
 }
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\0000387}}
   #features .features-item {
     max-width: 320px;
     display: block;
@@ -8650,13 +8650,13 @@ button.close {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003103}}
 #impact .hreview {
   position: relative;
   padding: 0 10px;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003108}}
 #impact .caption {
   position: absolute;
   top: auto;
@@ -8666,13 +8666,13 @@ button.close {
   line-height: 1.1;
   background: rgba(26, 26, 26, 0.55);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003116}}
 #impact .caption blockquote,
 #impact .caption .reviewer {
   margin: 0 6px;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003121}}
 #impact .caption blockquote {
   margin-top: 4px;
   border: none;
@@ -8680,80 +8680,80 @@ button.close {
   font-size: 18px;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003128}}
 #impact .caption .reviewer {
   margin-top: 2px;
   margin-bottom: 4px;
   text-align: right;
   color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003135}}
 #impact .review-item-1 .caption {
   top: 0;
   left: 10px;
   right: 20%;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003141}}
 #impact .review-item-2 .caption {
   top: auto;
   left: 10px;
   right: 17%;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003147}}
 #impact .review-item-3 .caption {
   top: auto;
   left: 17%;
   right: 10px;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003153}}
 #impact .review-item-4 .caption {
   top: 0;
   left: 62%;
   right: 10px;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003158}}
 #impact .review-item-4 .caption .reviewer {
   margin-top: 6px;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003163}}
 #impact .review-item-5 .caption {
   top: 0;
   left: 17%;
   right: 10px;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003169}}
 #impact .review-item-6 .caption {
   top: 0;
   left: 10px;
   right: 63%;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003174}}
 #impact .review-item-6 .caption .reviewer {
   margin-top: 6px;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003179}}
 #impact .review-item-7 .caption {
   top: 0;
   left: 62%;
   right: 10px;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003184}}
 #impact .review-item-7 .caption .reviewer {
   margin-top: 6px;
   text-align: left;
 }
 
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003193}}
   #impact .reviews {
     max-width: 400px;
     display: block;
@@ -8762,41 +8762,73 @@ button.close {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003199}}
   #impact .review-item-5 {
     height: 474px;
     overflow: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003202}}
   #impact .review-item-5 img {
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003208}}
   #impact .review-item-4 {
     display: none;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/mainView\.scss}line{font-family:\00003215}}
+#features h1 {
+  font-size: 3em !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/exercise\.scss}line{font-family:\000031}}
+.exerciseBody {
+  margin-top: 40px;
+  line-height: 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/exercise\.scss}line{font-family:\000036}}
+.selectEx {
+  width: 120px !important;
+  display: inline !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/exercise\.scss}line{font-family:\0000311}}
+.iconSuccess {
+  color: #5cb85c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/exercise\.scss}line{font-family:\0000315}}
+.iconFail {
+  color: #d9534f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/exercise\.scss}line{font-family:\0000321}}
+#exParts .btn-group .btn:focus {
+  background-color: #337ab7 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000310}}
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000316}}
 .navbar {
   margin-bottom: 0px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000320}}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000324}}
 .development {
   position: absolute;
   width: 149px;
@@ -8810,13 +8842,13 @@ body {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000337}}
 .navbar-version {
   font-size: 10px;
   color: #ccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000342}}
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -8824,7 +8856,7 @@ body {
   padding: 0.2em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000349}}
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -8836,20 +8868,20 @@ body {
   padding: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000360}}
 .hero-unit h1 {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000366}}
 .error {
   color: white;
   background-color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000371}}
 .hipster {
   display: inline-block;
   width: 347px;
@@ -8860,20 +8892,20 @@ body {
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000387}}
   .hipster {
     background: url("../images/hipster2x.png") no-repeat center top;
     background-size: contain;
   }
 }
 /* make sure browsers use the pointer cursor for anchors, even with no href */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000394}}
 a:hover {
   cursor: pointer;
 }
 
 /* start Password strength bar style */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003100}}
 ul#strength {
   display: inline;
   list-style: none;
@@ -8883,12 +8915,12 @@ ul#strength {
   vertical-align: 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003109}}
 .point:last {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003112}}
 .point {
   background: #DDD;
   border-radius: 2px;
@@ -8898,9 +8930,47 @@ ul#strength {
   width: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003121}}
 .well {
   margin-top: 10px;
 }
 
 /* end Password strength bar style */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003128}}
+ul.social {
+  margin: 20px auto 20px auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003133}}
+ul.social > li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003135}}
+ul.social > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #777777;
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003144}}
+ul.social > li > a:hover {
+  text-decoration: none;
+  background-color: #23527c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003152}}
+.margin-vert-20 {
+  margin: 20px 0px 20px 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003156}}
+.margin-vert-40 {
+  margin: 40px 0px 40px 0px;
+}

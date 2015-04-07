@@ -52,7 +52,8 @@
     margin-top: 16px;
   }
   @media (max-width: $screen-sm-max) {
-    background: #191919 url('../images/subway-906x600.jpg') center center no-repeat;
+//    background: #191919 url('../images/subway-906x600.jpg') center center no-repeat;
+    background: #191919 url('../images/beach-690125_1280.jpg') center center no-repeat;
   }
   @media (min-width: $screen-sm-min) {
     height: 480px;
@@ -207,5 +208,11 @@
     .review-item-4 {
       display: none;
     }
+  }
+}
+
+#features {
+  h1{
+    font-size: 3em !important;
   }
 }

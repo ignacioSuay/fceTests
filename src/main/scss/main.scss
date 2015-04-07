@@ -5,6 +5,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 @import "mainView.scss";
+@import "exercise.scss";
 
 body {
     background: #fafafa;
@@ -123,3 +124,35 @@ ul#strength {
 
 /* end Password strength bar style */
 
+// Footer class
+ul.social {
+    margin: 20px auto 20px auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    > li {
+        display: inline-block;
+        > a {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 30px;
+            @include square(30px);
+            border-radius: 36px;
+            background-color: $gray-light;
+            color: #fff;
+            margin: 0 3px 3px 0;
+            &:hover {
+                text-decoration: none;
+                background-color: $link-hover-color;
+            }
+        }
+    }
+}
+
+.margin-vert-20{
+    margin: 20px 0px 20px 0px;
+}
+
+.margin-vert-40{
+    margin: 40px 0px 40px 0px;
+}
