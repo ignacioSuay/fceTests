@@ -425,7 +425,8 @@ module.exports = function (grunt) {
         'clean:server',
         'wiredep',
         'ngconstant:dev',
-        'concurrent:server',
+        //'concurrent:server',
+        'compass:server',
         'browserSync',
         'watch'
     ]);

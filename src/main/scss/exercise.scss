@@ -1,0 +1,25 @@
+.exerciseBody{
+  margin-top: 40px;
+  line-height: 3em;
+}
+
+.selectEx{
+  width: 120px !important;
+  display: inline !important;
+}
+
+.iconSuccess{
+  color: $brand-success;
+}
+
+.iconFail{
+  color: $brand-danger;
+}
+
+#exParts{
+  .btn-group .btn{
+    &:focus{
+      background-color: $brand-primary !important;
+    }
+  }
+}

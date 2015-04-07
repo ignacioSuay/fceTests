@@ -3,19 +3,50 @@
         <script>
             db.exercise.insert(
             {
-                "title": "ex1",
-                "content": "bla bla",
+                "title": "What is genealogy?",
+                "content": "&lt;p> Genealogy is a branch of history.  It concerns family history,  (1) than the national or world history studied at school.  It doesn’t merely involve drawing a family tree, however – tracing your family history can also (2)  in learning about your roots and your identity.  The internet enables millions of people worldwide to (3)  information about their family history, without great (4).&lt;p> &lt;br> People who research their family history often (5)  that it’s a fascinating hobby which (6)  a lot about where they come from and whether they have famous ancestors.  According to a survey involving 900 people who had researched their family history, the chances of discovering a celebrity in your past are one in ten.  The survey also concluded that the (7)  back you follow your family line, the more likely you are to find a relation who was much wealthier than you are.  However, the vast majority of people who (8) in the survey discovered they were better off than their ancestors.",
                 "exerciseType": "USE_OF_ENGLISH_1",
                 "responses":[{
                     "_id": 1,
-                    "answers":["a", "b", "c", "d"],
-                    "correct": 0,
+                    "answers":["instead", "rather", "except", "sooner"],
+                    "correct": 1,
                     "responseType": "VOCABULARY"
                 },{
                     "_id": 2,
-                    "answers":["a", "s", "d", "f"],
+                    "answers":["cause", "mean", "result", "lead"],
+                    "correct": 2,
+                    "responseType": "VOCABULARY"
+                },{
+                        "_id": 3,
+                        "answers":["accomplish", "access", "approach", "admit"],
+                        "correct": 1,
+                        "responseType": "VOCABULARY"
+                },{
+                    "_id": 4,
+                    "answers":["fee", "price", "charge", "expense"],
                     "correct": 3,
-                    "responseType": "VOCABULARY"}
+                    "responseType": "VOCABULARY"
+                },{
+                    "_id": 5,
+                    "answers":["describe", "define", "remark", "regard"],
+                    "correct": 2,
+                    "responseType": "VOCABULARY"
+                },{
+                    "_id": 6,
+                    "answers":["reveals", "opens", "begins", "arises"],
+                    "correct": 0,
+                    "responseType": "VOCABULARY"
+                },{
+                    "_id": 7,
+                    "answers":["older", "greater", "higher", "further"],
+                    "correct": 3,
+                    "responseType": "VOCABULARY"
+                },{
+                    "_id": 8,
+                    "answers":["attended", "participated", "included", "associated"],
+                    "correct": 1,
+                    "responseType": "VOCABULARY"
+                }
                 ],
                 "examName": "fce1"
             });
