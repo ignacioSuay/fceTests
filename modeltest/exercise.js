@@ -114,3 +114,57 @@ db.exercise.insert(
         "examName": "fce1"
     });
 
+db.exercise.insert(
+    {
+        "title": "An incredible vegetable",
+        "content": "&lt;p> Garlic, a member of the Liliacaea family which also includes onions, is commonly used in cooking all around the world. China is currently the largest (17) of garlic, which is particularly associated with the dishes of northern Africa and southern Europe. It is native to central Asia and has long had a history as a health-giving food, used both to prevent and cure (18) . In Ancient Egypt, workers building the pyramids were given garlic to keep them strong, while Olympic athletes in Greece ate it to increase their resistance to infection.&lt;p> &lt;br> The forefather of antibiotic medicine, Louis Pasteur, claimed garlic was as (19) as penicillin in treating infections. Modern-day (20) have proved that garlic can indeed kill bacteria and even some viruses, so it can be very useful for people who have coughs and colds. In (21) , some doctors believe that garlic can reduce blood (22) . &lt;p> &lt;br> The only (23) to this truly amazing food is that the strong and rather (24).",
+        "exerciseType": "USE_OF_ENGLISH_3",
+        "responses":[{
+            "id": 17,
+            "answers":["PRODUCT"],
+            "correct": ["producer"],
+            "responseType": "COLOCATION"
+        },{
+            "id": 18,
+            "answers":["ILL"],
+            "correct": ["illness", "illnesses"],
+            "responseType": "COLOCATION"
+        },
+            {
+                "id": 19,
+                "answers":["EFFECT"],
+                "correct": ["effective"],
+                "responseType": "COLOCATION"
+            },
+            {
+                "id": 20,
+                "answers":["SCIENCE"],
+                "correct": ["scientists"],
+                "responseType": "COLOCATION"
+            },
+            {
+                "id": 21,
+                "answers":["ADD"],
+                "correct": ["addition"],
+                "responseType": "COLOCATION"
+            },
+            {
+                "id": 22,
+                "answers":["PRESS"],
+                "correct": ["pressure"],
+                "responseType": "COLOCATION"
+            },
+            {
+                "id": 23,
+                "answers":["ADVANTAGE"],
+                "correct": ["disadvantage"],
+                "responseType": "COLOCATION"
+            },
+            {
+                "id": 24,
+                "answers":["SPICE"],
+                "correct": ["spicy"],
+                "responseType": "COLOCATION"
+            }],
+        "examName": "fce1"
+    });
