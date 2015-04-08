@@ -6,9 +6,12 @@ spring:
         active: prod
     data:
         mongodb:
-            host: localhost
-            port: 27017
-            database: firstcertificatetests
+            uri: mongodb://ignacioSuay:H0mersit0!@ds039281.mongolab.com:39281/fcetests
+            port: 39281
+            host: ds039281.mongolab.com
+            database: fcetests
+            username: ignacioSuay
+            password: H0mersit0!
 
     mail:
         baseUrl: http://localhost:8080
