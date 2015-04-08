@@ -14,9 +14,11 @@ angular.module('firstcertificatetestsApp')
             $scope.part = partNumber;
             $scope.exercise.htmlContent ="";
             if(partNumber === 1){
+                $scope.part = 1;
                 $scope.exercise = $scope.exercises[0];
                 $scope.getExercise1Body()
             }else if(partNumber === 2){
+                $scope.part = 2;
                 $scope.exercise = $scope.exercises[1];
                 $scope.getExercise2Body()
             }
@@ -62,8 +64,10 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.check = function(partNumber){
-            if(partNumber === 1){
+            if($scope.part === 1){
                 $scope.checkPart1();
+            }else if($scope.part === 2){
+                $scope.checkPart2();
             }
         };
 
@@ -78,6 +82,17 @@ angular.module('firstcertificatetestsApp')
           });
         };
 
+        $scope.checkPart2 = function(){
+            $scope.exercises[1].responses.forEach(function(response){
+                var inputText = $("#input-" + response.id).val();
+                if(inputText.trim().toLowerCase() === response.correct[0].trim().toLowerCase()){
+                    $("#span2-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
+                }else{
+                    $("#span2-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
+                }
+            });
+        };
+
         $scope.getExercise2Body = function(){
             var str = $scope.exercise.content;
             var regex = new RegExp(/\(\d*\)/g); //(1)
@@ -85,7 +100,8 @@ angular.module('firstcertificatetestsApp')
             while((result = regex.exec(str)) !== null){
                 var responseId = result[0].substr(1,result[0].length - 2 );
                 var response = $scope.findResponseById(responseId);
-                var inputTest = "<input  id=input"+responseId+" type='text' class='form-control inputEx' placeholder='Respond' aria-describedby='basic-addon1'>";
+                var inputTest = "<input  id=input-"+responseId+" type='text' class='form-control inputEx' placeholder='Response' aria-describedby='basic-addon1'>" +
+                    "<span id=\'span2-"+responseId +"\' />";
                 str = str.replace(result[0], inputTest);
             };
 
