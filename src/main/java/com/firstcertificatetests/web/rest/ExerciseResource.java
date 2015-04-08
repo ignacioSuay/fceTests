@@ -47,12 +47,12 @@ public class ExerciseResource {
     /**
      * GET  /users/:login -> get the "login" user.
      */
-    @RequestMapping(value = "/exercises/{id}",
+    @RequestMapping(value = "/exercises/exam/{examName}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public Exercise getExercise(@PathVariable String id) {
-        log.debug("REST request to get Exercise : {}");
-        return exerciseRepository.findAll().iterator().next();
+    public List<Exercise> getExercise(@PathVariable String examName) {
+        log.debug("REST request to get Exercise from exam: " + examName);
+        return exerciseRepository.findAllByExamName(examName);
     }
 }

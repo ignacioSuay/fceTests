@@ -13,5 +13,5 @@ import java.util.Optional;
  */
 public interface ExerciseRepository extends MongoRepository<Exercise, String> {
 
-
+        List<Exercise> findAllByExamName(String examName);
 }

@@ -20,7 +20,7 @@ public class Response {
     private List<String> answers;
 
     @Field
-    private Integer correct;
+    private List<String> correct;
 
     @Field
     private ResponseType responseType;
@@ -41,11 +41,11 @@ public class Response {
         this.answers = answers;
     }
 
-    public Integer getCorrect() {
+    public List<String> getCorrect() {
         return correct;
     }
 
-    public void setCorrect(Integer correct) {
+    public void setCorrect(List<String> correct) {
         this.correct = correct;
     }
 
@@ -70,13 +70,13 @@ public class Response {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Response)) return false;
 
         Response response = (Response) o;
 
-        if (correct != response.correct) return false;
-        if (id != response.id) return false;
         if (answers != null ? !answers.equals(response.answers) : response.answers != null) return false;
+        if (correct != null ? !correct.equals(response.correct) : response.correct != null) return false;
+        if (id != null ? !id.equals(response.id) : response.id != null) return false;
         if (responseType != response.responseType) return false;
 
         return true;
@@ -84,9 +84,9 @@ public class Response {
 
     @Override
     public int hashCode() {
-        int result = id;
+        int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (answers != null ? answers.hashCode() : 0);
-        result = 31 * result + correct;
+        result = 31 * result + (correct != null ? correct.hashCode() : 0);
         result = 31 * result + (responseType != null ? responseType.hashCode() : 0);
         return result;
     }

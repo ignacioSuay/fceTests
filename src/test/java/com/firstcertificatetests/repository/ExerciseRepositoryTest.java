@@ -14,6 +14,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import javax.inject.Inject;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by natxo on 03/04/15.
  */
@@ -31,5 +33,11 @@ public class ExerciseRepositoryTest {
     public void testFindAll() throws Exception{
         List<Exercise> exerciseList = exerciseRepository.findAll();
         System.out.println("size " + exerciseList.size());
+    }
+
+    @Test
+    public void testFindByExamName() throws Exception{
+        List<Exercise> exercises = exerciseRepository.findAllByExamName("fce1");
+        assertEquals("fce1", exercises.iterator().next().getExamName());
     }
 }

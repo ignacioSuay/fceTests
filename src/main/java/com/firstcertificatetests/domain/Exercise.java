@@ -74,6 +74,14 @@ public class Exercise {
         this.exerciseType = exerciseType;
     }
 
+    public String getExamName() {
+        return examName;
+    }
+
+    public void setExamName(String examName) {
+        this.examName = examName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
