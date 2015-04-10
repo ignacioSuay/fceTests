@@ -64,9 +64,9 @@ module.exports = function (grunt) {
                 exclude: [
                     /angular-i18n/, // localizations are loaded dynamically
                     /swagger-ui/,
-                    'bower_components/bootstrap/' // Exclude Bootstrap LESS as we use bootstrap-sass 
+                    'bower_components/bootstrap/' // Exclude Bootstrap LESS as we use bootstrap-sass
                 ],
-                ignorePath: /\.\.\/webapp\/bower_components\// // remove ../webapp/bower_components/ from paths of injected sass files 
+                ignorePath: /\.\.\/webapp\/bower_components\// // remove ../webapp/bower_components/ from paths of injected sass files
             },
             test: {
                 src: 'src/test/javascript/karma.conf.js',
@@ -250,9 +250,9 @@ module.exports = function (grunt) {
             //         ]
             //     }
             // }
-            options: {
-                root: 'src/main/webapp' // Replace relative paths for static resources with absolute path
-            }
+            //options: {
+            //    root: 'src/main/webapp' // Replace relative paths for static resources with absolute path
+            //}
         },
         ngtemplates:    {
             dist: {
@@ -319,6 +319,16 @@ module.exports = function (grunt) {
                     src: [
                         'generated/*'
                     ]
+                },{
+                    expand: true,
+                    cwd: 'src/main/webapp/bower_components/bower_components/bootstrap-sass/assets',
+                    src: 'fonts/*',
+                    dest: '<%= yeoman.dist %>/assets/'
+                },{
+                    expand: true,
+                    cwd: 'src/main/webapp/bower_components/fontawesome',
+                    src: 'fonts/*',
+                    dest: '<%= yeoman.dist %>/assets/'
                 }]
             },
             generateHerokuDirectory: {
@@ -440,8 +450,8 @@ module.exports = function (grunt) {
         'clean:server',
         'wiredep:test',
         'ngconstant:dev',
-        'concurrent:test',
-        'karma'
+        'concurrent:test'
+        //'karma'
     ]);
 
     grunt.registerTask('build', [
