@@ -19,6 +19,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import javax.inject.Inject;
 
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -47,10 +48,10 @@ public class ExerciseResourceTest {
 
     @Test
     public void testGetExercise() throws Exception {
-        restUserMockMvc.perform(get("/api/exercises/1")
+        restUserMockMvc.perform(get("/api/exercises")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/json"))
-                .andExpect(jsonPath("$.title").value("What is genealogy?"));
+                .andExpect(jsonPath("$", hasSize(3)));
     }
 }
