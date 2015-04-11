@@ -156,3 +156,60 @@ db.exercise.insert(
             }],
         "examName": "fce1"
     });
+
+db.exercise.insert(
+    {
+        "title": "",
+        "content": "",
+        "exerciseType": "USE_OF_ENGLISH_4",
+        "responses": [{
+            "_id": 25,
+            "statement":"Joan was in favour of visiting the museum.",
+            "reformat":" Joan thought it would be (X) to the museum.",
+            "answers":["IDEA"],
+            "correct": ["a good idea to go"],
+            "responseType": "COLOCATION"
+        },{
+
+            "_id": 26,
+            "statement":"Arthur has the talent to become a concert pianist.",
+            "reformat":"Arthur is so (X) could become a concert pianist.",
+            "answers":["THAT"],
+            "correct": ["talented that he", "talented that she"],
+            "responseType": "COLOCATION"
+        },{
+
+            "_id": 27,
+            "statement":"'Do you know when the match starts, Sally?' asked Mary.",
+            "reformat":"Mary asked Sally (X) time the match started.",
+            "answers":["IF"],
+            "correct": ["if he knew what", "if she knew what","if he knew the","if she knew the"],
+            "responseType": "COLOCATION"
+        },{
+
+            "_id": 28,
+            "statement":"I knocked for ages at Ruth's door but I got no reply.",
+            "reformat":"I (X) knocking at Ruth's door but I got no reply.",
+            "answers":["LONG"],
+            "correct": ["spent a long time", "took a long time","was a long time"],
+            "responseType": "COLOCATION"
+        },{
+
+            "_id": 29,
+            "statement":"Everyone says that the band is planning to go on a world tour next year.",
+            "reformat":"The band (X) planning to go on a world tour next year.",
+            "answers":["SAID"],
+            "correct": ["are said to be", "is said to be"],
+            "responseType": "COLOCATION"
+        },{
+
+            "_id": 30,
+            "statement":" I'd prefer not to cancel the meeting.",
+            "reformat":"I'd rather (X) the meeting.",
+            "answers":["CALL"],
+            "correct": ["not call off", "you didn't call off", "you did not call off", "we did not call off", "we didn't call off"],
+            "responseType": "COLOCATION"
+        }
+        ],
+        "examName": "fce1"
+    });

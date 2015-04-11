@@ -25,6 +25,12 @@ public class Response {
     @Field
     private ResponseType responseType;
 
+    @Field
+    private String statement;
+
+    @Field
+    private String reformat;
+
     public Integer getId() {
         return id;
     }
@@ -55,6 +61,22 @@ public class Response {
 
     public void setResponseType(ResponseType responseType) {
         this.responseType = responseType;
+    }
+
+    public String getStatement() {
+        return statement;
+    }
+
+    public void setStatement(String statement) {
+        this.statement = statement;
+    }
+
+    public String getReformat() {
+        return reformat;
+    }
+
+    public void setReformat(String reformat) {
+        this.reformat = reformat;
     }
 
     @Override

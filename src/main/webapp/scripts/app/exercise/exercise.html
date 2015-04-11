@@ -31,7 +31,13 @@
 
         <div class="exerciseBody">
             <h2>{{exercise.title}}</h2>
-            <div ng-bind-html="exercise.htmlContent"></div>
+            <div>
+                <exercise-content1 ng-show="isPart(1)"></exercise-content1>
+                <exercise-content2 ng-show="isPart(2)"></exercise-content2>
+                <exercise-content3 ng-show="isPart(3)"></exercise-content3>
+                <exercise-content4 ng-show="isPart(4)"></exercise-content4>
+            </div>
+
         </div>
         <div id="exParts" class="row margin-vert-40">
             <div class=" btn-group pull-left">
