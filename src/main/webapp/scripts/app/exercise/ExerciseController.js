@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('ExerciseController', function ($scope,$sce,$compile, Exercise) {
+    .controller('ExerciseController', function ($scope, Exercise) {
 
         $scope.part = 1;
         $scope.userResponses=[];

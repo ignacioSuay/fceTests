@@ -1,11 +1,10 @@
-package com.firstcertificatetests.web;
+package com.firstcertificatetests.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 import com.firstcertificatetests.domain.UserDetails;
 import com.firstcertificatetests.repository.UserDetailsRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

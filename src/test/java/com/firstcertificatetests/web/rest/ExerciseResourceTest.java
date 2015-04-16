@@ -51,7 +51,6 @@ public class ExerciseResourceTest {
         restUserMockMvc.perform(get("/api/exercises")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType("application/json"))
-                .andExpect(jsonPath("$", hasSize(3)));
+                .andExpect(content().contentType("application/json"));
     }
 }

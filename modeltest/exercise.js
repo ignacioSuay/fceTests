@@ -213,3 +213,16 @@ db.exercise.insert(
         ],
         "examName": "fce1"
     });
+
+    db.user_details.insert(
+    {
+        "_id" : new ObjectId(),
+        "userId":"user-suay",
+        "exercisesCompleted":[{
+            "_id":1,
+            "exerciseId":ObjectId("652bf0f760b21e58df21416e"),
+            "when": new Date(),
+            "userResponses": {1:"1", 2:"2"},
+            "score": 2
+        }]
+    }

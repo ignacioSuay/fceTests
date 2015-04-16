@@ -19,6 +19,12 @@
                         <span translate="global.menu.home">Home</span>
                     </a>
                 </li>
+                <li  ng-switch-when="true" ui-sref-active="active">
+                    <a ui-sref="userDetails">
+                        <span class="glyphicon glyphicon-signal"></span>
+                        <span>Progress</span>
+                    </a>
+                </li>
                 <!--<li ui-sref-active="active" ng-switch-when="true" class="dropdown pointer" ng-show="isInRole('ROLE_ADMIN')">-->
                     <!--<a class="dropdown-toggle" data-toggle="dropdown" href="">-->
                                 <!--<span>-->
