@@ -47,4 +47,13 @@ public class UserDetails implements Serializable{
     public void setExercisesCompleted(List<ExerciseCompleted> exercisesCompleted) {
         this.exercisesCompleted = exercisesCompleted;
     }
+
+    @Override
+    public String toString() {
+        return "UserDetails{" +
+                "id=" + id +
+                ", userId='" + userId + '\'' +
+                ", exercisesCompleted=" + exercisesCompleted +
+                '}';
+    }
 }

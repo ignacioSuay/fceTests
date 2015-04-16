@@ -68,6 +68,22 @@ public class UserDetailsResource {
     }
 
     /**
+     * GET  /userDetails/:id -> get the "id" userDetails.
+     */
+    @RequestMapping(value = "/userDetails/{userId}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public ResponseEntity<UserDetails> get(@PathVariable String userId, HttpServletResponse response) {
+        log.debug("REST request to get userDetails : {}", userId);
+        UserDetails userDetails = userDetailsRepository.findByUserId(userId);
+        if (userDetails == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(userDetails, HttpStatus.OK);
+    }
+
+    /**
      * DELETE  /userDetails/:id -> delete the "id" userDetails.
      */
     @RequestMapping(value = "/userDetails/{id}",

@@ -37,4 +37,10 @@ public class UserDetailsRepositoryTest {
         System.out.println("size " + userDetails.size());
     }
 
+    @Test
+    public void testFindByUserId() throws Exception{
+        UserDetails userDetails = userDetailsRepository.findByUserId("user-suay");
+        assertThat(userDetails).isNotNull();
+        System.out.println("size " + userDetails.toString());
+    }
 }

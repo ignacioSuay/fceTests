@@ -19,7 +19,13 @@
                         <span translate="global.menu.home">Home</span>
                     </a>
                 </li>
-                <li  ng-switch-when="true" ui-sref-active="active">
+                <li  ng-switch-when="true">
+                    <a ui-sref="exercise">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        <span>Tests</span>
+                    </a>
+                </li>
+                <li  ng-switch-when="true">
                     <a ui-sref="userDetails">
                         <span class="glyphicon glyphicon-signal"></span>
                         <span>Progress</span>
