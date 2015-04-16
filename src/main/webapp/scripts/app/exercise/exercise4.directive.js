@@ -10,11 +10,11 @@ angular.module('firstcertificatetestsApp')
                 var responseId = response.id;
                 var regex = new RegExp(/\(\X\)/g); //(X)
                 var result = regex.exec(response.reformat);
-                var inputTest = "<input  id=input-"+responseId+" type='text' class='form-control inputEx4' placeholder='Response' aria-describedby='basic-addon1' ng-model=\"userResponses["+responseId+"]\">" +
+                var inputTest = " <input  id=input-"+responseId+" type='text' class='form-control inputEx4' placeholder='Response' aria-describedby='basic-addon1' ng-model=\"userResponses["+responseId+"]\">" +
                     "<span id=\'span4-"+responseId +"\' />";
                 var reformatStr =  response.reformat.replace(result[0], inputTest);
 
-                var auxtemplate = "<p>" + response.id +" "+ response.statement +"<br>"+response.answers[0]+"<br>"+reformatStr + "<br>";
+                var auxtemplate = "<div class=\"well\">" + response.id +". "+ response.statement +"<br>"+response.answers[0]+"<br>"+reformatStr + "</div>";
                 template += auxtemplate;
             });
 
