@@ -1,3 +1,29 @@
 <div class="container">
-    <p>uueeeeeeee!{{userDetails}}</p>
+    <h2>Exercises Completed</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Exam</th>
+                <th>Exercise Type</th>
+                <th>Date</th>
+                <th>Score</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="exercise in userDetails.exercisesCompleted">
+                    <td>{{exercise.examName}}</td>
+                    <td>{{exercise.exerciseType}}</td>
+                    <td>{{exercise.when| date : 'dd-MMMM-yyyy' }}</td>
+                    <td>{{exercise.score}}</td>
+                    <td><button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span> View</span>
+                    </button>
+                    <button class="btn btn-success">
+                        <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span> Retake</span>
+                    </button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

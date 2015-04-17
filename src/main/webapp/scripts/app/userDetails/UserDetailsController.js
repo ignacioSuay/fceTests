@@ -10,7 +10,7 @@ angular.module('firstcertificatetestsApp')
         });
 
         $scope.loadAll = function() {
-            UserDetails.data.query({userId:$scope.account.login}, function(result) {
+            UserDetails.data.get({userId:$scope.account.login}, function(result) {
                 $scope.userDetails = result;
             });
         };

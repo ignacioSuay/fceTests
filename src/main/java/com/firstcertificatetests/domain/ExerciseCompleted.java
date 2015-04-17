@@ -24,10 +24,16 @@ public class ExerciseCompleted {
     private Date when;
 
     @Field
+    private String examName;
+
+    @Field
+    private ExerciseType exerciseType;
+
+    @Field
     Map<Integer,String> userResponses;
 
     @Field
-    Integer score;
+    String score;
 
     public Integer getId() {
         return id;
@@ -53,21 +59,48 @@ public class ExerciseCompleted {
         this.userResponses = userResponses;
     }
 
-    public Integer getScore() {
+    public String getScore() {
         return score;
     }
 
-    public void setScore(Integer score) {
+    public void setScore(String score) {
         this.score = score;
+    }
+
+    public ObjectId getExerciseId() {
+        return exerciseId;
+    }
+
+    public void setExerciseId(ObjectId exerciseId) {
+        this.exerciseId = exerciseId;
+    }
+
+    public String getExamName() {
+        return examName;
+    }
+
+    public void setExamName(String examName) {
+        this.examName = examName;
+    }
+
+    public ExerciseType getExerciseType() {
+        return exerciseType;
+    }
+
+    public void setExerciseType(ExerciseType exerciseType) {
+        this.exerciseType = exerciseType;
     }
 
     @Override
     public String toString() {
         return "ExerciseCompleted{" +
                 "id=" + id +
+                ", exerciseId=" + exerciseId +
                 ", when=" + when +
+                ", examName='" + examName + '\'' +
+                ", exerciseType=" + exerciseType +
                 ", userResponses=" + userResponses +
-                ", score=" + score +
+                ", score='" + score + '\'' +
                 '}';
     }
 }

@@ -51,21 +51,21 @@ public class UserDetailsResource {
         return userDetailsRepository.findAll();
     }
 
-    /**
-     * GET  /userDetails/:id -> get the "id" userDetails.
-     */
-    @RequestMapping(value = "/userDetails/{id}",
-            method = RequestMethod.GET,
-            produces = MediaType.APPLICATION_JSON_VALUE)
-    @Timed
-    public ResponseEntity<UserDetails> get(@PathVariable Integer id, HttpServletResponse response) {
-        log.debug("REST request to get userDetails : {}", id);
-        UserDetails userDetails = userDetailsRepository.findOne(id);
-        if (userDetails == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<>(userDetails, HttpStatus.OK);
-    }
+//    /**
+//     * GET  /userDetails/:id -> get the "id" userDetails.
+//     */
+//    @RequestMapping(value = "/userDetails/{id}",
+//            method = RequestMethod.GET,
+//            produces = MediaType.APPLICATION_JSON_VALUE)
+//    @Timed
+//    public ResponseEntity<UserDetails> get(@PathVariable Integer id, HttpServletResponse response) {
+//        log.debug("REST request to get userDetails : {}", id);
+//        UserDetails userDetails = userDetailsRepository.findOne(id);
+//        if (userDetails == null) {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<>(userDetails, HttpStatus.OK);
+//    }
 
     /**
      * GET  /userDetails/:id -> get the "id" userDetails.

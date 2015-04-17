@@ -3,7 +3,7 @@
 angular.module('firstcertificatetestsApp')
     .factory('UserDetails', function ($resource) {
         return {
-            data : $resource('api/userDetails/:id', {}, {
+            data : $resource('api/userDetails/:userId', {}, {
                 'query': {method: 'GET', isArray: true},
                 'get': {
                     method: 'GET',

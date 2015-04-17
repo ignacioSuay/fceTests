@@ -4,13 +4,31 @@
             db.user_details.insert(
             {
                 "_id" : new ObjectId(),
-                "userId":"user-suay",
+                "userId":"user",
                 "exercisesCompleted":[{
                         "_id":1,
                         "exerciseId":ObjectId("652bf0f760b21e58df21416e"),
                         "when": new Date(),
+                        "examName": "fce1",
+                        "exerciseType": "USE_OF_ENGLISH_1",
                         "userResponses": {1:"1", 2:"2"},
-                        "score": 2
+                        "score": "4/8"
+                },{
+                        "_id":1,
+                        "exerciseId":ObjectId("652bf0f760b21e58df21416e"),
+                        "when": new Date(),
+                        "examName": "fce1",
+                        "exerciseType": "USE_OF_ENGLISH_3",
+                        "userResponses": {1:"1", 2:"2"},
+                        "score": "5/8"
+                },{
+                        "_id":1,
+                        "exerciseId":ObjectId("652bf0f760b21e58df21416e"),
+                        "when": new Date(),
+                        "examName": "fce1",
+                        "exerciseType": "USE_OF_ENGLISH_4",
+                        "userResponses": {1:"1", 2:"2"},
+                        "score": "4/6"
                 }]
             });
         </script>
