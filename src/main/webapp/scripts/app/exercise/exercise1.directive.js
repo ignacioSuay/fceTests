@@ -20,7 +20,6 @@ angular.module('firstcertificatetestsApp')
                 template = template.replace(result[0], select);
             }
             return template;
-            //return "<div>alaa</div>";
         };
 
 
