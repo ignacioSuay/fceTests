@@ -36,8 +36,6 @@ angular.module('firstcertificatetestsApp')
                 }
             });
         };
-
-
         return {
             restrict: "E",
             link: linker,
