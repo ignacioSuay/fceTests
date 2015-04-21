@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('ExerciseController', function ($scope, Exercise) {
+    .controller('ExerciseController', function ($scope,$state, Exercise) {
 
         $scope.part = 1;
         $scope.userResponses=[];
@@ -85,5 +85,11 @@ angular.module('firstcertificatetestsApp')
                 }
             });
         };
+
+        //change nav active when click
+        $(".nav a").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
 
     });

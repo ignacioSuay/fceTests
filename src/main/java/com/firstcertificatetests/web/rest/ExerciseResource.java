@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -54,5 +55,25 @@ public class ExerciseResource {
     public List<Exercise> getExercise(@PathVariable String examName) {
         log.debug("REST request to get Exercise from exam: " + examName);
         return exerciseRepository.findAllByExamName(examName);
+    }
+
+    @RequestMapping(value = "/exercises/exam/{examName}/{exerciseType}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public List<Exercise> getExercise(@PathVariable String examName, @PathVariable String exerciseType) {
+        log.debug("REST request to get Exercise from exam: " + examName);
+        List<Exercise> exercises = exerciseRepository.findAllByExamName(examName);
+        return getExercisesByType(exercises, exerciseType);
+    }
+
+    private List<Exercise> getExercisesByType(List<Exercise> exercises, String type){
+        List<Exercise> exercisesRes = new ArrayList<>();
+        for(Exercise exercise : exercises){
+            if(exercise.getExerciseType() != null && type.equals(exercise.getExerciseType().getParent())){
+                exercisesRes.add(exercise);
+            }
+        }
+        return exercisesRes;
     }
 }

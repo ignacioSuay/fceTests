@@ -4,6 +4,7 @@ import com.firstcertificatetests.domain.Exercise;
 import com.firstcertificatetests.domain.User;
 import org.joda.time.DateTime;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
 
 import java.util.List;
 import java.util.Optional;
