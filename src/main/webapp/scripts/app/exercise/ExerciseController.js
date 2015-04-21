@@ -22,7 +22,7 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.loadAll = function() {
-            Exercise.exam.query({examName:"fce1"}, function(result) {
+            Exercise.exam.query({examName:"fce1", exerciseType:"USE_OF_ENGLISH"}, function(result) {
                 $scope.exercises= result;
                 $scope.exercise = $scope.exercises[0];
             });
