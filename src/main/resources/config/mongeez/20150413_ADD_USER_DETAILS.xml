@@ -1,5 +1,5 @@
 <mongoChangeLog>
-    <changeSet changeId="20150303_ADD_EXERCISES" author="jhipster">
+    <changeSet changeId="20150303_ADD_EXERCISES" author="suay">
         <script>
             db.user_details.insert(
             {
