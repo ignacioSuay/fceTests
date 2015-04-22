@@ -34,7 +34,7 @@ angular.module('firstcertificatetestsApp')
                     //nameOfView@state
                     'exerciseView@exercise':{
                         templateUrl: 'scripts/app/exercise/useOfEnglish/useOfEnglish.html',
-                        controller: 'ExerciseController'
+                        controller: 'UseEnglishController'
                     }
                 }
 
@@ -46,7 +46,7 @@ angular.module('firstcertificatetestsApp')
                     //nameOfView@state
                     'exerciseView@exercise':{
                         templateUrl: 'scripts/app/exercise/reading/reading.html',
-                        controller: 'ExerciseController'
+                        controller: 'ReadingController'
                     }
                 }
             })
