@@ -11,42 +11,43 @@
                         "&lt;p> We were about halfway across when I saw the boy. My first thought was how odd it was to see someone walking on the Stand. You don't often see people walking around here. Between Hale and Moulton (the nearest town about thirty kilometres away on the mainland), there's nothing but small cottages, farmland, heathland and a couple of hills. So islanders don't walk because of that. If they're going to Moulton they tend to take the bus. So the only pedestrians you're likely to see around here are walkers or bird-watchers. But even from a distance I could tell that the figure ahead didn't fit into either of these categories. I wasn't sure how I knew, I just did." +
                         "&lt;p> As we drew closer, he became clearer. He was actually a young man rather than a boy. Although he was on the small side, he wasn't as slight as I'd first thought. He wasn't exactly muscular, but he wasn't weedy-looking either. It's hard to explain. There was a sense of strength about him, a graceful strength that showed in his balance, the way he held himself, the way he walked....",
             "exerciseType": "READING_1",
+            "examName": "fce1",
             "responses": [
                 {
                     "_id": 31,
                     "statement":"In the first paragraph, what is Caitlin's main point about the island?",
                     "answers": ["It can be dangerous to try to cross from the mainland.", "It is much smaller than it looks from the mainland.", "It is only completely cut off at certain times.", "It can be a difficult place for people to live in."],
-                    "correct": 2,
+                    "correct": "2",
                     "responseType": "VOCABULARY"},
                 {
                     "_id": 32,
                     "statement":"What does Caitlin suggest about her father?",
                     "answers": ["His writing prevents him from doing things he wants to with his family.", "His initial reaction to his son's request is different from usual.", "His true feelings are easily hidden from his daughter.", "His son's arrival is one event he will take time off for."],
-                    "correct": 3,
+                    "correct": "3",
                     "responseType": "VOCABULARY"},
                 {
                     "_id": 33,
                     "statement":"Caitlin emphasises her feelings of discomfort because she",
                     "answers": ["is embarrassed that she doesn't understand what her brother is talking about.", "feels confused about why she can't relate to her brother any more.", "is upset by the unexpected change in her brother's behaviour.", "feels foolish that her brother's attention is so important to her."],
-                    "correct": 2,
+                    "correct": "2",
                     "responseType": "VOCABULARY"},
                 {
                     "_id": 34,
                     "statement":"In the fourth paragraph, what is Caitlin's purpose in describing the island?",
                     "answers": ["to express her positive feelings about it","to explain how the road was built", "to illustrate what kind of weather was usual", "to describe her journey home"],
-                    "correct": 0,
+                    "correct": "0",
                     "responseType": "VOCABULARY"},
                 {
                     "_id": 35,
                     "statement":"In 'because of that' the word 'that' refers to",
                     "answers": ["locals thinking it is odd to walk anywhere.","it being easier for people to take the bus than walk.","people having everything they need on the island.", "there being nowhere in particular to walk to from the island."],
-                    "correct": 3,
+                    "correct": "3",
                     "responseType": "VOCABULARY"},
                 {
                     "_id": 36,
                     "statement":"What do we learn about Caitlin's reactions to the boy?",
                     "answers": ["She felt his air of confidence contrasted with his physical appearance.", "She was able to come up with a reason for him being there.", "She realised her first impression of him was inaccurate.", "She thought she had seen him somewhere before."],
-                    "correct": 2,
+                    "correct": "2",
                     "responseType": "VOCABULARY"},
             ]
             });
@@ -62,41 +63,42 @@
             "&lt;p> The human body is designed to adapt to the demands we make of it, provided we make them carefully and over time. (41) In the same way, all those years of classes add up to a fit-for-purpose dancing machine.  This level of physical fluency doesn’t hurt; it feels good.  " +
             "&lt;p> (42) But they should not be misled: there is a difference between hard work and hardship.  Dancers have an everyday familiarity with the first. Hardship it isn’t. ",
             "exerciseType": "READING_2",
+            "examName": "fce1",
             "responses": [
             {
             "_id":1,
             "statement":"Through endless tries at the usual exercises and frequent failures, ballet dancers develop the neural pathways in the brain necessary to control accurate, fast and smooth movement.",
-            "correct":40
+            "correct":"40"
             },
             {
             "_id":2,
             "statement":"The ballet shoe offers some support, but the real strength is in the muscles, built up through training.",
-            "correct":0
+            "correct":"0"
             },
             {
             "_id":3,
             "statement":"As technology takes away activity from the lives of many, perhaps the ballet dancer’s physicality is ever more difficult for most people to imagine.",
-            "correct":42
+            "correct":"42"
             },
             {
             "_id":4,
             "statement":"Ballet technique is certainly extreme but it is not, in itself, dangerous.",
-            "correct":37
+            "correct":"37"
             },
             {
             "_id":5,
             "statement":"The principle is identical in the gym – pushing yourself to the limit, but not beyond, will eventually bring the desired result.",
-            "correct":41
+            "correct":"41"
             },
             {
             "_id":6,
             "statement":"No one avoids this: it is ballet’s great democratiser, the well established members of the company working alongside the newest recruits.",
-            "correct":39
+            "correct":"39"
             },
             {
             "_id":7,
             "statement":"It takes at least a decade of high-quality, regular practice to become an expert in any physical discipline.",
-            "correct":38
+            "correct":"38"
             }
             ]});
 
@@ -107,6 +109,7 @@
             "&lt;p>Paragraph C &lt;br> Duncan takes up the story: ‘The first half of that season I played in the youth team. I got lucky – the first-team manager came to watch us play QPR, and though we lost 3-1, I had a really good game. I moved up to the first team after that performance.’ Gavin points out that it can be beneficial to be smaller and weaker when you are developing – it forces you to learn how to keep the ball better, how to use ‘quick feet’ to get out of tight spaces. ‘A couple of years ago, Duncan would run past an opponent as if he wasn’t there but then the other guy would close in on him. I used to say to him, “Look, if you can do that now, imagine what you’ll be like when you’re 17, 18 and you’re big and quick and they won’t be able to get near you.” If you’re a smaller player, you have to use your brain a lot more.’" +
             "&lt;p>Paragraph C &lt;br> Not every kid gets advice from an ex-England player over dinner, nor their own private training sessions. Now Duncan is following in Gavin’s footsteps. He has joined a national scheme where people like him give advice to ambitious young teenagers who are hoping to become professionals. He is an old head on young shoulders. Yet he’s also like a young kid in his enthusiasm. And fame has clearly not gone to his head; it would be hard to meet a more likeable, humble young man. So will he get to play for the national team? ‘One day I’d love to, but when that is, is for somebody else to decide.’ The way he is playing, that won’t be long.",
             "exerciseType": "READING_3",
+            "examName": "fce1",
             "responses":[
             {
             "_id": 43,
