@@ -29,7 +29,7 @@ angular.module('firstcertificatetestsApp')
 
         $scope.loadAll();
 
-        $scope.check = function(partNumber){
+        $scope.check = function(){
             if($scope.part === 1){
                 $scope.checkPart1();
             }else if($scope.part === 2){
