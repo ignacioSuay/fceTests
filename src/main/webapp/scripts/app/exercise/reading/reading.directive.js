@@ -21,6 +21,7 @@ angular.module('firstcertificatetestsApp')
             return template;
         };
 
+
         var linker = function(scope, element, attrs) {
             scope.$watch('exercise',function(newValue,oldValue) {
                 if (newValue && scope.exercise.exerciseType === "READING_1") {
@@ -39,34 +40,42 @@ angular.module('firstcertificatetestsApp')
 
         var getTemplate = function(exercise){
             var template = exercise.content;
-            var regex = new RegExp(/\(\d\)/g); //(1)
+            var regex = new RegExp(/\(\d*\)/g); //(1)
             var result;
+
             while((result = regex.exec(template)) !== null){
                 var responseId = result[0].substr(1,result[0].length - 2 );
-                //var response = findResponseById(exercise, responseId);
-                var select = "<select id=\'select-"+responseId +"\' class=\"form-control input-sm selectEx\" ng-model=\"userResponses["+responseId+"] \">" +
-                        "<option>select</option>" +
-                    //"<option>" + response.answers[0] +"</option>" +
-                    //"<option>" + response.answers[1] +"</option>" +
-                    //"<option>" + response.answers[2] +"</option>" +
-                    //"<option>" + response.answers[3] +"</option>" +
-                    "</select><span id=\'span-"+responseId +"\' />";
+                var select = "<select> " +
+                        "<option ng-repeat='item in responsesId' value='{{item}}'>{{item}} </option>"+
+                    "</select> <span id=\'span-"+responseId +"\' />";
                 template = template.replace(result[0], select);
             }
-
+            template += getParagraphs(exercise);
             return template;
         };
 
-        var findResponseById = function(exercise, id){
-            var responseArray = exercise.responses.filter(function (response){
-                return response.id === Number(id);
-            });
-            return responseArray[0].answers[0].toUpperCase();
+        var getResponsesId = function(exercise){
+          var responsesId = [];
+          exercise.responses.forEach(function(response){
+              responsesId.push(response.id);
+          });
+            return responsesId;
         };
+
+        var getParagraphs = function(exercise){
+            var responses = "<div>";
+            exercise.responses.forEach(function(response){
+                responses += response.id + ".<br/>"+ response.statement + "<br/>";
+            });
+            responses += "</div>";
+            return responses;
+        };
+
 
         var linker = function(scope, element, attrs) {
             scope.$watch('exercise',function(newValue,oldValue) {
                 if (newValue && scope.exercise.exerciseType === "READING_2") {
+                    scope.responsesId = getResponsesId(scope.exercise);
                     element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
                 }
