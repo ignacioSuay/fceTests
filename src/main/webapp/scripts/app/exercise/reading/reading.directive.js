@@ -45,9 +45,9 @@ angular.module('firstcertificatetestsApp')
 
             while((result = regex.exec(template)) !== null){
                 var responseId = result[0].substr(1,result[0].length - 2 );
-                var select = "<select> " +
+                var select = "<select class=\"form-control input-sm selectEx\" id=\'selectR-"+responseId +"\' >" +
                         "<option ng-repeat='item in responsesId' value='{{item}}'>{{item}} </option>"+
-                    "</select> <span id=\'span-"+responseId +"\' />";
+                    "</select> <span id=\'spanR-"+responseId +"\' />";
                 template = template.replace(result[0], select);
             }
             template += getParagraphs(exercise);
@@ -65,7 +65,7 @@ angular.module('firstcertificatetestsApp')
         var getParagraphs = function(exercise){
             var responses = "<div>";
             exercise.responses.forEach(function(response){
-                responses += response.id + ".<br/>"+ response.statement + "<br/>";
+                responses += "<div class='well'> Paragraph " + response.id + ".<br/>"+ response.statement + "<br/></div>";
             });
             responses += "</div>";
             return responses;
@@ -76,6 +76,60 @@ angular.module('firstcertificatetestsApp')
             scope.$watch('exercise',function(newValue,oldValue) {
                 if (newValue && scope.exercise.exerciseType === "READING_2") {
                     scope.responsesId = getResponsesId(scope.exercise);
+                    element.html(getTemplate(scope.exercise)).show();
+                    $compile(element.contents())(scope);
+                }
+            });
+        };
+        return {
+            restrict: "E",
+            link: linker,
+            scope: false
+        };
+    }).directive('readingContent3', function ($compile) {
+        var getTemplate = function(exercise){
+            var template = exercise.content;
+            var result;
+
+            //while((result = regex.exec(template)) !== null){
+            //    var responseId = result[0].substr(1,result[0].length - 2 );
+            //    var select = "<select class=\"form-control input-sm selectEx\" id=\'selectR-"+responseId +"\' >" +
+            //        "<option ng-repeat='item in responsesId' value='{{item}}'>{{item}} </option>"+
+            //        "</select> <span id=\'spanR-"+responseId +"\' />";
+            //    template = template.replace(result[0], select);
+            //}
+            template += getQuestions(exercise);
+            return template;
+        };
+
+        var getResponsesId = function(exercise){
+            var responsesId = [];
+            exercise.responses.forEach(function(response){
+                responsesId.push(response.id);
+            });
+            return responsesId;
+        };
+
+        var getQuestions = function(exercise){
+            var responses = "<div>";
+            exercise.responses.forEach(function(response){
+                responses += "<div class='well'>"+ response.id+ ". " + response.statement + ".<br/> " +
+                "<input type='radio' name='radioR-"+response.id+"' value='A'/> Paragraph A </input>" +
+                "<input type='radio' name='radioR-"+response.id+"' value='B'/> Paragraph B </input>" +
+                "<input type='radio' name='radioR-"+response.id+"' value='C'/> Paragraph C </input>" +
+                "<input type='radio' name='radioR-"+response.id+"' value='D'/> Paragraph D </input>" +
+                "<span id=\'span3R-"+response.id +"\' />"+
+                "<br/></div>";
+            });
+            responses += "</div>";
+            return responses;
+        };
+
+
+        var linker = function(scope, element, attrs) {
+            scope.$watch('exercise',function(newValue,oldValue) {
+                if (newValue && scope.exercise.exerciseType === "READING_3") {
+                    //scope.responsesId = getResponsesId(scope.exercise);
                     element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
                 }

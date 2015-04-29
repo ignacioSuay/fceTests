@@ -37,8 +37,6 @@ angular.module('firstcertificatetestsApp')
                 $scope.checkPart2();
             }else if($scope.part === 3){
                 $scope.checkPart3();
-            }else if($scope.part === 4){
-                $scope.checkPart4();
             }
         };
 
@@ -49,6 +47,28 @@ angular.module('firstcertificatetestsApp')
                     $("#spanR-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
                 }else{
                     $("#spanR-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
+                }
+            });
+        };
+
+        $scope.checkPart2 = function(){
+            $scope.exercise.responses.forEach(function(response){
+                var selectedText = $("#selectR-" + response.correct[0] + " option:selected").text();
+                if(parseInt(selectedText) === response.id){
+                    $("#spanR-" + response.correct[0]).attr("class","glyphicon glyphicon-ok iconSuccess");
+                }else{
+                    $("#spanR-" + response.correct[0]).attr("class","glyphicon glyphicon-remove iconFail");
+                }
+            });
+        };
+
+        $scope.checkPart3 = function(){
+            $scope.exercise.responses.forEach(function(response){
+                var selectedAnswer = $('input:radio[name=radioR-'+response.id+']:checked').val();
+                if(selectedAnswer === response.correct[0]){
+                    $("#span3R-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
+                }else{
+                    $("#span3R-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
                 }
             });
         };
