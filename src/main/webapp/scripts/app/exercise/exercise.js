@@ -50,4 +50,15 @@ angular.module('firstcertificatetestsApp')
                     }
                 }
             })
+            .state('exercise.writing', {
+                parent: 'exercise',
+                url: 'writing',
+                views:{
+                    //nameOfView@state
+                    'exerciseView@exercise':{
+                        templateUrl: 'scripts/app/exercise/writing/writing.html',
+                        controller: 'WritingController'
+                    }
+                }
+            })
     });

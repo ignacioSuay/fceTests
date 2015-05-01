@@ -15,7 +15,10 @@ public enum ExerciseType {
     READING_2("Reading 2", "READING"),
     READING_3("Reading 3", "READING"),
     READING_4("Reading 4", "READING"),
-    WRITING("Writing", "WRITING");
+    WRITING_1("Writing 1", "WRITING"),
+    WRITING_2("Writing 2", "WRITING"),
+    WRITING_3("Writing 3", "WRITING"),
+    WRITING_4("Writing 4", "WRITING");
 
     private String name;
 

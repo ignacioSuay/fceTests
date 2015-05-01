@@ -54,15 +54,15 @@ public class DatabaseConfiguration extends AbstractMongoConfiguration  {
         return mongo;
     }
 
-    @Bean
-    @Profile("!" + Constants.SPRING_PROFILE_PRODUCTION)
-    public Mongeez mongeez() {
-        log.debug("Configuring Mongeez");
-        Mongeez mongeez = new Mongeez();
-        mongeez.setFile(new ClassPathResource("/config/mongeez/master.xml"));
-        mongeez.setMongo(mongo);
-        mongeez.setDbName(mongoProperties.getDatabase());
-        mongeez.process();
-        return mongeez;
-    }
+//    @Bean
+//    @Profile("!" + Constants.SPRING_PROFILE_PRODUCTION)
+//    public Mongeez mongeez() {
+//        log.debug("Configuring Mongeez");
+//        Mongeez mongeez = new Mongeez();
+//        mongeez.setFile(new ClassPathResource("/config/mongeez/master.xml"));
+//        mongeez.setMongo(mongo);
+//        mongeez.setDbName(mongoProperties.getDatabase());
+//        mongeez.process();
+//        return mongeez;
+//    }
 }
