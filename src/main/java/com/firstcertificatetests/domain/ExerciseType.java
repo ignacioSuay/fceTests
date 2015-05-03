@@ -18,7 +18,11 @@ public enum ExerciseType {
     WRITING_1("Writing 1", "WRITING"),
     WRITING_2("Writing 2", "WRITING"),
     WRITING_3("Writing 3", "WRITING"),
-    WRITING_4("Writing 4", "WRITING");
+    WRITING_4("Writing 4", "WRITING"),
+    SPEAKING_1("Speaking 1", "SPEAKING"),
+    SPEAKING_2("Speaking 2", "SPEAKING"),
+    SPEAKING_3("Speaking 3", "SPEAKING"),
+    SPEAKING_4("Speaking 4", "SPEAKING");
 
     private String name;
 

@@ -61,4 +61,26 @@ angular.module('firstcertificatetestsApp')
                     }
                 }
             })
+            .state('exercise.speaking', {
+                parent: 'exercise',
+                url: 'speaking',
+                views:{
+                    //nameOfView@state
+                    'exerciseView@exercise':{
+                        templateUrl: 'scripts/app/exercise/speaking/speaking.html',
+                        controller: 'SpeakingController'
+                    }
+                }
+            })
+            .state('exercise.listening', {
+                parent: 'exercise',
+                url: 'speaking',
+                views:{
+                    //nameOfView@state
+                    'exerciseView@exercise':{
+                        templateUrl: 'scripts/app/exercise/Listening/listening.html',
+                        controller: 'ListeningController'
+                    }
+                }
+            })
     });
