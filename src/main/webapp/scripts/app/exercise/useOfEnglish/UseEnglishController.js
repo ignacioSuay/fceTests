@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UseEnglishController', function ($scope,$state, Exercise) {
+    .controller('UseEnglishController', function ($scope,$state, Exercise, $timeout) {
         $scope.part = 1;
         $scope.userResponses=[];
         $scope.exercise = {};
@@ -84,6 +84,17 @@ angular.module('firstcertificatetestsApp')
                 }
             });
         };
+
+        $scope.m = 0;
+        $scope.s = 0;
+        $scope.startTime= function() {
+            $scope.time = $scope.m + ":" + $scope.s;
+            $scope.s++;
+            var t = $timeout(function () {
+                $scope.startTime()
+            }, 1000);
+        };
+        $scope.startTime();
 
 
     });
