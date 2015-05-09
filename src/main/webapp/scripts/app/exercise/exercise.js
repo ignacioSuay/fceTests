@@ -74,7 +74,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.listening', {
                 parent: 'exercise',
-                url: 'speaking',
+                url: 'listening',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
