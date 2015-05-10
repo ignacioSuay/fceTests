@@ -5,6 +5,7 @@ angular.module('firstcertificatetestsApp')
         $scope.part = 1;
         $scope.userResponses=[];
         $scope.exercise = {};
+        $scope.options = {interval :1000};
 
 
         $scope.btnPartClass = function(partNumber){
@@ -29,8 +30,8 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.loadAll();
-
         $scope.check = function(){
+            $scope.options.stopTimer();
             if($scope.part === 1){
                 $scope.checkPart1();
             }else if($scope.part === 2){
@@ -47,8 +48,10 @@ angular.module('firstcertificatetestsApp')
                 var selectedText = $("#select-" + response.id + " option:selected").text();
                 if(selectedText === response.correct[0]){
                     $("#span-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
+                    $("#span-" + response.id).text("");
                 }else{
                     $("#span-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
+                    $("#span-" + response.id).text(response.correct);
                 }
             });
         };
