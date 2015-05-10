@@ -1,8 +1,5 @@
 <div class="exerciseBody">
-    <timer options='options'>
-        <div>{{options.elapsedTime | timerFilterTime}}</div>
-        <button ng-click="start()">start</button>
-    </timer>
+    <timer options='options'/>
     <h2>{{exercise.title}}</h2>
     <div>
         <exercise-content1 ng-show="isPart(1)"></exercise-content1>

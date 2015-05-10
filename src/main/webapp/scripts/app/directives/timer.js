@@ -3,21 +3,25 @@
 angular.module('firstcertificatetestsApp')
     .directive('timer', ['TimerFactory', function (TimerFactory) {
 
-        var linker = function(scope, element, attrs) {
-            //var timerService = new TimerFactory(scope[attrs.options]);
-            //scope.startTimer = timerService.startTimer;
-        };
-
         return {
             restrict: "EA",
-            link: linker,
-            scope: true
+            scope: true,
+            controller: function ($scope, $element){
+                $scope.options = {interval :500};
+                var timerService = new TimerFactory($scope.options);
+                timerService.startTimer();
+                $scope.$on('$destroy', function(node){
+                    timerService.cancelTimer();
+                });
+            },
+            template: "<div class='btn btn-success'>{{options.elapsedTime | timerFilterTime}}</div>"
         };
     }])
     .filter('timerFilterTime', function () {
         return function (input) {
             if(input){
 
+                var hoursStr, minsStr, secsStr;
                 var elapsed = input.getTime();
                 var hours = parseInt(elapsed / 3600000,10);
                 elapsed %= 3600000;
@@ -26,7 +30,11 @@ angular.module('firstcertificatetestsApp')
                 var secs = parseInt(elapsed / 1000,10);
                 var ms = elapsed % 1000;
 
-                return hours + ':' + mins + ':' + secs + ':' + ms;
+                hoursStr = hours < 10 ? "0" + hours : hours;
+                minsStr = mins < 10 ? "0" + mins : mins;
+                secsStr = secs < 10 ? "0" + secs : secs;
+
+                return hoursStr + ':' + minsStr + ':' + secsStr;
             }
         };
     })
@@ -41,7 +49,7 @@ angular.module('firstcertificatetestsApp')
                 self = this;
 
             if(!options.interval){
-                options.interval = 100;
+                options.interval = 1000;
             }
 
             options.elapsedTime = new Date(0);
@@ -53,10 +61,10 @@ angular.module('firstcertificatetestsApp')
                     options.log.push(lap);
                 }
             }
-
+            var timeElapsed;
             self.updateTime = function(){
                 currentTime = new Date().getTime();
-                var timeElapsed = offset + (currentTime - startTime);
+                timeElapsed = offset + (currentTime - startTime);
                 options.elapsedTime.setTime(timeElapsed);
             };
 

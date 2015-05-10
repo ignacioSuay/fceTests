@@ -5,7 +5,7 @@ angular.module('firstcertificatetestsApp')
         $scope.part = 1;
         $scope.userResponses=[];
         $scope.exercise = {};
-        $scope.options = {interval :100};
+
 
         $scope.btnPartClass = function(partNumber){
             if($scope.part === partNumber)
@@ -86,18 +86,7 @@ angular.module('firstcertificatetestsApp')
             });
         };
 
-        var timerService = new TimerFactory($scope.options);
-        timerService.startTimer();
-        //$scope.m = 0;
-        //$scope.s = 0;
-        //$scope.startTime= function() {
-        //    $scope.time = $scope.m + ":" + $scope.s;
-        //    $scope.s++;
-        //    var t = $timeout(function () {
-        //        $scope.startTime()
-        //    }, 1000);
-        //};
-        //$scope.startTime();
+
 
 
     });
