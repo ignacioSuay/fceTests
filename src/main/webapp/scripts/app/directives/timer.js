@@ -6,10 +6,10 @@ angular.module('firstcertificatetestsApp')
         return {
             restrict: "EA",
             scope: true,
-            controller: function ($scope, $element){
-                $scope.options = {interval :500};
+            controller: function ($scope, $element, $attrs){
                 var timerService = new TimerFactory($scope.options);
                 timerService.startTimer();
+                $scope.options.stopTimer = timerService.stopTimer;
                 $scope.$on('$destroy', function(node){
                     timerService.cancelTimer();
                 });
