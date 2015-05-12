@@ -59,21 +59,31 @@ angular.module('firstcertificatetestsApp')
         $scope.checkPart2 = function(){
             $scope.exercises[1].responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
-                if(inputText.trim().toLowerCase() === response.correct[0].trim().toLowerCase()){
+                var checkData = $scope.checkData(inputText, response);
+
+                if(checkData.isCorrect){
                     $("#span2-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
+                    $("#span2-" + response.id).text("");
                 }else{
                     $("#span2-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
+                    $("#span2-" + response.id).text(checkData.posibleSolutions);
                 }
             });
         };
 
+
+
         $scope.checkPart3 = function(){
             $scope.exercises[2].responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
-                if(inputText.trim().toLowerCase() === response.correct[0].trim().toLowerCase()){
+                var checkData = $scope.checkData(inputText, response);
+
+                if(checkData.isCorrect){
                     $("#span3-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
+                    $("#span3-" + response.id).text("");
                 }else{
                     $("#span3-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
+                    $("#span3-" + response.id).text(checkData.posibleSolutions);
                 }
             });
         };
@@ -81,14 +91,29 @@ angular.module('firstcertificatetestsApp')
         $scope.checkPart4 = function(){
             $scope.exercises[3].responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
-                if(inputText.trim().toLowerCase() === response.correct[0].trim().toLowerCase()){
+                var checkData = $scope.checkData(inputText, response);
+                if(checkData.isCorrect){
                     $("#span4-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
+                    $("#span4-" + response.id).text("");
                 }else{
                     $("#span4-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
+                    $("#span4-" + response.id).text(checkData.posibleSolutions);
                 }
             });
         };
 
+        $scope.checkData = function(inputText, response){
+            var isCorrect = false;
+            var posibleSolutions ="";
+            response.correct.forEach(function(correct){
+                if(inputText.trim().toLowerCase() === correct.trim().toLowerCase()){
+                    isCorrect = true;
+                }
+                posibleSolutions += correct + "/";
+            });
+            posibleSolutions = posibleSolutions.substring(0, posibleSolutions.length - 1);
+            return {isCorrect: isCorrect, posibleSolutions: posibleSolutions};
+        };
 
 
 
