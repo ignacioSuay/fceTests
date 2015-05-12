@@ -32,5 +32,9 @@
             <div ui-view="exerciseView" class="view-animate"></div>
         </div>
 
+        <div class="alert alert-danger" ng-show="!isAuthenticated()">
+            <h4>You are not logged in. Please you need to log in to save your results and track your progress.</h4>
+        </div>
+
     </div>
 </div>
