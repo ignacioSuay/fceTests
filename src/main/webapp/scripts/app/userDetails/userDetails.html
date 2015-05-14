@@ -7,6 +7,7 @@
                 <th>Exam</th>
                 <th>Exercise Type</th>
                 <th>Date</th>
+                <th>Time Spent</th>
                 <th>Score</th>
             </tr>
             </thead>
@@ -15,6 +16,7 @@
                     <td>{{exercise.examName}}</td>
                     <td>{{exercise.exerciseType}}</td>
                     <td>{{exercise.when| date : 'dd-MMMM-yyyy' }}</td>
+                    <td>{{exercise.time | secondsToTime}}</td>
                     <td>{{exercise.score}}</td>
                     <td><button class="btn btn-primary">
                         <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span> View</span>

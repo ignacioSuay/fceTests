@@ -38,8 +38,8 @@ public class UserDetailsRepositoryTest {
     }
 
     @Test
-    public void testFindByUserId() throws Exception{
-        UserDetails userDetails = userDetailsRepository.findByUserId("user-suay");
+    public void testFindByLogin() throws Exception{
+        UserDetails userDetails = userDetailsRepository.findByLogin("suay");
         assertThat(userDetails).isNotNull();
         System.out.println("size " + userDetails.toString());
     }
