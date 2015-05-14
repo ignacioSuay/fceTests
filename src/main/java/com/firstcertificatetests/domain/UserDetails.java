@@ -18,7 +18,7 @@ public class UserDetails implements Serializable{
     private ObjectId id;
 
     @Field
-    private String userId;
+    private String login;
 
     @Field
     private List<ExerciseCompleted> exercisesCompleted;
@@ -33,11 +33,11 @@ public class UserDetails implements Serializable{
     }
 
     public String getUserId() {
-        return userId;
+        return login;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUserId(String login) {
+        this.login = login;
     }
 
     public List<ExerciseCompleted> getExercisesCompleted() {
@@ -52,7 +52,7 @@ public class UserDetails implements Serializable{
     public String toString() {
         return "UserDetails{" +
                 "id=" + id +
-                ", userId='" + userId + '\'' +
+                ", login='" + login + '\'' +
                 ", exercisesCompleted=" + exercisesCompleted +
                 '}';
     }

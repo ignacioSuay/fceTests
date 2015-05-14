@@ -27,6 +27,9 @@ public class ExerciseCompleted {
     private String examName;
 
     @Field
+    private int time;
+
+    @Field
     private ExerciseType exerciseType;
 
     @Field
@@ -89,6 +92,14 @@ public class ExerciseCompleted {
 
     public void setExerciseType(ExerciseType exerciseType) {
         this.exerciseType = exerciseType;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
     }
 
     @Override

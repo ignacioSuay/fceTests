@@ -70,13 +70,13 @@ public class UserDetailsResource {
     /**
      * GET  /userDetails/:id -> get the "id" userDetails.
      */
-    @RequestMapping(value = "/userDetails/{userId}",
+    @RequestMapping(value = "/userDetails/{login}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public ResponseEntity<UserDetails> get(@PathVariable String userId, HttpServletResponse response) {
-        log.debug("REST request to get userDetails : {}", userId);
-        UserDetails userDetails = userDetailsRepository.findByUserId(userId);
+    public ResponseEntity<UserDetails> get(@PathVariable String login, HttpServletResponse response) {
+        log.debug("REST request to get userDetails : {}", login);
+        UserDetails userDetails = userDetailsRepository.findByLogin(login);
         if (userDetails == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }

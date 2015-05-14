@@ -9,5 +9,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  */
 public interface UserDetailsRepository extends MongoRepository<UserDetails, Integer> {
 
-    UserDetails findByUserId(String userId);
+    UserDetails findByLogin(String login);
 }
