@@ -2,6 +2,8 @@ db.authority.insert({"_id" : "ROLE_ADMIN"});
 db.authority.insert({"_id" : "ROLE_USER"})
 db.user.ensureIndex({"login" : 1});
 db.user.ensureIndex({"email" : 1});
+
+/**************** USERS ***************/
 db.user.insert(
     {
         "_id" : "user-0",
@@ -59,18 +61,40 @@ db.user.insert(
         "authorities": [{"_id": "ROLE_USER"}]
     });
 
+db.user.insert(
+    {
+        "_id" : "user-suay",
+        "login" : "suay",
+        "password" : "$2a$10$IZ2w4u/XykNE//zner/j0uLprKaOCvcwKfT5JiggImy6NjCLeSLhW",
+        "first_name": "",
+        "last_name": "User",
+        "email": "",
+        "activated": "true",
+        "lang_key": "en",
+        "created_by": "system",
+        "created_date": new Date(),
+        "authorities": [{"_id": "ROLE_USER"}]
+    });
+
+/**************** USER DETAILS ***************/
+
 db.user_details.insert(
     {
         "_id" : new ObjectId(),
-        "userId":"user-suay",
+        "login":"suay",
         "exercisesCompleted":[{
             "_id":1,
             "exerciseId":ObjectId("652bf0f760b21e58df21416e"),
             "when": new Date(),
             "userResponses": {1:"1", 2:"2"},
+            "exerciseType": "USE_OF_ENGLISH_1",
+            "examName": "fce1",
+            "time": 600,
             "score": 2
         }]
     });
+
+/**************** EXERCISE ***************/
 
 db.exercise.insert(
     {
