@@ -1,11 +1,16 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UseEnglishController', function ($scope,$state, Exercise, $timeout, TimerFactory) {
+    .controller('UseEnglishController', function ($scope,$state, Exercise, $timeout, TimerFactory, UserDetails, Principal) {
         $scope.part = 1;
         $scope.userResponses=[];
         $scope.exercise = {};
         $scope.options = {interval :1000};
+
+        Principal.identity().then(function(account) {
+            $scope.account = account;
+            $scope.isAuthenticated = Principal.isAuthenticated;
+        });
 
 
         $scope.btnPartClass = function(partNumber){
@@ -54,7 +59,19 @@ angular.module('firstcertificatetestsApp')
                     $("#span-" + response.id).text(response.correct);
                 }
             });
+
+            $scope.saveUserDetails();
         };
+
+        $scope.saveUserDetails = function(){
+            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: null, when: new Date(), examName: $scope.exercise.examName, time: 100, exerciseType: "USE_OF_ENGLISH_1", userResponses:null}]};
+            UserDetails.data.save(userDetails, function(){
+                console.log("user details log succesfull");
+            }, function(){
+                console.log("error")
+            });
+        };
+
 
         $scope.checkPart2 = function(){
             $scope.exercises[1].responses.forEach(function(response){
