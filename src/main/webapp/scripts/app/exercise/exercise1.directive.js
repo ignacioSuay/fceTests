@@ -10,6 +10,7 @@ angular.module('firstcertificatetestsApp')
             while((result = regex.exec(template)) !== null){
                 var responseId = result[0].substr(1,result[0].length - 2 );
                 var response = findResponseById(exercise, responseId);
+                if(!response){return;}
                 var select = "<select id=\'select-"+responseId +"\' class=\"form-control input-sm selectEx\" ng-model=\"userResponses["+responseId+"] \">" +
                     //"<option>select</option>" +
                     "<option>" + response.answers[0] +"</option>" +
@@ -33,7 +34,7 @@ angular.module('firstcertificatetestsApp')
 
         var linker = function(scope, element, attrs) {
             scope.$watch('exercise',function(newValue,oldValue) {
-                if (newValue) {
+                if (newValue && scope.exercise.exerciseType === "USE_OF_ENGLISH_1") {
                     element.html(getTemplate(scope.exercise)).show();;
                     $compile(element.contents())(scope);
                 }
