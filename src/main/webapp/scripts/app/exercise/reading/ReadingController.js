@@ -5,6 +5,7 @@ angular.module('firstcertificatetestsApp')
 
         $scope.part = 1;
         $scope.exercise = {};
+        $scope.options = {interval :1000};
 
         $scope.loadAll = function() {
             Exercise.exam.query({examName:"fce1", exerciseType:"READING"}, function(result) {
