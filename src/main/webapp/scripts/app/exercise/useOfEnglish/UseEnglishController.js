@@ -19,6 +19,7 @@ angular.module('firstcertificatetestsApp')
             return 'btn-default';
         };
         $scope.setPart = function(partNumber){
+            $scope.options.resetTimer();
             $scope.part = partNumber;
             $scope.exercise = $scope.exercises[partNumber-1];
         };
@@ -36,6 +37,7 @@ angular.module('firstcertificatetestsApp')
 
         $scope.loadAll();
         $scope.check = function(){
+            $scope.score = 0;
             $scope.options.stopTimer();
             if($scope.part === 1){
                 $scope.checkPart1();
@@ -46,10 +48,12 @@ angular.module('firstcertificatetestsApp')
             }else if($scope.part === 4){
                 $scope.checkPart4();
             }
+
+            $scope.saveUserDetails();
         };
 
         $scope.checkPart1 = function(){
-            $scope.score = 0;
+
             $scope.exercise.responses.forEach(function(response){
                 var selectedText = $("#select-" + response.id + " option:selected").text();
                 if(selectedText === response.correct[0]){
@@ -62,7 +66,6 @@ angular.module('firstcertificatetestsApp')
                 }
             });
 
-            $scope.saveUserDetails();
         };
 
         $scope.saveUserDetails = function(){
@@ -86,15 +89,16 @@ angular.module('firstcertificatetestsApp')
                 var checkData = $scope.checkData(inputText, response);
 
                 if(checkData.isCorrect){
+                    $scope.score++;
                     $("#span2-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
                     $("#span2-" + response.id).text("");
                 }else{
                     $("#span2-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
                     $("#span2-" + response.id).text(checkData.posibleSolutions);
                 }
+
             });
         };
-
 
 
         $scope.checkPart3 = function(){
@@ -103,6 +107,7 @@ angular.module('firstcertificatetestsApp')
                 var checkData = $scope.checkData(inputText, response);
 
                 if(checkData.isCorrect){
+                    $scope.score++;
                     $("#span3-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
                     $("#span3-" + response.id).text("");
                 }else{
@@ -117,6 +122,7 @@ angular.module('firstcertificatetestsApp')
                 var inputText = $("#input-" + response.id).val();
                 var checkData = $scope.checkData(inputText, response);
                 if(checkData.isCorrect){
+                    $scope.score++;
                     $("#span4-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
                     $("#span4-" + response.id).text("");
                 }else{
@@ -138,7 +144,5 @@ angular.module('firstcertificatetestsApp')
             posibleSolutions = posibleSolutions.substring(0, posibleSolutions.length - 1);
             return {isCorrect: isCorrect, posibleSolutions: posibleSolutions};
         };
-
-
 
     });
