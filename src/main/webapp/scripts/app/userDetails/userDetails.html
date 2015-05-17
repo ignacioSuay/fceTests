@@ -15,7 +15,7 @@
                 <tr ng-repeat="exercise in userDetails.exercisesCompleted">
                     <td>{{exercise.examName}}</td>
                     <td>{{exercise.exerciseType}}</td>
-                    <td>{{exercise.when| date : 'dd-MMMM-yyyy' }}</td>
+                    <td>{{exercise.when| date : 'dd-MMMM-yyyy HH:mm' }}</td>
                     <td>{{exercise.time | secondsToTime}}</td>
                     <td>{{exercise.score}}</td>
                     <td><button class="btn btn-primary">

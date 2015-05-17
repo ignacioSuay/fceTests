@@ -32,11 +32,11 @@ public class UserDetails implements Serializable{
         this.id = id;
     }
 
-    public String getUserId() {
+    public String getLogin() {
         return login;
     }
 
-    public void setUserId(String login) {
+    public void setLogin(String login) {
         this.login = login;
     }
 

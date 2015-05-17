@@ -36,7 +36,19 @@ public class UserDetailsResource {
     @Timed
     public void create(@RequestBody UserDetails userDetails) {
         log.debug("REST request to save userDetails : {}", userDetails);
-        userDetailsRepository.save(userDetails);
+        try {
+            UserDetails userDetailsSaved = userDetailsRepository.findByLogin(userDetails.getLogin());
+
+            if (userDetailsSaved == null) {
+                userDetailsRepository.save(userDetails);
+            } else {
+                userDetailsSaved.getExercisesCompleted().addAll(userDetails.getExercisesCompleted());
+                userDetailsRepository.save(userDetailsSaved);
+            }
+        }catch (Exception e){
+            log.error("Error saving userdetails for login:" + userDetails.getLogin());
+            e.printStackTrace();
+        }
     }
 
     /**

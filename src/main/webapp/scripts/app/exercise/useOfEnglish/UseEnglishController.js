@@ -49,9 +49,11 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.checkPart1 = function(){
+            $scope.score = 0;
             $scope.exercise.responses.forEach(function(response){
                 var selectedText = $("#select-" + response.id + " option:selected").text();
                 if(selectedText === response.correct[0]){
+                    $scope.score++;
                     $("#span-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
                     $("#span-" + response.id).text("");
                 }else{
@@ -64,11 +66,16 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.saveUserDetails = function(){
-            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: null, when: new Date(), examName: $scope.exercise.examName, time: 100, exerciseType: "USE_OF_ENGLISH_1", userResponses:null}]};
+            if(!$scope.account){
+                return;
+            }
+            var score = $scope.score + "/" + $scope.exercise.responses.length;
+            var seconds = $scope.options.elapsedTime.getTime() / 1000;
+            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: $scope.exercise.id, when: new Date(), examName: $scope.exercise.examName, time: seconds, exerciseType: $scope.exercise.exerciseType, score: score, userResponses:null}]};
             UserDetails.data.save(userDetails, function(){
-                console.log("user details log succesfull");
+                console.log("user details saved succesfull");
             }, function(){
-                console.log("error")
+                console.log("error saving user details")
             });
         };
 
