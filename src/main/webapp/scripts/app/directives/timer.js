@@ -10,6 +10,7 @@ angular.module('firstcertificatetestsApp')
                 var timerService = new TimerFactory($scope.options);
                 timerService.startTimer();
                 $scope.options.stopTimer = timerService.stopTimer;
+                $scope.options.resetTimer = timerService.resetTimer;
                 $scope.$on('$destroy', function(node){
                     timerService.cancelTimer();
                 });
