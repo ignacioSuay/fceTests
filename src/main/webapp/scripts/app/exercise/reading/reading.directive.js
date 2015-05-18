@@ -8,7 +8,7 @@ angular.module('firstcertificatetestsApp')
             exercise.responses.forEach(function(response){
 
                 var responseId = response.id;
-                var auxtemplate = "<div>" + response.id +". "+ response.statement +"<span id='spanR-"+responseId+"'/><br> <div class='form-group'>";
+                var auxtemplate = "<div><b>" + response.id +". "+ response.statement +"</b><span id='spanR-"+responseId+"'/><br> <div class='form-group'>";
 
                 var rowRes = 0;
                 response.answers.forEach(function(answer){

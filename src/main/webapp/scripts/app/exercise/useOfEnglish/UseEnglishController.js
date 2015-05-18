@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UseEnglishController', function ($scope,$state, Exercise, $timeout, TimerFactory, UserDetails, Principal) {
+    .controller('UseEnglishController', function ($scope,$state, Exercise, UserDetails, Principal) {
         $scope.part = 1;
         $scope.userResponses=[];
         $scope.exercise = {};
@@ -68,19 +68,7 @@ angular.module('firstcertificatetestsApp')
 
         };
 
-        $scope.saveUserDetails = function(){
-            if(!$scope.account){
-                return;
-            }
-            var score = $scope.score + "/" + $scope.exercise.responses.length;
-            var seconds = $scope.options.elapsedTime.getTime() / 1000;
-            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: $scope.exercise.id, when: new Date(), examName: $scope.exercise.examName, time: seconds, exerciseType: $scope.exercise.exerciseType, score: score, userResponses:null}]};
-            UserDetails.data.save(userDetails, function(){
-                console.log("user details saved succesfull");
-            }, function(){
-                console.log("error saving user details")
-            });
-        };
+
 
 
         $scope.checkPart2 = function(){
@@ -129,6 +117,20 @@ angular.module('firstcertificatetestsApp')
                     $("#span4-" + response.id).attr("class","glyphicon glyphicon-remove iconFail");
                     $("#span4-" + response.id).text(checkData.posibleSolutions);
                 }
+            });
+        };
+
+        $scope.saveUserDetails = function(){
+            if(!$scope.account){
+                return;
+            }
+            var score = $scope.score + "/" + $scope.exercise.responses.length;
+            var seconds = $scope.options.elapsedTime.getTime() / 1000;
+            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: $scope.exercise.id, when: new Date(), examName: $scope.exercise.examName, time: seconds, exerciseType: $scope.exercise.exerciseType, score: score, userResponses:null}]};
+            UserDetails.data.save(userDetails, function(){
+                console.log("user details saved succesfull");
+            }, function(){
+                console.log("error saving user details")
             });
         };
 
