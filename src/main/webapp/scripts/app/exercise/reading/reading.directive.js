@@ -65,7 +65,7 @@ angular.module('firstcertificatetestsApp')
         var getParagraphs = function(exercise){
             var responses = "<div>";
             exercise.responses.forEach(function(response){
-                responses += "<div class='well'> Paragraph " + response.id + ".<br/>"+ response.statement + "<br/></div>";
+                responses += "<div class='well'><b> Paragraph " + response.id + ".</b><br/>"+ response.statement + "<br/></div>";
             });
             responses += "</div>";
             return responses;
