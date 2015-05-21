@@ -417,10 +417,10 @@ db.exercise.insert({
 db.exercise.insert({
     "title":"Rising Star",
     "content": "Margaret Garelly goes to meet Duncan Williams, who plays for Chelsea Football Club.</br>" +
-    "<p>Paragraph A <br> It’s my first time driving to Chelsea’s training ground and I turn off slightly too early at the London University playing fields. Had he accepted football’s rejections in his early teenage years, it is exactly the sort of ground Duncan Williams would have found himself running around on at weekends. At his current age of 18, he would have been a bright first-year undergraduate mixing his academic studies with a bit of football, rugby and cricket, given his early talent in all these sports. However, Duncan undoubtedly took the right path. Instead of studying, he is sitting with his father Gavin in one of the interview rooms at Chelsea’s training base reflecting on Saturday’s match against Manchester City. Such has been his rise to fame that it is with some disbelief that you listen to him describing how his career was nearly all over before it began." +
-    "<p>Paragraph B <br> Gavin, himself a fine footballer – a member of the national team in his time – and now a professional coach, sent Duncan to three professional clubs as a 14 year-old, but all three turned him down. ‘I worked with him a lot when he was around 12, and it was clear he had fantastic technique and skill. But then the other boys shot up in height and he didn’t. But I was still upset and surprised that no team seemed to want him, that they couldn’t see what he might develop into in time. When Chelsea accepted him as a junior, it was made clear to him that this was more of a last chance than a new beginning. They told him he had a lot of hard work to do and wasn’t part of their plans. Fortunately, that summer he just grew and grew, and got much stronger as well.’" +
-    "<p>Paragraph C <br> Duncan takes up the story: ‘The first half of that season I played in the youth team. I got lucky – the first-team manager came to watch us play QPR, and though we lost 3-1, I had a really good game. I moved up to the first team after that performance.’ Gavin points out that it can be beneficial to be smaller and weaker when you are developing – it forces you to learn how to keep the ball better, how to use ‘quick feet’ to get out of tight spaces. ‘A couple of years ago, Duncan would run past an opponent as if he wasn’t there but then the other guy would close in on him. I used to say to him, “Look, if you can do that now, imagine what you’ll be like when you’re 17, 18 and you’re big and quick and they won’t be able to get near you.” If you’re a smaller player, you have to use your brain a lot more.’" +
-    "<p>Paragraph C <br> Not every kid gets advice from an ex-England player over dinner, nor their own private training sessions. Now Duncan is following in Gavin’s footsteps. He has joined a national scheme where people like him give advice to ambitious young teenagers who are hoping to become professionals. He is an old head on young shoulders. Yet he’s also like a young kid in his enthusiasm. And fame has clearly not gone to his head; it would be hard to meet a more likeable, humble young man. So will he get to play for the national team? ‘One day I’d love to, but when that is, is for somebody else to decide.’ The way he is playing, that won’t be long.",
+    "<p><b>Paragraph A </b><br> It’s my first time driving to Chelsea’s training ground and I turn off slightly too early at the London University playing fields. Had he accepted football’s rejections in his early teenage years, it is exactly the sort of ground Duncan Williams would have found himself running around on at weekends. At his current age of 18, he would have been a bright first-year undergraduate mixing his academic studies with a bit of football, rugby and cricket, given his early talent in all these sports. However, Duncan undoubtedly took the right path. Instead of studying, he is sitting with his father Gavin in one of the interview rooms at Chelsea’s training base reflecting on Saturday’s match against Manchester City. Such has been his rise to fame that it is with some disbelief that you listen to him describing how his career was nearly all over before it began." +
+    "<p><b>Paragraph B </b><br> Gavin, himself a fine footballer – a member of the national team in his time – and now a professional coach, sent Duncan to three professional clubs as a 14 year-old, but all three turned him down. ‘I worked with him a lot when he was around 12, and it was clear he had fantastic technique and skill. But then the other boys shot up in height and he didn’t. But I was still upset and surprised that no team seemed to want him, that they couldn’t see what he might develop into in time. When Chelsea accepted him as a junior, it was made clear to him that this was more of a last chance than a new beginning. They told him he had a lot of hard work to do and wasn’t part of their plans. Fortunately, that summer he just grew and grew, and got much stronger as well.’" +
+    "<p><b>Paragraph C </b><br> Duncan takes up the story: ‘The first half of that season I played in the youth team. I got lucky – the first-team manager came to watch us play QPR, and though we lost 3-1, I had a really good game. I moved up to the first team after that performance.’ Gavin points out that it can be beneficial to be smaller and weaker when you are developing – it forces you to learn how to keep the ball better, how to use ‘quick feet’ to get out of tight spaces. ‘A couple of years ago, Duncan would run past an opponent as if he wasn’t there but then the other guy would close in on him. I used to say to him, “Look, if you can do that now, imagine what you’ll be like when you’re 17, 18 and you’re big and quick and they won’t be able to get near you.” If you’re a smaller player, you have to use your brain a lot more.’" +
+    "<p><b>Paragraph D </b><br> Not every kid gets advice from an ex-England player over dinner, nor their own private training sessions. Now Duncan is following in Gavin’s footsteps. He has joined a national scheme where people like him give advice to ambitious young teenagers who are hoping to become professionals. He is an old head on young shoulders. Yet he’s also like a young kid in his enthusiasm. And fame has clearly not gone to his head; it would be hard to meet a more likeable, humble young man. So will he get to play for the national team? ‘One day I’d love to, but when that is, is for somebody else to decide.’ The way he is playing, that won’t be long.",
     "exerciseType": "READING_3",
     "examName": "fce1",
     "responses":[
@@ -481,7 +481,8 @@ db.exercise.insert({
 db.exercise.insert(
     {
         "title": "",
-        "content":  "Every country in the world has problems with pollution and damage to the environment. Do you think these problems can be solved? <br/> Notes <br/> Write about <br/> 1. transport <br/> 2. rivers and seas <br/> 3...",
+        "content":  "<b> Every country in the world has problems with pollution and damage to the environment. Do you think these problems can be solved? </b>" +
+        "<br/><b> Notes </b><br/> Write about <br/> 1. transport <br/> 2. rivers and seas <br/> 3...",
         "exerciseType": "WRITING_1",
         "examName": "fce1"
     });
@@ -489,7 +490,9 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "",
-        "content":  "You see this announcement in your college English-language magazine.<div class='well'> <p>Book reviews wanted</p><p>Have you read a book in which the main character behaved in a surprising way?</p><p>Write us a review of the book, explaining what the main character did and why it was surprising. Tell us whether or not you would recommend this book to other people.</p><p>The best reviews will be published in the magazine.</p> </div> Write your review. ",
+        "content":  "<b>You see this announcement in your college English-language magazine.</b>" +
+        "<div class='well'> <p>Book reviews wanted</p><p>Have you read a book in which the main character behaved in a surprising way?</p><p>Write us a review of the book, explaining what the main character did and why it was surprising. Tell us whether or not you would recommend this book to other people.</p><p>The best reviews will be published in the magazine.</p> </div> " +
+        "<b> Write your review. </b>",
         "exerciseType": "WRITING_2",
         "examName": "fce1"
     });
@@ -497,14 +500,18 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "",
-        "content":  "You see this announcement on an English-language website. <div class='well'><p>Articles wanted</p><p>The most useful thing I have ever learned.</p><p>What is the most useful thing you have learned?Who did you learn it from? Why is it useful?<p>Write us an article answering these questions.</p><p>We will publish the best articles on our website.</p> </div>Write your article. ",
+        "content":  "<b> You see this announcement on an English-language website.</b>" +
+        "<div class='well'><p>Articles wanted</p><p>The most useful thing I have ever learned.</p><p>What is the most useful thing you have learned?Who did you learn it from? Why is it useful?<p>Write us an article answering these questions.</p><p>We will publish the best articles on our website.</p> </div>" +
+        "<b> Write your article. </b>",
         "exerciseType": "WRITING_3",
         "examName": "fce1"
     });
 db.exercise.insert(
     {
         "title": "",
-        "content":  "You have received this email from your English-speaking friend David. <div class='well'><p>From: David <br/> Subject: touring holiday</p><p>Some college friends of mine are visiting your area soon for a week’s touring holiday. They would like to travel around and learn about your local area and its history.</p><p>Can you tell me about some of the places they could visit? What’s the best way to travel around – car, bike or coach?</p><p>Thanks</p><p>David</p></div> Write your email ",
+        "content":  "<b> You have received this email from your English-speaking friend David.</b>" +
+        "<div class='well'><p>From: David <br/> Subject: touring holiday</p><p>Some college friends of mine are visiting your area soon for a week’s touring holiday. They would like to travel around and learn about your local area and its history.</p><p>Can you tell me about some of the places they could visit? What’s the best way to travel around – car, bike or coach?</p><p>Thanks</p><p>David</p></div>" +
+        "<b> Write your email </b>",
         "exerciseType": "WRITING_4",
         "examName": "fce1"
     });
@@ -512,10 +519,11 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "Part 1 (2 minutes)",
-        "content":  "<p> Good morning/afternoon/evening. My name is ... and this is my colleague...</p>" +
+        "content":  "<h3> Introduction </h3><p> Good morning/afternoon/evening. My name is ..... and this is my colleague......</p>" +
         "<p> And your names are? Can I have yor mark sheets, please?<br/> Thank you.</p>" +
         "<p> Where are you from (Candidate A)? and you, (candidate B)?</p>" +
-        "<p> First we would like to know something about you" +
+        "<h3>Likes and dislikes / Special occasions / Media  </h3>" +
+        "<p> First we would like to know something about you " +
         "Do you like reading? Tell us about a book you really like </p>" +
         "<p> What did you do on your last holiday?</p>" +
         "<p> Tell us about a film you have seen recently.</p>",
