@@ -12,7 +12,7 @@
   padding-bottom: 48px;
   h1 {
     font-size: 5em;
-    color: $gray;
+    //color: $gray;
     line-height: 1.3;
     padding-bottom: 24px;
   }
@@ -53,7 +53,7 @@
   }
   @media (max-width: $screen-sm-max) {
 //    background: #191919 url('../images/subway-906x600.jpg') center center no-repeat;
-    background: #191919 url('../images/beach-690125_1280.jpg') center center no-repeat;
+    background: #191919 url('../images/english.jpg') center center no-repeat;
   }
   @media (min-width: $screen-sm-min) {
     height: 480px;
@@ -71,7 +71,7 @@
   @media (min-width: $screen-md-min) {
     height: 540px;
 //    background: #191919 url('../images/subway-1600x1060.jpg') center center no-repeat;
-    background: #191919 url('../images/beach-690125_1280.jpg') center center no-repeat;
+    background: #191919 url('../images/entrepreneur-593378_640.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,8 +89,20 @@
     padding: 20px;
     height: 270px;
     .icon {
-      font-size: 90px;
+      font-size: 50px;
+      border-radius: 50%;
+      background-color: $brand-primary;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      color: white;
+      display: inline-block;
+
+      &:before {
+        font: 1.5em/1.6em "FontAwesome";
+      }
     }
+
     @media (max-width: $screen-xs-max) {
       max-width: 320px;
       @include center-block();
@@ -216,3 +228,27 @@
     font-size: 3em !important;
   }
 }
+
+.shareSection{
+//  background-color: #14b0bf;
+//  width: 100%;
+  background-color: #336799;
+  margin: 40px 0 0 0;
+  padding: 40px 0 40px 0;
+  color: #ffffff;
+}
+
+.friendsSection{
+  background-color:#e0e0e0;
+  color: #ffffff;
+  margin: 0 0 0px 0;
+  padding: 20px 0 20px 0;
+}
+
+.professionalSection{
+  background-color: #fda939;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+  padding: 20px 0 20px 0;
+}
+
