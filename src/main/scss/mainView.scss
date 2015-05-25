@@ -234,8 +234,12 @@
 //  width: 100%;
   background-color: #336799;
   margin: 40px 0 0 0;
-  padding: 40px 0 40px 0;
+  padding: 20px 0 20px 0;
   color: #ffffff;
+  height: 100%;
+  .img{
+    background: #336799 url("../images/share3.png") center center no-repeat;
+  }
 }
 
 .friendsSection{
@@ -243,12 +247,41 @@
   color: #ffffff;
   margin: 0 0 0px 0;
   padding: 20px 0 20px 0;
+  height: 100%;
+  .img{
+    background: #e0e0e0 url("../images/friends.png") center center no-repeat;
+  }
 }
 
 .professionalSection{
   background-color: #fda939;
   color: #ffffff;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
   padding: 20px 0 20px 0;
+  height: 100%;
+  .img{
+    background: #fda939 url("../images/education2.png") center center no-repeat;
+  }
 }
 
+.imgHeight{
+    height: 300px;
+    @media (min-width: $screen-sm-min) {
+      height: 350px;
+    }
+    @media (min-width: $screen-md-min) {
+      height: 350px;
+    }
+
+}
+.sectionContainer{
+  height: 500px;
+  @media (min-width: $screen-sm-min) {
+    height: 400px;
+  }
+  @media (min-width: $screen-md-min) {
+    height: 400px;
+  }
+
+
+}
