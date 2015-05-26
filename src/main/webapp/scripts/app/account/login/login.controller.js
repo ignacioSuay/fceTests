@@ -17,7 +17,8 @@ angular.module('firstcertificatetestsApp')
                 if ($rootScope.previousStateName === 'register') {
                     $state.go('home');
                 } else {
-                    $rootScope.back();
+                    //$rootScope.back();
+                    $state.go('history');
                 }
             }).catch(function () {
                 $scope.authenticationError = true;
