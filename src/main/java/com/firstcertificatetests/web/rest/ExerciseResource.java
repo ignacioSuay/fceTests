@@ -76,4 +76,6 @@ public class ExerciseResource {
         }
         return exercisesRes;
     }
+
+
 }
