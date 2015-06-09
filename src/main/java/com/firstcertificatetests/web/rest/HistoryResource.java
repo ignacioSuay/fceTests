@@ -33,7 +33,7 @@ public class HistoryResource {
     /**
      * GET  /history/{login} -> get user history
      */
-    @RequestMapping(value = "/exercises/{login}",
+    @RequestMapping(value = "/history/{login}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
@@ -41,6 +41,8 @@ public class HistoryResource {
         log.debug("REST request to get all Users");
 
         UserDetails userDetails = userDetailsRepository.findByLogin(login);
+
+        if(userDetails == null) return null;
         List<ExerciseCompleted> exercises = userDetails.getExercisesCompleted();
         List<History> histories = History.createHistory(exercises);
 

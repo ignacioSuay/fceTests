@@ -18,7 +18,7 @@ angular.module('firstcertificatetestsApp')
                     $state.go('home');
                 } else {
                     //$rootScope.back();
-                    $state.go('history');
+                    $state.go('userDetails');
                 }
             }).catch(function () {
                 $scope.authenticationError = true;
