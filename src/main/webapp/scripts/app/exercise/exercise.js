@@ -15,11 +15,11 @@ angular.module('firstcertificatetestsApp')
                     'content@': {
                         templateUrl: 'scripts/app/exercise/exercise.html',
                         controller: 'ExerciseController'
-                    },
-                    'content@useOfEnglish':{
-                        templateUrl: 'scripts/app/exercise/useOfEnglish/useOfEnglish.html',
-                        controller: 'ExerciseController'
-                    }
+                    }//,
+                    //'content@useOfEnglish':{
+                    //    templateUrl: 'scripts/app/exercise/useOfEnglish/useOfEnglish.html',
+                    //    controller: 'ExerciseController'
+                    //}
                     //'reading@':{
                     //    templateUrl: 'scripts/app/exercise/reading/reading.html',
                     //    controller: 'ReadingController'
@@ -29,7 +29,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.useOfEnglish', {
                 parent: 'exercise',
-                url: 'useOfEnglish',
+                url: ':exam/useOfEnglish',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
@@ -41,7 +41,7 @@ angular.module('firstcertificatetestsApp')
         })
             .state('exercise.reading', {
                 parent: 'exercise',
-                url: 'reading',
+                url: ':exam/reading',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
@@ -52,7 +52,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.writing', {
                 parent: 'exercise',
-                url: 'writing',
+                url: ':exam/writing',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
@@ -63,7 +63,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.speaking', {
                 parent: 'exercise',
-                url: 'speaking',
+                url: ':exam/speaking',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
@@ -74,7 +74,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.listening', {
                 parent: 'exercise',
-                url: 'listening',
+                url: ':exam/listening',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{

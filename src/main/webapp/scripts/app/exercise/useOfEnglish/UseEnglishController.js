@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UseEnglishController', function ($scope,$state, Exercise, UserDetails, Principal) {
+    .controller('UseEnglishController', function ($scope,$state, Exercise, UserDetails, Principal, $stateParams) {
         $scope.part = 1;
         $scope.userResponses=[];
         $scope.exercise = {};
@@ -29,7 +29,7 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.loadAll = function() {
-            Exercise.exam.query({examName:"fce1", exerciseType:"USE_OF_ENGLISH"}, function(result) {
+            Exercise.exam.query({examName:$stateParams.exam, exerciseType:"USE_OF_ENGLISH"}, function(result) {
                 $scope.exercises= result;
                 $scope.exercise = $scope.exercises[0];
             });
