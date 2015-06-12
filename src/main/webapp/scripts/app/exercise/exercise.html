@@ -17,11 +17,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a ui-sref="exercise.useOfEnglish">Use Of English <span class="sr-only">(current)</span></a></li>
-                        <li><a ui-sref="exercise.reading">Reading</a></li>
-                        <li><a ui-sref="exercise.listening">Listening</a></li>
-                        <li><a ui-sref="exercise.writing">Writing</a></li>
-                        <li><a ui-sref="exercise.speaking">Speaking</a></li>
+                        <li class="active"><a ui-sref="exercise.useOfEnglish({exam:'{{examName}}'})">Use Of English <span class="sr-only">(current)</span></a></li>
+                        <li><a ui-sref="exercise.reading({exam:'{{examName}}'})">Reading</a></li>
+                        <li><a ui-sref="exercise.listening({exam:'{{examName}}'})">Listening</a></li>
+                        <li><a ui-sref="exercise.writing({exam:'{{examName}}'})">Writing</a></li>
+                        <li><a ui-sref="exercise.speaking({exam:'{{examName}}'})">Speaking</a></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->

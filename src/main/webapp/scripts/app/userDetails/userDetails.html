@@ -1,61 +1,71 @@
 <div class="container">
-    <h2>History</h2>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Exam</th>
-                <th>Completed</th>
-
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="exam in history">
-                <td>{{exam.examName}}</td>
-                <!--<td>{{exam.completedPercentage}}</td>-->
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{exam.completedPercentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{exam.completedPercentage}}%">
-                            <!--<span class="sr-only">45% Complete</span>-->
-                            {{exam.completedPercentage}}%
-
+    <div class="well">
+        <div class="span7 text-center">
+            <button class="btn btn-success btn-lg" ng-click="goNextExam()">Take a new exam</button>
+        </div>
+        <h2>History</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Exam</th>
+                    <th>Completed</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="exam in history">
+                    <td>{{exam.examName}}</td>
+                    <!--<td>{{exam.completedPercentage}}</td>-->
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{exam.completedPercentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{exam.completedPercentage}}%">
+                                <!--<span class="sr-only">45% Complete</span>-->
+                                {{exam.completedPercentage}}%
+                            </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                    </td>
+                    <td>
+                        <button class="btn btn-warning" >Continue Exam</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
+
 <div class="container">
-    <h2>Exercises Completed</h2>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Exam</th>
-                <th>Exercise Type</th>
-                <th>Date</th>
-                <th>Time Spent</th>
-                <th>Score</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="exercise in userDetails.exercisesCompleted">
-                    <td>{{exercise.examName}}</td>
-                    <td>{{exercise.exerciseType | exerciseTypeFilter}}</td>
-                    <td>{{exercise.when| date : 'dd-MMMM-yyyy HH:mm' }}</td>
-                    <td>{{exercise.time | secondsToTime}}</td>
-                    <td>{{exercise.score}}</td>
-                    <td><button class="btn btn-primary">
-                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span> View</span>
-                    </button>
-                    <button class="btn btn-success">
-                        <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span> Retake</span>
-                    </button>
+    <div class="well">
+        <h2>Exercises Completed</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Exam</th>
+                    <th>Exercise Type</th>
+                    <th>Date</th>
+                    <th>Time Spent</th>
+                    <th>Score</th>
                 </tr>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="exercise in userDetails.exercisesCompleted">
+                        <td>{{exercise.examName}}</td>
+                        <td>{{exercise.exerciseType | exerciseTypeFilter}}</td>
+                        <td>{{exercise.when| date : 'dd-MMMM-yyyy HH:mm' }}</td>
+                        <td>{{exercise.time | secondsToTime}}</td>
+                        <td>{{exercise.score}}</td>
+                        <td><button class="btn btn-primary">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span> View</span>
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span> Retake</span>
+                        </button>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

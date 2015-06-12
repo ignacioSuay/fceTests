@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UserDetailsController', function ($scope, Principal, UserDetails, History) {
+    .controller('UserDetailsController', function ($scope, $state, Principal, UserDetails, History) {
+
+        $scope.totalExams = 2;
 
         Principal.identity().then(function(account) {
             $scope.account = account;
@@ -22,6 +24,26 @@ angular.module('firstcertificatetestsApp')
             });
         };
 
+        $scope.goNextExam = function(){
+            var exam;
+            var maxExamNum = -1
+            if($scope.history.length < 1)
+                exam = "fce1";
+            else{
+                $scope.history.forEach(function(history){
+                    var examNum = history.examName.substring(3);
+                    if(examNum > maxExamNum)
+                        maxExamNum = examNum;
+                });
+                var nextExam = maxExamNum;
+                if(maxExamNum < $scope.totalExams){
+                    nextExam++;
+                }
+
+                exam = "fce" + nextExam;
+            }
+            $state.go('exercise.useOfEnglish', {exam: exam});
+        }
 
 
     });
