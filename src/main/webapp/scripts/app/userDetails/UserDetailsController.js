@@ -5,6 +5,10 @@ angular.module('firstcertificatetestsApp')
 
         $scope.totalExams = 2;
 
+
+        $scope.calcNextExam();
+        $scope.examDisabled = $scope.nextExam === $scope.totalExams;
+
         Principal.identity().then(function(account) {
             $scope.account = account;
             $scope.isAuthenticated = Principal.isAuthenticated;
@@ -24,9 +28,22 @@ angular.module('firstcertificatetestsApp')
             });
         };
 
+        $scope.calcNextExam = function(){
+            var maxExamNum = -1;
+            $scope.history.forEach(function(history){
+                var examNum = history.examName.substring(3);
+                if(examNum > maxExamNum)
+                    maxExamNum = examNum;
+            });
+            $scope.nextExam = maxExamNum;
+            if(maxExamNum < $scope.totalExams){
+                nextExam++;
+            }
+        };
+
         $scope.goNextExam = function(){
             var exam;
-            var maxExamNum = -1
+            var maxExamNum = -1;
             if($scope.history.length < 1)
                 exam = "fce1";
             else{
@@ -35,7 +52,7 @@ angular.module('firstcertificatetestsApp')
                     if(examNum > maxExamNum)
                         maxExamNum = examNum;
                 });
-                var nextExam = maxExamNum;
+                $scope.nextExam = maxExamNum;
                 if(maxExamNum < $scope.totalExams){
                     nextExam++;
                 }
