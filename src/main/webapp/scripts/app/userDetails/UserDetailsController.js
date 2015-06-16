@@ -4,10 +4,8 @@ angular.module('firstcertificatetestsApp')
     .controller('UserDetailsController', function ($scope, $state, Principal, UserDetails, History) {
 
         $scope.totalExams = 2;
-
-
-        $scope.calcNextExam();
-        $scope.examDisabled = $scope.nextExam === $scope.totalExams;
+        $scope.examDisabled = false;
+        $scope.nextExam = 1;
 
         Principal.identity().then(function(account) {
             $scope.account = account;
@@ -25,7 +23,10 @@ angular.module('firstcertificatetestsApp')
         $scope.loadHistory = function() {
             History.data.query({login:$scope.account.login}, function(result) {
                 $scope.history = result;
+                $scope.calcNextExam();
+                $scope.examDisabled = $scope.nextExam === ($scope.totalExams + 1);
             });
+
         };
 
         $scope.calcNextExam = function(){
@@ -35,11 +36,10 @@ angular.module('firstcertificatetestsApp')
                 if(examNum > maxExamNum)
                     maxExamNum = examNum;
             });
-            $scope.nextExam = maxExamNum;
-            if(maxExamNum < $scope.totalExams){
-                nextExam++;
-            }
+            $scope.nextExam = maxExamNum + 1;
         };
+
+
 
         $scope.goNextExam = function(){
             var exam;
@@ -47,17 +47,7 @@ angular.module('firstcertificatetestsApp')
             if($scope.history.length < 1)
                 exam = "fce1";
             else{
-                $scope.history.forEach(function(history){
-                    var examNum = history.examName.substring(3);
-                    if(examNum > maxExamNum)
-                        maxExamNum = examNum;
-                });
-                $scope.nextExam = maxExamNum;
-                if(maxExamNum < $scope.totalExams){
-                    nextExam++;
-                }
-
-                exam = "fce" + nextExam;
+                exam = "fce" + $scope.nextExam;
             }
             $state.go('exercise.useOfEnglish', {exam: exam});
         }
