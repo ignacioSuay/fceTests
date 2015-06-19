@@ -52,5 +52,16 @@ angular.module('firstcertificatetestsApp')
             $state.go('exercise.useOfEnglish', {exam: exam});
         }
 
+        $scope.deleteHistory = function(){
+            UserDetails.data.delete({login:$scope.account.login}, function(result) {
+                $scope.cleanData();
+            });
+        };
+
+        $scope.cleanData = function(){
+            $scope.userDetails = {};
+            $scope.history = {};
+        }
+
 
     });

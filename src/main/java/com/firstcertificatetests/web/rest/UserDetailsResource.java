@@ -98,13 +98,15 @@ public class UserDetailsResource {
     /**
      * DELETE  /userDetails/:id -> delete the "id" userDetails.
      */
-    @RequestMapping(value = "/userDetails/{id}",
+    @RequestMapping(value = "/userDetails/{login}",
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public void delete(@PathVariable Integer id) {
-        log.debug("REST request to delete userDetails : {}", id);
-        userDetailsRepository.delete(id);
+    public void delete(@PathVariable String login) {
+        log.debug("REST request to delete userDetails : {}", login);
+        UserDetails userDetails = userDetailsRepository.findByLogin(login);
+        if(userDetails != null)
+            userDetailsRepository.delete(userDetails);
     }
 
 }
