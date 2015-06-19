@@ -34,7 +34,7 @@ angular.module('firstcertificatetestsApp')
             $scope.history.forEach(function(history){
                 var examNum = history.examName.substring(3);
                 if(examNum > maxExamNum)
-                    maxExamNum = examNum;
+                    maxExamNum = parseInt(examNum);
             });
             $scope.nextExam = maxExamNum + 1;
         };
@@ -50,7 +50,7 @@ angular.module('firstcertificatetestsApp')
                 exam = "fce" + $scope.nextExam;
             }
             $state.go('exercise.useOfEnglish', {exam: exam});
-        }
+        };
 
         $scope.deleteHistory = function(){
             UserDetails.data.delete({login:$scope.account.login}, function(result) {
@@ -60,7 +60,10 @@ angular.module('firstcertificatetestsApp')
 
         $scope.cleanData = function(){
             $scope.userDetails = {};
-            $scope.history = {};
+            $scope.history = [];
+            $scope.nextExam = 1;
+            $scope.examDisabled = false;
+
         }
 
 
