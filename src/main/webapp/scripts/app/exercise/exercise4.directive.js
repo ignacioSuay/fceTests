@@ -31,7 +31,7 @@ angular.module('firstcertificatetestsApp')
         var linker = function(scope, element, attrs) {
             scope.$watch('exercise',function(newValue,oldValue) {
                 if (newValue && scope.exercise.exerciseType === "USE_OF_ENGLISH_4") {
-                    element.html(getTemplate(scope.exercise)).show();;
+                    element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
                 }
             });

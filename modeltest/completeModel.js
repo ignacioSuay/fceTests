@@ -99,162 +99,164 @@ db.user_details.insert(
 db.exercise.insert(
     {
         "_id":ObjectId("652bf0f760b21e58df21416e"),
-        "title": "What is genealogy?",
-        "content": "<p> Genealogy is a branch of history.  It concerns family history,  (1) than the national or world history studied at school.  It doesn’t merely involve drawing a family tree, however – tracing your family history can also (2)  in learning about your roots and your identity.  The internet enables millions of people worldwide to (3)  information about their family history, without great (4).<p> People who research their family history often (5)  that it’s a fascinating hobby which (6)  a lot about where they come from and whether they have famous ancestors.  According to a survey involving 900 people who had researched their family history, the chances of discovering a celebrity in your past are one in ten.  The survey also concluded that the (7)  back you follow your family line, the more likely you are to find a relation who was much wealthier than you are.  However, the vast majority of people who (8) in the survey discovered they were better off than their ancestors.",
+        "title": "Fred the Lawyer",
+        "content": "&lt;p> Fred was born on March 25th 1989, he was  (1) in a one-bedroom house (2)  New England’s South Shore.  He shared a bedroom with (3)  sister, although it was actually the lounge with a divider in the middle. .&lt;p>   Fred’s life changed radically in 2007, the day he started university.  He left his sister living in the (4) one bedroom apartment, (5)  by a burglar-proof iron (6) .&lt;p>   In 2011, Fred finished studying at Princeton University (7) he got his law degree in 1988 .&lt;p>  After (8) , he accepted a position at a New York law firm" ,
         "exerciseType": "USE_OF_ENGLISH_1",
         "responses":[{
             "_id": 1,
-            "answers":["instead", "rather", "except", "sooner"],
-            "correct": "rather",
-            "responseType": "VOCABULARY"
+            "answers":["raised", "raise", "raises", "raising"],
+            "correct": "raised",
+            "responseType": "VERB_TENSES"
         },{
             "_id": 2,
-            "answers":["cause", "mean", "result", "lead"],
-            "correct": "result",
+            "answers":["over", "inside", "under", "on"],
+            "correct": "on",
             "responseType": "VOCABULARY"
         },{
             "_id": 3,
-            "answers":["accomplish", "access", "approach", "admit"],
-            "correct": "access",
+            "answers":["her", "his", "their", "here"],
+            "correct": "his",
             "responseType": "VOCABULARY"
         },{
             "_id": 4,
-            "answers":["fee", "price", "charge", "expense"],
-            "correct": "expense",
+            "answers":["different", "identic", "same", "other"],
+            "correct": "same",
             "responseType": "VOCABULARY"
         },{
             "_id": 5,
-            "answers":["describe", "define", "remark", "regard"],
-            "correct": "remark",
+            "answers":["protected", "entered", "assisted", "surrounded"],
+            "correct": "protected",
             "responseType": "VOCABULARY"
         },{
             "_id": 6,
-            "answers":["reveals", "opens", "begins", "arises"],
-            "correct": "reveals",
+            "answers":["roof", "door", "garage", "floor"],
+            "correct": "door",
             "responseType": "VOCABULARY"
         },{
             "_id": 7,
-            "answers":["older", "greater", "higher", "further"],
-            "correct": "further",
+            "answers":["here", "there", "where", "away"],
+            "correct": "where",
             "responseType": "VOCABULARY"
         },{
             "_id": 8,
-            "answers":["attended", "participated", "included", "associated"],
-            "correct": "participated",
-            "responseType": "VOCABULARY"
+            "answers":["graduating", "graduated", "graduation", "graduate"],
+            "correct": "graduating",
+            "responseType": "VERB_TENSES"
         }
         ],
         "examName": "fce1"
     });
+
+    db.exercise.insert(
+        {
+            "title": "Mr Smith",
+            "content":"&lt;p> Dear Mr Smith I intend to write only a short note, to let you know (9) has been getting done (10) far this week.  The plumbing in the bathroom has gone quite well up until now, but we haven't finished fitting (11) the bath tub yet.In order to achieve this I have hired two apprentices (12) will help us get everything done much faster next week.  They will start working next monday.It has been quite rainy all week, (13) the builders haven't been able to lay many bricks (14) the outside wall as you requested, but they have been doing a great job in the dining room, changing the whole floor and fitting all the new windows.A last thing we need (15) discuss are the columns in the basement, apparently there's been a plague (16) termites making their way through them, it's not looking too good, please phone me as soon as you receive this letter so we can discuss this matter.",
+            "exerciseType": "USE_OF_ENGLISH_2",
+            "responses":[{
+                "_id": 9,
+                "answers":null,
+                "correct": ["what"],
+                "responseType": "COLOCATION"
+            },{
+                "_id": 10,
+                "answers":null,
+                "correct": ["so"],
+                "responseType": "COLOCATION"
+            },
+                {
+                    "_id": 11,
+                    "answers":null,
+                    "correct": ["in"],
+                    "responseType": "COLOCATION"
+                },
+                {
+                    "_id": 12,
+                    "answers":null,
+                    "correct": ["who"],
+                    "responseType": "COLOCATION"
+                },
+                {
+                    "_id": 13,
+                    "answers":null,
+                    "correct": ["so", "hence"],
+                    "responseType": "COLOCATION"
+                },
+                {
+                    "_id": 14,
+                    "answers":null,
+                    "correct": ["on", "at"],
+                    "responseType": "COLOCATION"
+                },
+                {
+                    "_id": 15,
+                    "answers":null,
+                    "correct": ["to"],
+                    "responseType": "COLOCATION"
+                },
+                {
+                    "_id": 16,
+                    "answers":null,
+                    "correct": ["of"],
+                    "responseType": "COLOCATION"
+                }],
+            "examName": "fce1"
+        });
+
 db.exercise.insert(
     {
-        "title": "Motorbike stunt rider",
-        "content": "<p> I work as a motorbike stunt rider – that is, I do tricks on my motorbike at shows. The Le Mans race track in France was (9) I first saw some guys doing motorbike stunts. I’d never seen anyone riding a motorbike using just the back wheel before and I was (10) impressed I went straight home and taught (11) to do the same. It wasn’t very long before I began to earn my living at shows performing my own motorbike stunts.<p>I have a degree (12) mechanical engineering; this helps me to look at the physics (13) lies behind each stunt. In addition to being responsible for design changes to the motorbike, I have to work (14) every stunt I do. People often think that my work is very dangerous, but, apart (15) some minor mechanical problem happening occasionally during a stunt, nothing ever goes wrong. I never feel in (16) kind of danger because I’m very experienced.",
-        "exerciseType": "USE_OF_ENGLISH_2",
+        "title": "Nirvana",
+        "content": "<p>Nirvana (17) an American grunge band that was formed by singer/guitarist Kurt Cobain and bassist Krist Novoselic in Aberdeen, Washington in 1987. Nirvana (18) through a succession of drummers, the longest-lasting being Dave Grohl,who joined the band in 1990. Despite (19) only three full-length studio albums in their seven-year career, Nirvana has come to be regarded as one of the most (20) and important rock bands of the modern era.During its initial months, the band went through a series of names, starting with Skid Row and including Pen Cap Chew, Bliss, and Ted Ed Fred. The group (21) settled on Nirvana, which Cobain said was chosen because 'I wanted a name that was kind of beautiful or nice and pretty instead of a mean punk name Nirvana released its first single, 'Love Buzz', in November 1988 on the Seattle independent record label Sub Pop. The following month, the band began recording its debut album, Bleach, with local (22) Jack Endino. Bleach was highly influenced by the heavy dirge-rock of the Melvins and Mudhoney, 1980s punk rock, and the 1970s heavy metal of Black Sabbath.Following the release of Bleach in June 1989, Nirvana embarkedon its first national tour,[19] and the album became a favorite of college radio stations.[20] Due to increasing dissatisfaction with Everman over the course of the tour, Nirvana cancelled the last few dates and (23) back to Washington. No one told Everman he was fired at the time, while Everman later claimed that he (24) quit the group.",
+        "exerciseType": "USE_OF_ENGLISH_3",
         "responses":[{
-            "_id": 9,
-            "answers":null,
-            "correct": ["where"],
+            "_id": 17,
+            "answers":["BE"],
+            "correct": ["was"],
             "responseType": "COLOCATION"
         },{
-            "_id": 10,
-            "answers":null,
-            "correct": ["so"],
+            "_id": 18,
+            "answers":["GO"],
+            "correct": ["went"],
             "responseType": "COLOCATION"
         },
             {
-                "_id": 11,
-                "answers":null,
-                "correct": ["myself"],
+                "_id": 19,
+                "answers":["RELEASE"],
+                "correct": ["releasing"],
                 "responseType": "COLOCATION"
             },
             {
-                "_id": 12,
-                "answers":null,
-                "correct": ["in"],
+                "_id": 20,
+                "answers":["INFLUENCE"],
+                "correct": ["influential"],
                 "responseType": "COLOCATION"
             },
             {
-                "_id": 13,
-                "answers":null,
-                "correct": ["which", "that"],
+                "_id": 21,
+                "answers":["FINAL"],
+                "correct": ["finally"],
                 "responseType": "COLOCATION"
             },
             {
-                "_id": 14,
-                "answers":null,
-                "correct": ["out", "on", "at"],
+                "_id": 22,
+                "answers":["PRODUCE"],
+                "correct": ["producer"],
                 "responseType": "COLOCATION"
             },
             {
-                "_id": 15,
-                "answers":null,
-                "correct": ["from"],
+                "_id": 23,
+                "answers":["DRIVE"],
+                "correct": ["drove"],
                 "responseType": "COLOCATION"
             },
             {
-                "_id": 16,
-                "answers":null,
-                "correct": ["any"],
+                "_id": 24,
+                "answers":["ACTUAL"],
+                "correct": ["actually"],
                 "responseType": "COLOCATION"
             }],
         "examName": "fce1"
     });
 
-db.exercise.insert(
-    {
-        "title": "An incredible vegetable",
-        "content": "<p> Garlic, a member of the Liliacaea family which also includes onions, is commonly used in cooking all around the world. China is currently the largest (17) of garlic, which is particularly associated with the dishes of northern Africa and southern Europe. It is native to central Asia and has long had a history as a health-giving food, used both to prevent and cure (18) . In Ancient Egypt, workers building the pyramids were given garlic to keep them strong, while Olympic athletes in Greece ate it to increase their resistance to infection.<p> The forefather of antibiotic medicine, Louis Pasteur, claimed garlic was as (19) as penicillin in treating infections. Modern-day (20) have proved that garlic can indeed kill bacteria and even some viruses, so it can be very useful for people who have coughs and colds. In (21) , some doctors believe that garlic can reduce blood (22) . <p> The only (23) to this truly amazing food is that the strong and rather (24).",
-        "exerciseType": "USE_OF_ENGLISH_3",
-        "responses":[{
-            "_id": 17,
-            "answers":["PRODUCT"],
-            "correct": ["producer"],
-            "responseType": "COLOCATION"
-        },{
-            "_id": 18,
-            "answers":["ILL"],
-            "correct": ["illness", "illnesses"],
-            "responseType": "COLOCATION"
-        },
-            {
-                "_id": 19,
-                "answers":["EFFECT"],
-                "correct": ["effective"],
-                "responseType": "COLOCATION"
-            },
-            {
-                "_id": 20,
-                "answers":["SCIENCE"],
-                "correct": ["scientists"],
-                "responseType": "COLOCATION"
-            },
-            {
-                "_id": 21,
-                "answers":["ADD"],
-                "correct": ["addition"],
-                "responseType": "COLOCATION"
-            },
-            {
-                "_id": 22,
-                "answers":["PRESS"],
-                "correct": ["pressure"],
-                "responseType": "COLOCATION"
-            },
-            {
-                "_id": 23,
-                "answers":["ADVANTAGE"],
-                "correct": ["disadvantage"],
-                "responseType": "COLOCATION"
-            },
-            {
-                "_id": 24,
-                "answers":["SPICE"],
-                "correct": ["spicy"],
-                "responseType": "COLOCATION"
-            }],
-        "examName": "fce1"
-    });
 db.exercise.insert(
     {
         "title": "",
@@ -262,56 +264,55 @@ db.exercise.insert(
         "exerciseType": "USE_OF_ENGLISH_4",
         "responses": [{
             "_id": 25,
-            "statement":"Joan was in favour of visiting the museum.",
-            "reformat":" Joan thought it would be (X) to the museum.",
-            "answers":["IDEA"],
-            "correct": ["a good idea to go"],
+            "statement":"I see how you are behaving like a very selfish person.",
+            "reformat":"I think you(X) very selfish",
+            "answers":["BE"],
+            "correct": ["are being"],
             "responseType": "COLOCATION"
         },{
 
             "_id": 26,
-            "statement":"Arthur has the talent to become a concert pianist.",
-            "reformat":"Arthur is so (X) could become a concert pianist.",
-            "answers":["THAT"],
-            "correct": ["talented that he", "talented that she"],
+            "statement":"John began studying science two years ago",
+            "reformat":"John (X) science for two years",
+            "answers":["STUDY"],
+            "correct": ["has been studying", "has studied"],
             "responseType": "COLOCATION"
         },{
 
             "_id": 27,
-            "statement":"'Do you know when the match starts, Sally?' asked Mary.",
-            "reformat":"Mary asked Sally (X) time the match started.",
-            "answers":["IF"],
-            "correct": ["if he knew what", "if she knew what","if he knew the","if she knew the"],
+            "statement":"Megan requested a survey, but then she realised it wasn’t necessary",
+            "reformat":"(X) survey, she realized it wasn’t necessary.",
+            "answers":["ONCE"],
+            "correct": ["Once Megan requested the survey", "Once the survey was requested"],
             "responseType": "COLOCATION"
         },{
 
             "_id": 28,
-            "statement":"I knocked for ages at Ruth's door but I got no reply.",
-            "reformat":"I (X) knocking at Ruth's door but I got no reply.",
-            "answers":["LONG"],
-            "correct": ["spent a long time", "took a long time","was a long time"],
+            "statement":"There’s a meeting at the principals office tomorrow",
+            "reformat":"Tomorrow (X)  at his office",
+            "answers":["HOLD"],
+            "correct": ["the principal's holding a meeting","the principal is holding a meeting"],
             "responseType": "COLOCATION"
         },{
 
             "_id": 29,
-            "statement":"Everyone says that the band is planning to go on a world tour next year.",
-            "reformat":"The band (X) planning to go on a world tour next year.",
-            "answers":["SAID"],
-            "correct": ["are said to be", "is said to be"],
+            "statement":"What year did Muse start playing?",
+            "reformat":"Do you think you (X) year Muse started playing?",
+            "answers":["CAN"],
+            "correct": ["could tell me what"],
             "responseType": "COLOCATION"
         },{
 
             "_id": 30,
-            "statement":" I'd prefer not to cancel the meeting.",
-            "reformat":"I'd rather (X) the meeting.",
-            "answers":["CALL"],
-            "correct": ["not call off", "you didn't call off", "you did not call off", "we did not call off", "we didn't call off"],
+            "statement":" It would be awesome to be able to sing like Matt Bellamy",
+            "reformat":"I (X) sing like Matt Bellamy",
+            "answers":["WISH"],
+            "correct": ["wish I could", "'d wish to"],
             "responseType": "COLOCATION"
         }
         ],
         "examName": "fce1"
     });
-
 
 db.exercise.insert(
     {

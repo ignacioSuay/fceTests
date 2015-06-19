@@ -21,7 +21,15 @@ angular.module('firstcertificatetestsApp')
         $scope.setPart = function(partNumber){
             $scope.options.resetTimer();
             $scope.part = partNumber;
-            $scope.exercise = $scope.exercises[partNumber-1];
+            //$scope.exercise = $scope.exercises[partNumber-1];
+            $scope.getExerciseByPart(partNumber);
+        };
+
+        $scope.getExerciseByPart = function(part){
+            $scope.exercise = $scope.exercises.filter(function(ex){
+               if(ex.exerciseType === "USE_OF_ENGLISH_"+ part)
+                return ex;
+            })[0];
         };
 
         $scope.isPart = function(partNumber){
