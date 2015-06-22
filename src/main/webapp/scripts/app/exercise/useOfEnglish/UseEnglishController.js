@@ -80,7 +80,7 @@ angular.module('firstcertificatetestsApp')
 
 
         $scope.checkPart2 = function(){
-            $scope.exercises[1].responses.forEach(function(response){
+            $scope.exercise.responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
                 var checkData = $scope.checkData(inputText, response);
 
@@ -98,7 +98,7 @@ angular.module('firstcertificatetestsApp')
 
 
         $scope.checkPart3 = function(){
-            $scope.exercises[2].responses.forEach(function(response){
+            $scope.exercise.responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
                 var checkData = $scope.checkData(inputText, response);
 
@@ -114,7 +114,7 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.checkPart4 = function(){
-            $scope.exercises[3].responses.forEach(function(response){
+            $scope.exercise.responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
                 var checkData = $scope.checkData(inputText, response);
                 if(checkData.isCorrect){
