@@ -9,8 +9,16 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 body {
     background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
+}
+
+p {
+    font-size: 16px;
+}
+
+p.big{
+    font-size: 22px;
 }
 
 .navbar{
@@ -196,4 +204,9 @@ ul#strength {
         }
     }
 
+}
+
+.jumbotron2{
+    @extend .jumbotron;
+    margin-bottom: 0;
 }
