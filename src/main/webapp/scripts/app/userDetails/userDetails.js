@@ -4,7 +4,7 @@ angular.module('firstcertificatetestsApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('userDetails', {
-                parent: 'home',
+                parent: 'site',
                 url: 'userdetails',
                 data: {
                     roles: ['ROLE_USER'],

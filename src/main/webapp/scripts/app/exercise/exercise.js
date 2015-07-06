@@ -4,7 +4,7 @@ angular.module('firstcertificatetestsApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('exercise', {
-                parent: 'home',
+                parent: 'site',
                 abstract: true,
                 //url: 'exercise',
                 //data: {
