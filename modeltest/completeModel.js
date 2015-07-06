@@ -544,7 +544,7 @@ db.exercise.insert(
         "<img src='assets/speaking/fce1/help.jpg'/> <img src='assets/speaking/fce1/save.jpg'/></p>" +
         "<p> (candidate B) do you find easy to ask for help when you have a problem? (Why / Why not? )</p>" +
         "<p> Now, (candidate B), here are your photographs. they show people spending time in different gardens <br/><br/>" +
-        "<img src='assets/images/fce1/garden.jpg'/> <img src='assets/speaking/fce1/gardening-475350_640.jpg'/></p>" +
+        "<img src='assets/speaking/fce1/garden.jpg'/> <img src='assets/speaking/fce1/gardening-475350_640.jpg'/></p>" +
         "<p> I would  like speaking to compare the photographs, and say what you think the people are enjoying about spending in these gardens </p>" +
         "<p> (Candidate A) which garden would you prefer to spend time in? ... (Why?)</p>" +
         "<p> Thank you </p>",
