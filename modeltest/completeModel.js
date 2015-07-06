@@ -98,9 +98,8 @@ db.user_details.insert(
 
 db.exercise.insert(
     {
-        "_id":ObjectId("652bf0f760b21e58df21416e"),
         "title": "Fred the Lawyer",
-        "content": "&lt;p> Fred was born on March 25th 1989, he was  (1) in a one-bedroom house (2)  New England’s South Shore.  He shared a bedroom with (3)  sister, although it was actually the lounge with a divider in the middle. .&lt;p>   Fred’s life changed radically in 2007, the day he started university.  He left his sister living in the (4) one bedroom apartment, (5)  by a burglar-proof iron (6) .&lt;p>   In 2011, Fred finished studying at Princeton University (7) he got his law degree in 1988 .&lt;p>  After (8) , he accepted a position at a New York law firm" ,
+        "content": "<p> Fred was born on March 25th 1989, he was  (1) in a one-bedroom house (2)  Baltimore's worst neighbourhood.  He shared a bedroom with (3) sister, although it was actually the lounge with a divider in the middle. .<p>   Fred’s life changed radically in 2007, the day he started university.  When he left, his sister stayed living in the (4) one bedroom apartment, which was (5) by a burglar-proof iron (6) to make her feel safer.<p>  It was four long years before Fred finished Studying at Princeton University (7) he got his law degree in 2011 .<p>  After (8) , he accepted a position at a New York law firm and it was only a few weeks later when he was able to rent a nice loft in a decent workers neighbourhood and offered his sister a bed in a new and safer environment." ,
         "exerciseType": "USE_OF_ENGLISH_1",
         "responses":[{
             "_id": 1,
@@ -150,7 +149,7 @@ db.exercise.insert(
     db.exercise.insert(
         {
             "title": "Mr Smith",
-            "content":"&lt;p> Dear Mr Smith I intend to write only a short note, to let you know (9) has been getting done (10) far this week.  The plumbing in the bathroom has gone quite well up until now, but we haven't finished fitting (11) the bath tub yet.In order to achieve this I have hired two apprentices (12) will help us get everything done much faster next week.  They will start working next monday.It has been quite rainy all week, (13) the builders haven't been able to lay many bricks (14) the outside wall as you requested, but they have been doing a great job in the dining room, changing the whole floor and fitting all the new windows.A last thing we need (15) discuss are the columns in the basement, apparently there's been a plague (16) termites making their way through them, it's not looking too good, please phone me as soon as you receive this letter so we can discuss this matter.",
+            "content":"<p> Dear Mr Smith I intend to write only a short note, to let you know (9) has been getting done (10) far this week.  The plumbing in the bathroom has gone quite well up until now, but we haven't finished fitting (11) the bath tub yet.In order to achieve this I have hired two apprentices (12) will help us get everything done much faster next week.  They will start working next monday.It has been quite rainy all week, (13) the builders haven't been able to lay many bricks (14) the outside wall as you requested, but they have been doing a great job in the dining room, changing the whole floor and fitting all the new windows.A last thing we need (15) discuss are the columns in the basement, apparently there's been a plague (16) termites making their way through them, it's not looking too good, please phone me as soon as you receive this letter so we can discuss this matter.",
             "exerciseType": "USE_OF_ENGLISH_2",
             "responses":[{
                 "_id": 9,
@@ -281,9 +280,9 @@ db.exercise.insert(
 
             "_id": 27,
             "statement":"Megan requested a survey, but then she realised it wasn’t necessary",
-            "reformat":"(X) survey, she realized it wasn’t necessary.",
+            "reformat":"(X) , she realized it wasn’t necessary.",
             "answers":["ONCE"],
-            "correct": ["Once Megan requested the survey", "Once the survey was requested"],
+            "correct": ["Once Megan requested the survey"],
             "responseType": "COLOCATION"
         },{
 
@@ -298,7 +297,7 @@ db.exercise.insert(
             "_id": 29,
             "statement":"What year did Muse start playing?",
             "reformat":"Do you think you (X) year Muse started playing?",
-            "answers":["CAN"],
+            "answers":["COULD"],
             "correct": ["could tell me what"],
             "responseType": "COLOCATION"
         },{
@@ -316,102 +315,106 @@ db.exercise.insert(
 
 db.exercise.insert(
     {
-        "title": "",
-        "content":  "<p> We live on the island of Hale. It's about four kilometres long and two kilometres wide at its broadest point, and it's joined to the mainland by a causeway called the Stand - a narrow road built across the mouth of the river which separates us from the rest of the country. Most of the time you wouldn't know we're on an island because the river mouth between us and the mainland is just a vast stretch of tall grasses and brown mud. But when there's a high tide and the water rises a half a metre or so above the road and nothing can pass until the tide goes out again a few hours later, then you know it's an island." +
-        "<p> We were on our way back from the mainland. My older brother, Dominic, had just finished his first year at university in a town 150 km away. Dominic's train was due in at five and he'd asked for a lift back from the station. Now, Dad normally hates being disturbed when he's writing (which is just about all the time), and he also hates having to go anywhere, but despite the typical sighs and moans – why can't he get a taxi? what's wrong with the bus? – I could tell by the sparkle in his eyes that he was really looking forward to seeing Dominic. "+
-        "<p> So, anyway, Dad and I had driven to the mainland and picked up Dominic from the station. He had been talking non-stop from the moment he'd slung his rucksack in the boot and got in the car. University this, university that, writers, books, parties, people, money, gigs.... And when I say talking, I don't mean talking as in having a conversation, I mean talking as in jabbering like a mad thing. I didn't like it .... the way he spoke and waved his hands around as if he was some kind of intellectual or something. It was embarrassing. It made me feel uncomfortable – that kind of discomfort you feel when someone you like, someone close to you, suddenly starts acting like a complete idiot. And I didn't like the way he was ignoring me, either. For all the attention I was getting I might as well not have been there. I felt a stranger in my own car." +
-        "<p> As we approached the island on that Friday afternoon, the tide was low and the Stand welcomed us home, stretched out before us, clear and dry, beautifully hazy in the heat – a raised strip of grey concrete bound by white railings and a low footpath on either side, with rough cobbled banks leading down to the water. Beyond the railings, the water was glinting with that wonderful silver light we sometimes get here in the late afternoon which lazes through to the early evening." +
-        "<p> We were about halfway across when I saw the boy. My first thought was how odd it was to see someone walking on the Stand. You don't often see people walking around here. Between Hale and Moulton (the nearest town about thirty kilometres away on the mainland), there's nothing but small cottages, farmland, heathland and a couple of hills. So islanders don't walk because of that. If they're going to Moulton they tend to take the bus. So the only pedestrians you're likely to see around here are walkers or bird-watchers. But even from a distance I could tell that the figure ahead didn't fit into either of these categories. I wasn't sure how I knew, I just did." +
-        "<p> As we drew closer, he became clearer. He was actually a young man rather than a boy. Although he was on the small side, he wasn't as slight as I'd first thought. He wasn't exactly muscular, but he wasn't weedy-looking either. It's hard to explain. There was a sense of strength about him, a graceful strength that showed in his balance, the way he held himself, the way he walked....",
+        "title": "The Middle East",
+        "content":  "<p>  The Middle East is not a continent, but rather a region spanning across western Asia. Sometimes parts of northeastern Africa (like Egypt, Libya and Sudan) are included. This part of the world is often in the news, most notably due to the war in Iraq and other civil unrest in countries like Israel, Lebanon, Yemen and more recently Syria." +
+        "<p> Despite the bad publicity, the Middle East has a lot to offer to travellers – historically and culturally. Palmyra in Syria, Petra in Jordan and Persepolis in Iran are reminders of the region's glorious past. The largest sandsea in the world, the Rub' al Khali, literally the Empty Quarter in English, can be found here in the Middle East. In fact, large parts are dry deserts but still many people manage to live here, mainly along major rivers like the Tigris."+
+        "<p> Travelling in this region is pleasantly easy. However, the differences in travelling costs between the cheaper countries like Iran and Syria and the more developed places like Oman and Dubai can be huge. Spend some time in this part of the world and enjoy the sights and experiences it has to offer." +
+        "<p> Despite having no consequent borders, there are huge similarities between many of the countries. Like mentioned above, huge parts are arid, but grasslands, fertile river beds and moutainous areas are not absent at all." +
+        "<p> The southern part of the Arabian Peninsula mainly consists of sandseas and mountains, especially the southwest of Saudi Arabia and parts of Oman and Yemen have high moutains with chances of snowfall in winter. " +
+        "<p> More to the north, the mountains are lower and sand makes places for rocks and gravel and lowlying deserts like the Syrian Desert and Iranian Desert can get extremely hot in summer and cold in winter. High mountains can be found in the west and north of Iran as well, with ski slopes just an hour away from Tehran."+
+        "<p> Many of the countries are bordered by waters, the Mediterrean Sea in the west, the Black Sea and Caspian Sea to the north and the Red Sea, Persian Gulf and Indian Ocean to the south all form borders of the Middle East. Rivers like the Euphrates and Tigris form the backbone of Iraq and most people live along these rivers."+
+        "<p> The Middle East has good connections by plane from a wide range of countries, including direct flights from many Asian, African and European cities and several direct flights from the USA and Australia as well. Dubai probably is the main hub which has by far the most flights and for the best prices. You can enter the Middle East overland easily from mainland Africa (Egypt), Europe (through Turkey) and Asia (route from India and Pakistan). Ferries connect some countries, mainly across the Red Sea and Persian Gulf.",
         "exerciseType": "READING_1",
         "examName": "fce1",
         "responses": [
             {
                 "_id": 31,
-                "statement":"In the first paragraph, what is Caitlin's main point about the island?",
-                "answers": ["It can be dangerous to try to cross from the mainland.", "It is much smaller than it looks from the mainland.", "It is only completely cut off at certain times.", "It can be a difficult place for people to live in."],
-                "correct": "2",
+                "statement":"The Middle East",
+                "answers": ["Is mostly formed of rivers and Seas", "Is often on the news for good reasons", "Receives many good publicity", "Is formed mainly by big extensions of dry desert"],
+                "correct": "3",
                 "responseType": "VOCABULARY"},
             {
                 "_id": 32,
-                "statement":"What does Caitlin suggest about her father?",
-                "answers": ["His writing prevents him from doing things he wants to with his family.", "His initial reaction to his son's request is different from usual.", "His true feelings are easily hidden from his daughter.", "His son's arrival is one event he will take time off for."],
+                "statement":"The author suggests that the Middle East ",
+                "answers": ["Is formed by a concrete amount of countries", "Is a small part of Asia", "Is a continent", "Is a certain area formed by different countries."],
                 "correct": "3",
                 "responseType": "VOCABULARY"},
             {
                 "_id": 33,
-                "statement":"Caitlin emphasises her feelings of discomfort because she",
-                "answers": ["is embarrassed that she doesn't understand what her brother is talking about.", "feels confused about why she can't relate to her brother any more.", "is upset by the unexpected change in her brother's behaviour.", "feels foolish that her brother's attention is so important to her."],
-                "correct": "2",
-                "responseType": "VOCABULARY"},
-            {
-                "_id": 34,
-                "statement":"In the fourth paragraph, what is Caitlin's purpose in describing the island?",
-                "answers": ["to express her positive feelings about it","to explain how the road was built", "to illustrate what kind of weather was usual", "to describe her journey home"],
+                "statement":"Travelling costs in the Middle East",
+                "answers": [" Can be very different between countries depending mainly on their stage of development", "Have relatively small variations between countries", "which makes travelling a tad difficult", "Are pretty much uniform between countries, Don't vary much between countries which makes travelling pleasantly easy"],
                 "correct": "0",
                 "responseType": "VOCABULARY"},
             {
+                "_id": 34,
+                "statement":"In the northern area of The Middle East?",
+                "answers": ["It's much colder in Winter than in Summer", "The geographical conditions result in deserts", "We can find ski slopes close to the Syrian Desert", "Temperatures in deserts stay the same all year round"],
+                "correct": "1",
+                "responseType": "VOCABULARY"},
+            {
                 "_id": 35,
-                "statement":"In 'because of that' the word 'that' refers to",
-                "answers": ["locals thinking it is odd to walk anywhere.","it being easier for people to take the bus than walk.","people having everything they need on the island.", "there being nowhere in particular to walk to from the island."],
-                "correct": "3",
+                "statement":"Many of The Middle East countries are bordered by waters, that's why connections",
+                "answers": ["Are only possible by plane or ferries, being Dubai the most expensive flight destination", "Are possible by plane, ferries for some countries mainly across the Red Sea and Persian Gulf", "Are possible by plane, ferries for some countries mainly across the Red Sea and Persian Gulf, or overland from Africa, Europe and Asia", "Are possible by plane, ferries or overland from Africa"],
+                "correct": "2",
                 "responseType": "VOCABULARY"},
             {
                 "_id": 36,
-                "statement":"What do we learn about Caitlin's reactions to the boy?",
-                "answers": ["She felt his air of confidence contrasted with his physical appearance.", "She was able to come up with a reason for him being there.", "She realised her first impression of him was inaccurate.", "She thought she had seen him somewhere before."],
+                "statement":"The Middle East",
+                "answers": ["Has mainly landscaping tourism", "Has a lot to offer, historically, culturally and landscaping", "Hasn't got any people living in the most arid areas", "Hasn't got much to offer because of bad publicity and civil unrests in Israel Lebanon, Yemen and more recently Syria"],
                 "correct": "2",
                 "responseType": "VOCABULARY"},
         ]
     });
 
 db.exercise.insert({
-    "title": "Good preparation leads to success in ballet dancing",
-    "content": "<p> A former classical ballet dancer explains what ballet training actually involves." +
-    "<p> What we ballet dancers do is instinctive, but instinct learnt through a decade of training.  A dancer’s life is hard to understand, and easy to misinterpret.  Many a poet and novelist has tried to do so, but even they have chosen to interpret all the hard work and physical discipline as obsessive.  And so the idea persists that dancers spend every waking hour in pain, bodies at breaking point, their smiles a pretence.   " +
-    "<p> As a former dancer in the Royal Ballet Company here in Britain, I would beg to question this. (37)   With expert teaching and daily practice, its various demands are easily within the capacity of the healthy human body. Contrary to popular belief, there is no need to break bones or tear muscles to achieve ballet positions.  It is simply a question of sufficient conditioning of the muscular system." +
-    "<p> Over the course of my dancing life I worked my way through at least 10,000 ballet classes.  I took my first at a school of dance at the age of seven and my last 36 years later at the Royal Opera House in London.  In the years between, ballet class was the first thing I did every day.  It starts at an early age, this daily ritual, because it has to.  (38)   But for a ballet dancer in particular, this lengthy period has to come before the effects of adolescence set in, while maximum flexibility can still be achieved.  " +
-    "<p> Those first classes I took were remarkably similar to the last.  In fact, taking into account the occasional new idea, ballet classes have changed little since 1820, when the details of ballet technique were first written down, and are easily recognised in any country.  Starting with the left hand on the barre, the routine unrolls over some 75 minutes. (39)  Even the leading dancers have to do it.  " +
-    "<p> These classes serve two distinct purposes: they are the way we warm our bodies and the mechanism by which we improve basic technique.  In class after class, we prove the old saying that ‘practice makes perfect’. (40)  And it is also this daily repetition which enables us to strengthen the muscles required in jumping, spinning or lifting our legs to angles impossible to the average person.  " +
-    "<p> The human body is designed to adapt to the demands we make of it, provided we make them carefully and over time. (41) In the same way, all those years of classes add up to a fit-for-purpose dancing machine.  This level of physical fluency doesn’t hurt; it feels good.  " +
-    "<p> (42) But they should not be misled: there is a difference between hard work and hardship.  Dancers have an everyday familiarity with the first. Hardship it isn’t. ",
+    "title": "George Clooney",
+    "content": "<p> A quick overlook on George Clooney's background and humanitarian work" +
+    "<p> George Timothy Clooney (born May 6, 1961) is an American actor, writer, producer, director and activist. He has received three Golden Globe Awards (37) " +
+    "<p> Early life" +
+    "<p> Clooney was born in Lexington, Kentucky, in 1961. His mother, Nina Bruce was a beauty queen and city councilwoman. His father, Nick Clooney, is a former anchorman, game show host, and hosted AMC for five years in the late 1990s." +
+    "<p> Clooney has Irish, German, and English ancestry.  His maternal four times great-grandmother, Mary Ann Sparrow, was the half-sister of Nancy Hanks (who was the mother of President Abraham Lincoln).  His aunt was the famed cabaret singer and actress Rosemary Clooney. Through Rosemary, (38)" +
+    "<p> Clooney was raised a strict Roman Catholic, but said in 2006 that (39) . He has said, 'Yes, we were Catholic, big time, whole family, whole group'. He began his education at the Blessed Sacrament School in Fort Mitchell, Kentucky. Spending part of his childhood in Ohio, he attended St. Michael's School in Columbus; then Western Row Elementary School (a public school) in Mason, Ohio, from 1968 to 1974; and St. Susanna School in Mason, where he served as an altar boy. The Clooneys moved back to Kentucky when George was midway through the seventh grade. In middle school, Clooney developed Bell's palsy, a condition that partially paralyzes the face. The malady went away within a year. In an interview with Larry King, he stated that (40) , which was a bad time for having half your face paralyzed.'" +
+    "<p> After his parents moved to Augusta, Kentucky, Clooney attended Augusta High School. He has stated that he earned all As and a B in school, and was an enthusiastic baseball and basketball player. He tried out to (41)  He attended Northern Kentucky University from 1979 to 1981, majoring in broadcast journalism, and very briefly attended the University of Cincinnati, but did not graduate from either.(42) " +
+    "<p> Humanitarian work" +
+    "<p> Clooney is involved with Not On Our Watch Project, an organization that focuses global attention and resources to stop and prevent mass atrocities, along with Brad Pitt, Matt Damon, Don Cheadle, David Pressman, and Jerry Weintraub. In February 2009, he visited Goz Beida, Chad, with NY Times columnist Nicholas D. Kristof. In January 2010, he organized the Telethon Hope for Haiti Now, which collected donations for the 2010 Haiti earthquake victims." +
+    "<p> In March 2012, Clooney was featured with Martin Sheen and Brad Pitt in a performance of Dustin Lance Black's play, '8'—a staged reenactment of the federal trial that overturned California's Prop 8 ban on same-sex marriage—as attorney David Boies.(43) to raise money for the American Foundation for Equal Rights. In September 2012, Clooney offered to take an auction winner out to lunch to benefit the Gay, Lesbian and Straight Education Network.",
     "exerciseType": "READING_2",
     "examName": "fce1",
     "responses": [
         {
             "_id":1,
-            "statement":"Through endless tries at the usual exercises and frequent failures, ballet dancers develop the neural pathways in the brain necessary to control accurate, fast and smooth movement.",
-            "correct":"40"
+            "statement":"his cousins include actors Miguel Ferrer, Rafael Ferrer, and Gabriel Ferrer, who is married to singer Debby Boone.",
+            "correct":"38"
         },
         {
             "_id":2,
-            "statement":"The ballet shoe offers some support, but the real strength is in the muscles, built up through training.",
-            "correct":"0"
+            "statement":" 'It goes away. It takes about nine months to go away. It was the first year of high school.",
+            "correct":"40"
         },
         {
             "_id":3,
-            "statement":"As technology takes away activity from the lives of many, perhaps the ballet dancer’s physicality is ever more difficult for most people to imagine.",
-            "correct":"42"
-        },
-        {
-            "_id":4,
-            "statement":"Ballet technique is certainly extreme but it is not, in itself, dangerous.",
+            "statement":"for his work as an actor and two Academy Awards, one for acting and the other for producing",
             "correct":"37"
         },
         {
-            "_id":5,
-            "statement":"The principle is identical in the gym – pushing yourself to the limit, but not beyond, will eventually bring the desired result.",
-            "correct":"41"
+            "_id":4,
+            "statement":"He made money selling women's shoes, insurance door-to-door, stocking shelves, working construction, and cutting tobacco.",
+            "correct":"42"
         },
         {
-            "_id":6,
-            "statement":"No one avoids this: it is ballet’s great democratiser, the well established members of the company working alongside the newest recruits.",
+            "_id":5,
+            "statement":"'he does not know if he believes in Heaven, or even God.'",
             "correct":"39"
         },
         {
+            "_id":6,
+            "statement":"play professional baseball with the Cincinnati Reds in 1977, but he did not pass the first round of player cuts, and was not offered a contract.",
+            "correct":"41"
+        },
+        {
             "_id":7,
-            "statement":"It takes at least a decade of high-quality, regular practice to become an expert in any physical discipline.",
-            "correct":"38"
+            "statement":"The production was held at the Wilshire Ebell Theatre and broadcast on YouTube.",
+            "correct":"43"
         }
     ]});
 
@@ -538,11 +541,11 @@ db.exercise.insert(
         "content":  "<p> In this part of the test, I'm going to give each of you 2 photographs. I'd like you to talk about your photographs on your own for about a minute, and also to answer a question about your partner's photograph </p>" +
         "<p> (candidate A), it's your turn first. Here are your photographs. They show people who are helping other people in different situations</p>" +
         "<p> I would  like you to compare the photographs, and say how important it is to help people in these situations. <br/><br/>" +
-        "<img src='assets/images/fce1/help.jpg'/> <img src='assets/images/fce1/save.jpg'/></p>" +
+        "<img src='assets/speaking/fce1/help.jpg'/> <img src='assets/speaking/fce1/save.jpg'/></p>" +
         "<p> (candidate B) do you find easy to ask for help when you have a problem? (Why / Why not? )</p>" +
         "<p> Now, (candidate B), here are your photographs. they show people spending time in different gardens <br/><br/>" +
-        "<img src='assets/images/fce1/garden.jpg'/> <img src='assets/images/fce1/gardening-475350_640.jpg'/></p>" +
-        "<p> I would  like you to compare the photographs, and say what you think the people are enjoying about spending in these gardens </p>" +
+        "<img src='assets/images/fce1/garden.jpg'/> <img src='assets/speaking/fce1/gardening-475350_640.jpg'/></p>" +
+        "<p> I would  like speaking to compare the photographs, and say what you think the people are enjoying about spending in these gardens </p>" +
         "<p> (Candidate A) which garden would you prefer to spend time in? ... (Why?)</p>" +
         "<p> Thank you </p>",
         "exerciseType": "SPEAKING_2",
@@ -1039,10 +1042,10 @@ db.exercise.insert(
         "content":  "<p> In this part of the test, I'm going to give each of you 2 photographs. I'd like you to talk about your photographs on your own for about a minute, and also to answer a question about your partner's photograph </p>" +
         "<p> (candidate A), it's your turn first. Here are your photographs. They show people who are helping other people in different situations</p>" +
         "<p> I would  like you to compare the photographs, and say how important it is to help people in these situations. <br/><br/>" +
-        "<img src='assets/images/fce1/help.jpg'/> <img src='assets/images/fce1/save.jpg'/></p>" +
+        "<img src='assets/speaking/fce1/help.jpg'/> <img src='assets/speaking/fce1/save.jpg'/></p>" +
         "<p> (candidate B) do you find easy to ask for help when you have a problem? (Why / Why not? )</p>" +
         "<p> Now, (candidate B), here are your photographs. they show people spending time in different gardens <br/><br/>" +
-        "<img src='assets/images/fce1/garden.jpg'/> <img src='assets/images/fce1/gardening-475350_640.jpg'/></p>" +
+        "<img src='assets/speaking/fce1/garden.jpg'/> <img src='assets/speaking/fce1/gardening-475350_640.jpg'/></p>" +
         "<p> I would  like you to compare the photographs, and say what you think the people are enjoying about spending in these gardens </p>" +
         "<p> (Candidate A) which garden would you prefer to spend time in? ... (Why?)</p>" +
         "<p> Thank you </p>",
