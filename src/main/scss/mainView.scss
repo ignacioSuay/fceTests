@@ -6,6 +6,7 @@
 //body { // adjust for navbar-fixed-top
 //  padding-top: $navbar-height;
 //}
+@import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 #features, #impact, #signup {
   padding-top: 36px;
@@ -53,7 +54,7 @@
   }
   @media (max-width: $screen-sm-max) {
 //    background: #191919 url('../images/subway-906x600.jpg') center center no-repeat;
-    background: #191919 url('../images/english.jpg') center center no-repeat;
+    background: #191919 url('../images/technology-792177_1920.jpg') center center no-repeat;
   }
   @media (min-width: $screen-sm-min) {
     height: 480px;
@@ -71,7 +72,7 @@
   @media (min-width: $screen-md-min) {
     height: 540px;
 //    background: #191919 url('../images/subway-1600x1060.jpg') center center no-repeat;
-    background: #191919 url('../images/entrepreneur-593378_640.jpg') center center no-repeat;
+    background: #191919 url('../images/technology-792177_1920.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
