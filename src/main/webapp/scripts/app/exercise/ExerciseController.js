@@ -8,10 +8,13 @@ angular.module('firstcertificatetestsApp')
             $(".nav").find(".active").removeClass("active");
             $(this).parent().addClass("active");
         });
-        Principal.identity().then(function(account) {
-            $scope.account = account;
-            $scope.isAuthenticated = Principal.isAuthenticated;
-        });
+
+        if(Principal.isAuthenticated) {
+            Principal.identity().then(function (account) {
+                $scope.account = account;
+                $scope.isAuthenticated = Principal.isAuthenticated;
+            });
+        }
 
         $scope.examName = $state.params.exam;
 

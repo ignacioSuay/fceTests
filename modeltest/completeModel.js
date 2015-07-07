@@ -30,7 +30,7 @@ db.user.insert(
         "lang_key": "en",
         "created_by": "system",
         "created_date": new Date(),
-        "authorities": []
+        "authorities": [{"_id": "ROLE_USER"}]
     });
 db.user.insert(
     {
@@ -362,7 +362,7 @@ db.exercise.insert(
                 "statement":"The Middle East",
                 "answers": ["Has mainly landscaping tourism", "Has a lot to offer, historically, culturally and landscaping", "Hasn't got any people living in the most arid areas", "Hasn't got much to offer because of bad publicity and civil unrests in Israel Lebanon, Yemen and more recently Syria"],
                 "correct": "2",
-                "responseType": "VOCABULARY"},
+                "responseType": "VOCABULARY"}
         ]
     });
 
@@ -419,64 +419,65 @@ db.exercise.insert({
     ]});
 
 db.exercise.insert({
-    "title":"Rising Star",
-    "content": "Margaret Garelly goes to meet Duncan Williams, who plays for Chelsea Football Club.</br>" +
-    "<p><b>Paragraph A </b><br> It’s my first time driving to Chelsea’s training ground and I turn off slightly too early at the London University playing fields. Had he accepted football’s rejections in his early teenage years, it is exactly the sort of ground Duncan Williams would have found himself running around on at weekends. At his current age of 18, he would have been a bright first-year undergraduate mixing his academic studies with a bit of football, rugby and cricket, given his early talent in all these sports. However, Duncan undoubtedly took the right path. Instead of studying, he is sitting with his father Gavin in one of the interview rooms at Chelsea’s training base reflecting on Saturday’s match against Manchester City. Such has been his rise to fame that it is with some disbelief that you listen to him describing how his career was nearly all over before it began." +
-    "<p><b>Paragraph B </b><br> Gavin, himself a fine footballer – a member of the national team in his time – and now a professional coach, sent Duncan to three professional clubs as a 14 year-old, but all three turned him down. ‘I worked with him a lot when he was around 12, and it was clear he had fantastic technique and skill. But then the other boys shot up in height and he didn’t. But I was still upset and surprised that no team seemed to want him, that they couldn’t see what he might develop into in time. When Chelsea accepted him as a junior, it was made clear to him that this was more of a last chance than a new beginning. They told him he had a lot of hard work to do and wasn’t part of their plans. Fortunately, that summer he just grew and grew, and got much stronger as well.’" +
-    "<p><b>Paragraph C </b><br> Duncan takes up the story: ‘The first half of that season I played in the youth team. I got lucky – the first-team manager came to watch us play QPR, and though we lost 3-1, I had a really good game. I moved up to the first team after that performance.’ Gavin points out that it can be beneficial to be smaller and weaker when you are developing – it forces you to learn how to keep the ball better, how to use ‘quick feet’ to get out of tight spaces. ‘A couple of years ago, Duncan would run past an opponent as if he wasn’t there but then the other guy would close in on him. I used to say to him, “Look, if you can do that now, imagine what you’ll be like when you’re 17, 18 and you’re big and quick and they won’t be able to get near you.” If you’re a smaller player, you have to use your brain a lot more.’" +
-    "<p><b>Paragraph D </b><br> Not every kid gets advice from an ex-England player over dinner, nor their own private training sessions. Now Duncan is following in Gavin’s footsteps. He has joined a national scheme where people like him give advice to ambitious young teenagers who are hoping to become professionals. He is an old head on young shoulders. Yet he’s also like a young kid in his enthusiasm. And fame has clearly not gone to his head; it would be hard to meet a more likeable, humble young man. So will he get to play for the national team? ‘One day I’d love to, but when that is, is for somebody else to decide.’ The way he is playing, that won’t be long.",
+    "title":"Barbra's Dream",
+    "content": "<p>Paragraph A <br> I will start by telling you a dream. It is not my dream, but the dream of Barbra, a13-year old Acholi girl, the daughter of a friend of mine. We are sitting at our favorite pork-eating place, locally referred to as “pork joint”, at the outskirts of Gulu town centre. It is the first day of the long school holidays and we have decided to treat the children to a pork dinner. It is already dark. The moon and the faded lights from the pork grill are shining over to where we are sitting, on an open meadow, surrounded by trees, in wooden chairs."+
+    "<p>Paragraph B <br> Pork joints are in many places at Gulu town. They are not only popular eating places, but important urban spaces for social meetings. In pork joints, people from all segments of urban Acholi society come together: men and women, rich and poor, students and out-of-school youth. They are especially popular among the younger generation. Most of the pork joints in the town centre have TV screens, where videos, usually Western action films or Nigerian movies and sometimes also music clips, are shown from morning to night. One often finds customers seated in rows in front of the TVs, watching videos while eating pieces of roasted pork with chopped cabbage and slices of tomato." +
+    "<p>Paragraph C <br>  During my stay in Gulu, I spend many hours hanging out in local pork joints – to meet friends for food or drinks, to visit young interlocutors who work there, or simply to observe the town life. Nearly every time I make valuable discoveries for my research, learn important aspects about social life in Gulu, and have great conversations. It is in the informal setting of pork joints that people tell me about their life stories and family biographies, about the time of the war, and about the challenges they face today." +
+    "<p>Paragraph D <br> Tonight, while we are waiting for the food to arrive, we talk about the dreams we had last night. It is Barbra’s turn. She is a good and confident story teller. After a small intro, she starts recounting her dream: "+
+    "<p> <br>“I dreamt I was at school. All the students in my class had just finished their exams and we were enjoying some free time on the school premises. Suddenly I see Alfred, the shortest boy in our class. He is running around the schoolyard, wearing a miniskirt. I am surprised and a little bit shocked. I walk up to him and shout: ‘Alfred, are you crazy? What do you think you are doing putting on that miniskirt?’ But instead of being intimidated or ashamed Alfred just answers: ‘We are now living in a globalized world and so I can wear miniskirts just as I like!’”"+
+    "<p> <br> Original text by: Julia Vorhölter  Youth at the Crossroads",
     "exerciseType": "READING_3",
     "examName": "fce1",
     "responses":[
         {
             "_id": 43,
-            "statement" : "states how surprised the writer was at Duncan’s early difficulties?",
-            "correct":"A"
+            "statement" : "Suggests how Barbra is a good interlocutor",
+            "correct":"D"
         },
         {
             "_id": 44,
-            "statement" : "says that Duncan sometimes seems much more mature than he really is?",
-            "correct":"D"
+            "statement" : "Pork joints are described by the author as informal places where substantial sociological information can be put together through casual conversations",
+            "correct":"C"
         },
         {
             "_id": 45,
-            "statement" : "describes the frustration felt by Duncan’s father?",
-            "correct":"B"
-        },
-        {
-            "_id": 46,
-            "statement" : "says that Duncan is on course to reach a high point in his profession?",
-            "correct":"D"
-        },
-        {
-            "_id": 47,
-            "statement" : "suggests that Duncan caught up with his team-mates in terms of physical development?",
-            "correct":"B"
-        },
-        {
-            "_id": 48,
-            "statement" : "explains how Duncan was a good all-round sportsperson?",
+            "statement" : "Explains what moment of the day it is",
             "correct":"A"
         },
         {
-            "_id": 49,
-            "statement" : "gives an example of how Gavin reassured his son?",
-            "correct":"C"
+            "_id": 46,
+            "statement" : "Suggests how going out to eat pork is something special for the kids",
+            "correct":"A"
         },
         {
-            "_id": 50,
-            "statement" : "mentions Duncan’s current club’s low opinion of him at one time?",
+            "_id": 47,
+            "statement" : "Political and social situations are revealed through an unconscious state of mind",
+            "correct":"D"
+        },
+        {
+            "_id": 48,
+            "statement" : "Explains what kind of food can be found at Pork Joints",
             "correct":"B"
         },
         {
-            "_id": 51,
-            "statement" : "mentions a personal success despite a failure for the team?",
+            "_id": 49,
+            "statement" : "Suggests that their favorite pork joint is surrounded by nature",
+            "correct":"A"
+        },
+        {
+            "_id": 50,
+            "statement" : "The author lets us know that the country she's in has been through difficult situations",
             "correct":"C"
         },
         {
-            "_id": 52,
-            "statement" : "explains how Duncan and his father are fulfilling a similar role?",
+            "_id": 51,
+            "statement" : "Two different cultures are confronted in a very peculiar situation",
             "correct":"D"
+        },
+        {
+            "_id": 52,
+            "statement" : "Explains how Pork Joints are social gathering places regardless of the social position or gender.",
+            "correct":"B"
         }
     ]
 });

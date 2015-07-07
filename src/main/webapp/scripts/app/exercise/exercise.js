@@ -4,13 +4,13 @@ angular.module('firstcertificatetestsApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('exercise', {
-                parent: 'site',
+                parent: 'home',
                 abstract: true,
                 //url: 'exercise',
-                //data: {
-                //    roles: ['ROLE_USER'],
-                //    pageTitle: 'FCE TEST'
-                //},
+                data: {
+                    roles: [],
+                    pageTitle: 'FCE TEST'
+                },
                 views: {
                     'content@': {
                         templateUrl: 'scripts/app/exercise/exercise.html',

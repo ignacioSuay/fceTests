@@ -7,10 +7,12 @@ angular.module('firstcertificatetestsApp')
         $scope.exercise = {};
         $scope.options = {interval :1000};
 
-        Principal.identity().then(function(account) {
-            $scope.account = account;
-            $scope.isAuthenticated = Principal.isAuthenticated;
-        });
+        if(Principal.isAuthenticated) {
+            Principal.identity().then(function (account) {
+                $scope.account = account;
+                $scope.isAuthenticated = Principal.isAuthenticated;
+            });
+        }
 
         $scope.loadAll = function() {
             Exercise.exam.query({examName:$stateParams.exam, exerciseType:"READING"}, function(result) {
