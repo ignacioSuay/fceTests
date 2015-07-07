@@ -17,12 +17,12 @@ spring:
     mail:
         host: smtp.gmail.com
         port: 587
-        user: ignacio.suay@gmail.com
-        password: 
+        user: first.certificate.tests@gmail.com
+        password: natxoiscool
         protocol: smtp
         tls: true
         auth: true
-        from: ignacio.suay@gmail.com
+        from: first.certificate.tests@gmail.com
 
     messageSource:
         cacheSeconds: 1
