@@ -26,9 +26,9 @@
                     </a>
                 </li>
                 <li ng-switch-when="false">
-                    <a ui-sref="register">
-                        <button class="btn btn-success">Sign Up!</button>
-                    </a>
+                    <div class="signup">
+                        <button class="btn btn-success" ui-sref="register">Sign Up!</button>
+                    </div>
                 </li>
                 <li  ng-switch-when="true">
                     <a ui-sref="exercise.useOfEnglish({exam:'fce1'})">
