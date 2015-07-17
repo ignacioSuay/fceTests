@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UserDetailsController', function ($scope, $state, Principal, UserDetails, History) {
+    .controller('UserDetailsController', function ($scope, $state, $location, Principal, UserDetails, History) {
 
         $scope.totalExams = 2;
         $scope.examDisabled = false;
@@ -64,7 +64,10 @@ angular.module('firstcertificatetestsApp')
             $scope.nextExam = 1;
             $scope.examDisabled = false;
 
-        }
+        };
 
+        $scope.goToExcercise = function(exercise){
+            $location.url("/ex/fce1/useOfEnglish");
+        }
 
     });
