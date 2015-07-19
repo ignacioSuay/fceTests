@@ -2,7 +2,7 @@
 
 angular.module('firstcertificatetestsApp')
     .controller('UseEnglishController', function ($scope,$state, Exercise, UserDetails, Principal, $stateParams) {
-        $scope.part = 1;
+        $scope.part = parseInt($stateParams.part);
         $scope.userResponses=[];
         $scope.exercise = {};
         $scope.options = {interval :1000};
@@ -20,12 +20,17 @@ angular.module('firstcertificatetestsApp')
                 return 'btn-primary';
             return 'btn-default';
         };
+
         $scope.setPart = function(partNumber){
+            if(!partNumber){
+                partNumber = 1;
+            }
             $scope.options.resetTimer();
             $scope.part = partNumber;
             //$scope.exercise = $scope.exercises[partNumber-1];
             $scope.getExerciseByPart(partNumber);
         };
+
 
         $scope.getExerciseByPart = function(part){
             $scope.exercise = $scope.exercises.filter(function(ex){
@@ -41,11 +46,14 @@ angular.module('firstcertificatetestsApp')
         $scope.loadAll = function() {
             Exercise.exam.query({examName:$stateParams.exam, exerciseType:"USE_OF_ENGLISH"}, function(result) {
                 $scope.exercises= result;
-                $scope.exercise = $scope.exercises[0];
+                //$scope.exercise = $scope.exercises[0];
+                $scope.setPart($scope.part);
             });
         };
 
         $scope.loadAll();
+
+
         $scope.check = function(){
             $scope.score = 0;
             $scope.options.stopTimer();
