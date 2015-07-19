@@ -3,7 +3,7 @@
 angular.module('firstcertificatetestsApp')
     .controller('UserDetailsController', function ($scope, $state, $location, Principal, UserDetails, History) {
 
-        $scope.totalExams = 2;
+        $scope.totalExams = 1;
         $scope.examDisabled = false;
         $scope.nextExam = 1;
 
