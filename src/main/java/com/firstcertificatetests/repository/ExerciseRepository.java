@@ -1,7 +1,9 @@
 package com.firstcertificatetests.repository;
 
 import com.firstcertificatetests.domain.Exercise;
+import com.firstcertificatetests.domain.ExerciseType;
 import com.firstcertificatetests.domain.User;
+import com.sun.xml.internal.ws.api.model.ExceptionType;
 import org.joda.time.DateTime;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
@@ -15,4 +17,6 @@ import java.util.Optional;
 public interface ExerciseRepository extends MongoRepository<Exercise, String> {
 
         List<Exercise> findAllByExamName(String examName);
+
+        Exercise findByExamNameAndExerciseType(String examName, ExerciseType exerciseType);
 }

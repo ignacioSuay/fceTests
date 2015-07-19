@@ -41,7 +41,7 @@ angular.module('firstcertificatetestsApp')
         })
             .state('exercise.reading', {
                 parent: 'exercise',
-                url: ':exam/reading',
+                url: ':exam/reading/:part',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
@@ -52,7 +52,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.writing', {
                 parent: 'exercise',
-                url: ':exam/writing',
+                url: ':exam/writing/:part',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{
@@ -63,7 +63,7 @@ angular.module('firstcertificatetestsApp')
             })
             .state('exercise.speaking', {
                 parent: 'exercise',
-                url: ':exam/speaking',
+                url: ':exam/speaking/:part',
                 views:{
                     //nameOfView@state
                     'exerciseView@exercise':{

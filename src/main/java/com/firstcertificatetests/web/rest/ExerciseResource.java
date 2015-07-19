@@ -2,6 +2,7 @@ package com.firstcertificatetests.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 import com.firstcertificatetests.domain.Exercise;
+import com.firstcertificatetests.domain.ExerciseType;
 import com.firstcertificatetests.domain.User;
 import com.firstcertificatetests.repository.ExerciseRepository;
 import com.firstcertificatetests.repository.UserRepository;
@@ -61,10 +62,11 @@ public class ExerciseResource {
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public List<Exercise> getExercise(@PathVariable String examName, @PathVariable String exerciseType) {
+    public Exercise getExercise(@PathVariable String examName, @PathVariable String exerciseType) {
         log.debug("REST request to get Exercise from exam: " + examName);
-        List<Exercise> exercises = exerciseRepository.findAllByExamName(examName);
-        return getExercisesByType(exercises, exerciseType);
+       // List<Exercise> exercises = exerciseRepository.findAllByExamName(examName);
+        ExerciseType exerciseType1 = ExerciseType.valueOf(exerciseType);
+        return exerciseRepository.findByExamNameAndExerciseType(examName, exerciseType1);
     }
 
     private List<Exercise> getExercisesByType(List<Exercise> exercises, String type){

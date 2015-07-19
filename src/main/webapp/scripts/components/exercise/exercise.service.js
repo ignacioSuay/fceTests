@@ -15,7 +15,7 @@ angular.module('firstcertificatetestsApp')
                 }
             }),
             exam: $resource('api/exercises/exam/:examName/:exerciseType', {}, {
-                'query': {method: 'GET', isArray: true}
+                'query': {method: 'GET', isArray: false}
             })
         };
     });

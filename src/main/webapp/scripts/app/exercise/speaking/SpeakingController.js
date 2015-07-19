@@ -3,24 +3,15 @@
 angular.module('firstcertificatetestsApp')
     .controller('SpeakingController', function ($scope,$state, Exercise, $stateParams) {
 
-        $scope.part = 1;
-        $scope.exercise = {};
+        $scope.part = parseInt($stateParams.part);
 
         $scope.loadAll = function() {
-            Exercise.exam.query({examName: $stateParams.exam, exerciseType:"SPEAKING"}, function(result) {
-                $scope.exercises= result;
-                $scope.exercise = $scope.exercises[0];
+            Exercise.exam.query({examName: $stateParams.exam, exerciseType:"SPEAKING_" + $scope.part}, function(result) {
+                $scope.exercise = result;
             });
         };
 
         $scope.loadAll();
-
-        $scope.setPart = function(partNumber){
-            $scope.part = partNumber;
-            $scope.exercise = $scope.exercises.filter(function(exercise){
-                return exercise.exerciseType === "SPEAKING_"+ partNumber;
-            })[0];
-        };
 
         $scope.isPart = function(partNumber){
             return partNumber === $scope.part;

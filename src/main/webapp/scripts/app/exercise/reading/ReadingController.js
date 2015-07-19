@@ -3,7 +3,7 @@
 angular.module('firstcertificatetestsApp')
     .controller('ReadingController', function ($scope,$state, Exercise, UserDetails, Principal, $stateParams) {
 
-        $scope.part = 1;
+        $scope.part = parseInt($stateParams.part);
         $scope.exercise = {};
         $scope.options = {interval :1000};
 
@@ -15,9 +15,9 @@ angular.module('firstcertificatetestsApp')
         }
 
         $scope.loadAll = function() {
-            Exercise.exam.query({examName:$stateParams.exam, exerciseType:"READING"}, function(result) {
-                $scope.exercises= result;
-                $scope.exercise = $scope.exercises[0];
+            Exercise.exam.query({examName:$stateParams.exam, exerciseType:"READING_" + $scope.part}, function(result) {
+                $scope.exercise= result;
+                //$scope.exercise = $scope.exercises[0];
             });
         };
 
@@ -25,8 +25,6 @@ angular.module('firstcertificatetestsApp')
 
         $scope.setPart = function(partNumber){
             $scope.options.resetTimer();
-            $scope.part = partNumber;
-            $scope.exercise = $scope.exercises[partNumber-1];
         };
 
         $scope.isPart = function(partNumber){

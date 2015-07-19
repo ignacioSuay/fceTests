@@ -3,22 +3,15 @@
 angular.module('firstcertificatetestsApp')
     .controller('WritingController', function ($scope,$state, Exercise, $stateParams) {
 
-        $scope.part = 1;
-        $scope.exercise = {};
+        $scope.part = parseInt($stateParams.part);
 
         $scope.loadAll = function() {
-            Exercise.exam.query({examName:$stateParams.exam, exerciseType:"WRITING"}, function(result) {
-                $scope.exercises= result;
-                $scope.exercise = $scope.exercises[0];
+            Exercise.exam.query({examName:$stateParams.exam, exerciseType:"WRITING_" + $scope.part}, function(result) {
+                $scope.exercise= result;
             });
         };
 
         $scope.loadAll();
-
-        $scope.setPart = function(partNumber){
-            $scope.part = partNumber;
-            $scope.exercise = $scope.exercises[partNumber-1];
-        };
 
         $scope.isPart = function(partNumber){
             return partNumber === $scope.part;
