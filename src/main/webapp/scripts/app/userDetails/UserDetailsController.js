@@ -49,7 +49,7 @@ angular.module('firstcertificatetestsApp')
             else{
                 exam = "fce" + $scope.nextExam;
             }
-            $state.go('exercise.useOfEnglish', {exam: exam});
+            $state.go('exercise.useOfEnglish', {exam: exam, part:1});
         };
 
         $scope.deleteHistory = function(){
@@ -66,8 +66,20 @@ angular.module('firstcertificatetestsApp')
 
         };
 
-        $scope.goToExcercise = function(exercise){
-            $location.url("/ex/fce1/useOfEnglish");
+        $scope.goToExercise = function(exercise){
+            var exerciseState = $scope.getExerciseState(exercise.exerciseType);
+            var part = exercise.exerciseType.slice(-1);
+            $state.go(exerciseState, {exam: exercise.examName, part:part});
+        };
+
+        $scope.getExerciseState = function(exerciseType){
+            if(exerciseType.indexOf("USE_OF_ENGLISH")===0){
+                return 'exercise.useOfEnglish';
+            }else if(exerciseType.indexOf("READING")===0){
+                return 'exercise.reading';
+            }
+
+            return "";
         }
 
     });
