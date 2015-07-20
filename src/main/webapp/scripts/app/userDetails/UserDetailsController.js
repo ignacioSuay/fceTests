@@ -72,6 +72,12 @@ angular.module('firstcertificatetestsApp')
             $state.go(exerciseState, {exam: exercise.examName, part:part});
         };
 
+        $scope.viewAnswers = function(exercise){
+            var exerciseState = $scope.getExerciseState(exercise.exerciseType);
+            var part = exercise.exerciseType.slice(-1);
+            $state.go(exerciseState, {exam: exercise.examName, part:part, data: exercise.userResponses});
+        };
+
         $scope.getExerciseState = function(exerciseType){
             if(exerciseType.indexOf("USE_OF_ENGLISH")===0){
                 return 'exercise.useOfEnglish';
@@ -80,6 +86,10 @@ angular.module('firstcertificatetestsApp')
             }
 
             return "";
+        };
+
+        $scope.continueExam = function(exam){
+            $state.go('exercise.useOfEnglish', {exam: exam.examName, part:1});
         }
 
     });

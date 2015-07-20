@@ -26,7 +26,7 @@
                         </div>
                     </td>
                     <td>
-                        <button class="btn btn-warning" >Continue Exam</button>
+                        <button class="btn btn-warning" ng-click="continueExam(exam)">Go to the Exam</button>
                     </td>
                 </tr>
                 </tbody>
@@ -57,7 +57,7 @@
                         <td>{{exercise.when| date : 'dd-MMMM-yyyy HH:mm' }}</td>
                         <td>{{exercise.time | secondsToTime}}</td>
                         <td>{{exercise.score}}</td>
-                        <td><button class="btn btn-primary">
+                        <td><button class="btn btn-primary" ng-click="viewAnswers(exercise)">
                             <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span> View</span>
                         </button>
                         <button class="btn btn-success" ng-click="goToExercise(exercise)" >

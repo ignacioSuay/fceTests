@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -33,7 +34,7 @@ public class ExerciseCompleted {
     private ExerciseType exerciseType;
 
     @Field
-    Map<Integer,String> userResponses;
+    List<UserResponse> userResponses;
 
     @Field
     String score;
@@ -52,14 +53,6 @@ public class ExerciseCompleted {
 
     public void setWhen(Date when) {
         this.when = when;
-    }
-
-    public Map<Integer, String> getUserResponses() {
-        return userResponses;
-    }
-
-    public void setUserResponses(Map<Integer, String> userResponses) {
-        this.userResponses = userResponses;
     }
 
     public String getScore() {
@@ -100,6 +93,14 @@ public class ExerciseCompleted {
 
     public void setTime(int time) {
         this.time = time;
+    }
+
+    public List<UserResponse> getUserResponses() {
+        return userResponses;
+    }
+
+    public void setUserResponses(List<UserResponse> userResponses) {
+        this.userResponses = userResponses;
     }
 
     @Override
