@@ -27,8 +27,18 @@ angular.module('firstcertificatetestsApp')
                 if (newValue && scope.exercise.exerciseType === "READING_1") {
                     element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
+                    if(scope.data){
+                        loadAnswers(scope.data);
+                    }
                 }
             });
+        };
+
+        var loadAnswers = function(data){
+            data.forEach(function(answer){
+                // $scope.userResponses[answer.id] = answer.response;
+                $('input:radio[name=radio-'+answer.id+']').filter('[value='+answer.response+']').prop('checked', true);
+            })
         };
         return {
             restrict: "E",
@@ -78,9 +88,21 @@ angular.module('firstcertificatetestsApp')
                     scope.responsesId = getResponsesId(scope.exercise);
                     element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
+                    if(scope.data){
+                        loadAnswers(scope.data);
+                    }
                 }
             });
         };
+
+        var loadAnswers = function(data){
+            data.forEach(function(answer){
+                // $scope.userResponses[answer.id] = answer.response;
+                $("#selectR-" + answer.id + " option").
+                    filter(function() {return $(this).text() == answer.response; }).prop('selected', true);
+            })
+        };
+
         return {
             restrict: "E",
             link: linker,
