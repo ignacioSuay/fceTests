@@ -42,6 +42,7 @@ angular.module('firstcertificatetestsApp')
         })
             .state('exercise.reading', {
                 parent: 'exercise',
+                params:{data:null},
                 url: ':exam/reading/:part',
                 views:{
                     //nameOfView@state

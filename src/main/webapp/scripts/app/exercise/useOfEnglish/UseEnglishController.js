@@ -35,9 +35,15 @@ angular.module('firstcertificatetestsApp')
         };
         $scope.loadAll();
 
+        $scope.loadAnswers = function(data){
+            data.forEach(function(answer){
+                $scope.userResponses[answer.id] = answer.response;
+            })
+        };
+
 
         $scope.check = function(){
-            $scope.userResponses = [];
+            $scope.userResponsesFormat = [];
             $scope.score = 0;
             $scope.options.stopTimer();
             if($scope.part === 1){
@@ -57,7 +63,7 @@ angular.module('firstcertificatetestsApp')
 
             $scope.exercise.responses.forEach(function(response){
                 var selectedText = $("#select-" + response.id + " option:selected").text();
-                $scope.userResponses.push({id:response.id, response: selectedText});
+                $scope.userResponsesFormat.push({id:response.id, response: selectedText});
                 if(selectedText === response.correct[0]){
                     $scope.score++;
                     $("#span-" + response.id).attr("class","glyphicon glyphicon-ok iconSuccess");
@@ -76,6 +82,7 @@ angular.module('firstcertificatetestsApp')
         $scope.checkPart2 = function(){
             $scope.exercise.responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
+                $scope.userResponsesFormat.push({id:response.id, response: inputText});
                 var checkData = $scope.checkData(inputText, response);
 
                 if(checkData.isCorrect){
@@ -94,6 +101,7 @@ angular.module('firstcertificatetestsApp')
         $scope.checkPart3 = function(){
             $scope.exercise.responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
+                $scope.userResponsesFormat.push({id:response.id, response: inputText});
                 var checkData = $scope.checkData(inputText, response);
 
                 if(checkData.isCorrect){
@@ -110,6 +118,7 @@ angular.module('firstcertificatetestsApp')
         $scope.checkPart4 = function(){
             $scope.exercise.responses.forEach(function(response){
                 var inputText = $("#input-" + response.id).val();
+                $scope.userResponsesFormat.push({id:response.id, response: inputText});
                 var checkData = $scope.checkData(inputText, response);
                 if(checkData.isCorrect){
                     $scope.score++;
@@ -128,16 +137,12 @@ angular.module('firstcertificatetestsApp')
             }
             var score = $scope.score + "/" + $scope.exercise.responses.length;
             var seconds = $scope.options.elapsedTime.getTime() / 1000;
-            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: $scope.exercise.id, when: new Date(), examName: $scope.exercise.examName, time: seconds, exerciseType: $scope.exercise.exerciseType, score: score, userResponses:$scope.userResponses}]};
+            var userDetails= {id: null, login: $scope.account.login, exercisesCompleted:[{id: null, exerciseId: $scope.exercise.id, when: new Date(), examName: $scope.exercise.examName, time: seconds, exerciseType: $scope.exercise.exerciseType, score: score, userResponses:$scope.userResponsesFormat}]};
             UserDetails.data.save(userDetails, function(){
                 console.log("user details saved succesfull");
             }, function(){
                 console.log("error saving user details")
             });
-        };
-
-        $scope.getUserResponses = function(){
-
         };
 
         $scope.checkData = function(inputText, response){
@@ -153,13 +158,5 @@ angular.module('firstcertificatetestsApp')
             return {isCorrect: isCorrect, posibleSolutions: posibleSolutions};
         };
 
-
-        $scope.loadAnswers = function(data){
-            if($scope.part === 1){
-                data.forEach(function(answer){
-                    $("#select-" + answer.id).val(answer.response);
-                })
-            }
-        };
 
     });
