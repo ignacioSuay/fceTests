@@ -36,7 +36,6 @@ angular.module('firstcertificatetestsApp')
 
         var loadAnswers = function(data){
             data.forEach(function(answer){
-                // $scope.userResponses[answer.id] = answer.response;
                 $('input:radio[name=radio-'+answer.id+']').filter('[value='+answer.response+']').prop('checked', true);
             })
         };
@@ -55,8 +54,7 @@ angular.module('firstcertificatetestsApp')
 
             while((result = regex.exec(template)) !== null){
                 var responseId = result[0].substr(1,result[0].length - 2 );
-                var select = "<select class=\"form-control input-sm selectEx\" id=\'selectR-"+responseId +"\' >" +
-                        "<option ng-repeat='item in responsesId' value='{{item}}'>{{item}} </option>"+
+                var select = "<select class=\"form-control input-sm selectEx\"  id=\'selectR-"+responseId +"\' ng-options=\"resp.id as resp.id for resp in responsesId\" ng-model=\"userResponses["+responseId+"]\" >" +
                     "</select> <span id=\'spanR-"+responseId +"\' />";
                 template = template.replace(result[0], select);
             }
@@ -67,7 +65,7 @@ angular.module('firstcertificatetestsApp')
         var getResponsesId = function(exercise){
           var responsesId = [];
           exercise.responses.forEach(function(response){
-              responsesId.push(response.id);
+              responsesId.push({id: response.id});
           });
             return responsesId;
         };
@@ -88,20 +86,10 @@ angular.module('firstcertificatetestsApp')
                     scope.responsesId = getResponsesId(scope.exercise);
                     element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
-                    if(scope.data){
-                        loadAnswers(scope.data);
-                    }
                 }
             });
         };
 
-        var loadAnswers = function(data){
-            data.forEach(function(answer){
-                // $scope.userResponses[answer.id] = answer.response;
-                $("#selectR-" + answer.id + " option").
-                    filter(function() {return $(this).text() == answer.response; }).prop('selected', true);
-            })
-        };
 
         return {
             restrict: "E",
@@ -111,15 +99,6 @@ angular.module('firstcertificatetestsApp')
     }).directive('readingContent3', function ($compile) {
         var getTemplate = function(exercise){
             var template = exercise.content;
-            var result;
-
-            //while((result = regex.exec(template)) !== null){
-            //    var responseId = result[0].substr(1,result[0].length - 2 );
-            //    var select = "<select class=\"form-control input-sm selectEx\" id=\'selectR-"+responseId +"\' >" +
-            //        "<option ng-repeat='item in responsesId' value='{{item}}'>{{item}} </option>"+
-            //        "</select> <span id=\'spanR-"+responseId +"\' />";
-            //    template = template.replace(result[0], select);
-            //}
             template += getQuestions(exercise);
             return template;
         };
@@ -154,9 +133,19 @@ angular.module('firstcertificatetestsApp')
                     //scope.responsesId = getResponsesId(scope.exercise);
                     element.html(getTemplate(scope.exercise)).show();
                     $compile(element.contents())(scope);
+                    if(scope.data){
+                        loadAnswers(scope.data);
+                    }
                 }
             });
         };
+
+        var loadAnswers = function(data){
+            data.forEach(function(answer){
+                $('input:radio[name=radioR-'+answer.id+']').filter('[value='+answer.response+']').prop('checked', true);
+            })
+        };
+
         return {
             restrict: "E",
             link: linker,

@@ -19,7 +19,7 @@ angular.module('firstcertificatetestsApp')
             Exercise.exam.query({examName:$stateParams.exam, exerciseType:"READING_" + $scope.part}, function(result) {
                 $scope.exercise= result;
                 if($stateParams.data){
-                    $scope.data = $stateParams.data;
+                    $scope.loadAnswers($stateParams.data);
                 }
             });
         };
@@ -27,12 +27,13 @@ angular.module('firstcertificatetestsApp')
         $scope.loadAll();
 
         $scope.loadAnswers = function(data){
+            $scope.data = data;
             data.forEach(function(answer){
-               // $scope.userResponses[answer.id] = answer.response;
-                if($scope.part===1)
-                    $('input:radio[name=radio-'+answer.id+']').filter('[value='+answer.response+']').prop('checked', true);
+                if($scope.part === 2)
+                    $scope.userResponses[answer.id] = parseInt(answer.response);
             })
         };
+
 
         $scope.setPart = function(partNumber){
             $scope.options.resetTimer();
