@@ -3,7 +3,6 @@ package com.firstcertificatetests.repository;
 import com.firstcertificatetests.domain.Exercise;
 import com.firstcertificatetests.domain.ExerciseType;
 import com.firstcertificatetests.domain.User;
-import com.sun.xml.internal.ws.api.model.ExceptionType;
 import org.joda.time.DateTime;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
