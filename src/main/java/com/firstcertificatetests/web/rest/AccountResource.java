@@ -4,6 +4,7 @@ import com.codahale.metrics.annotation.Timed;
 import com.firstcertificatetests.domain.Authority;
 import com.firstcertificatetests.domain.PersistentToken;
 import com.firstcertificatetests.domain.User;
+import com.firstcertificatetests.domain.util.EmailDTO;
 import com.firstcertificatetests.repository.PersistentTokenRepository;
 import com.firstcertificatetests.repository.UserRepository;
 import com.firstcertificatetests.security.SecurityUtils;
@@ -192,5 +193,14 @@ public class AccountResource {
                 .filter(persistentToken -> StringUtils.equals(persistentToken.getSeries(), decodedSeries))
                 .findAny().ifPresent(t -> persistentTokenRepository.delete(decodedSeries));
         });
+    }
+
+
+    @RequestMapping(value = "/sendMeEmail",
+            method = RequestMethod.POST,
+            produces = MediaType.TEXT_PLAIN_VALUE)
+    @Timed
+    public void sendEmailToMe(@RequestBody EmailDTO emailDTO) {
+        mailService.sendMeEmail(emailDTO.getName(), emailDTO.getEmail(), emailDTO.getPhone(), emailDTO.getMessage());
     }
 }

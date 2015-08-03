@@ -1,11 +1,15 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('MainController', function ($scope, Principal) {
+    .controller('MainController', function ($scope, Principal, $http) {
         Principal.identity().then(function(account) {
             $scope.account = account;
             $scope.isAuthenticated = Principal.isAuthenticated;
         });
+
+        $scope.emailSent= false;
+
+        $scope.email = {};
 
         $(function() {
             $("body").on("input propertychange", ".floating-label-form-group", function(e) {
@@ -16,4 +20,10 @@ angular.module('firstcertificatetestsApp')
                 $(this).removeClass("floating-label-form-group-with-focus");
             });
         });
+
+        $scope.sendMeEmail = function(){
+            $http.post("api/sendMeEmail", $scope.email).success(function(data){
+                $scope.emailSent= true;
+            });
+        }
     });

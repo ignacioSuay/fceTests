@@ -83,4 +83,14 @@ public class MailService {
         String subject = messageSource.getMessage("email.activation.title", null, locale);
         sendEmail(user.getEmail(), subject, content, false, true);
     }
+
+    @Async
+    public void sendMeEmail(String name, String email, String phone, String message) {
+        StringBuilder content = new StringBuilder();
+        content.append("Name: " + name + "\n");
+        content.append("Email: " + email+"\n");
+        content.append("Phone: " + phone + "\n");
+        content.append("Message: "+message + "\n");
+        sendEmail("ignacio.suay@gmail.com", "email from " + name, content.toString(), false, false);
+    }
 }
