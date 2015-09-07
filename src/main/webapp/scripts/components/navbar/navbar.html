@@ -30,13 +30,13 @@
                         <button class="btn btn-success" ui-sref="register">Sign Up!</button>
                     </div>
                 </li>
-                <li  ng-switch-when="true">
+                <li  ui-sref-active="active" ng-switch-when="true">
                     <a ui-sref="exercise.useOfEnglish({exam:'fce1', part:1})">
                         <span class="glyphicon glyphicon-pencil"></span>
                         <span>Tests</span>
                     </a>
                 </li>
-                <li  ng-switch-when="true">
+                <li ui-sref-active="active" ng-switch-when="true">
                     <a ui-sref="userDetails">
                         <span class="fa fa-line-chart"></span>
                         <span>Your Progress</span>
