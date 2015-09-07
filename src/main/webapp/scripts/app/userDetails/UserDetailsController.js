@@ -52,9 +52,14 @@ angular.module('firstcertificatetestsApp')
             $state.go('exercise.useOfEnglish', {exam: exam, part:1});
         };
 
-        $scope.deleteHistory = function(){
+        $scope.deleteAllHistory = function(){
+            $('#deleteAllHistoryConfirmation').modal('show');
+        };
+
+        $scope.confirmDeleteAllHistory = function(){
             UserDetails.data.delete({login:$scope.account.login}, function(result) {
                 $scope.cleanData();
+                $('#deleteAllHistoryConfirmation').modal('hide');
             });
         };
 
@@ -91,5 +96,22 @@ angular.module('firstcertificatetestsApp')
         $scope.continueExam = function(exam){
             $state.go('exercise.useOfEnglish', {exam: exam.examName, part:1});
         }
+
+        $scope.delete = function (exercise) {
+            $('#deleteHistoryConfirmation').modal('show');
+        };
+
+        $scope.confirmDelete = function (id) {
+            MarkerType.delete({id: id},
+                function () {
+                    $scope.reset();
+                    $('#deleteMarkerTypeConfirmation').modal('hide');
+                    $scope.clear();
+                });
+        };
+
+        $scope.clear = function () {
+            $scope.userDetails = {};
+        };
 
     });
