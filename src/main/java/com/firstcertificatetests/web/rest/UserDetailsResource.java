@@ -1,6 +1,7 @@
 package com.firstcertificatetests.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
+import com.firstcertificatetests.domain.ExerciseCompleted;
 import com.firstcertificatetests.domain.UserDetails;
 import com.firstcertificatetests.repository.UserDetailsRepository;
 import org.slf4j.Logger;
@@ -109,4 +110,30 @@ public class UserDetailsResource {
             userDetailsRepository.delete(userDetails);
     }
 
+    /**
+     * DELETE  /userDetails/:id -> delete the "id" userDetails.
+     */
+    @RequestMapping(value = "/userDetails/{login}/delete/{id}",
+            method = RequestMethod.DELETE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public ResponseEntity<UserDetails> deleteExercise(@PathVariable String login, @PathVariable Integer id) {
+        log.debug("REST request to delete userDetails : {}", login);
+        UserDetails userDetails = userDetailsRepository.findByLogin(login);
+        removeExercise(userDetails, id);
+        return new ResponseEntity<>(userDetails, HttpStatus.OK);
+
+    }
+
+    private void removeExercise(UserDetails userDetails, Integer id){
+        List<ExerciseCompleted> exercisesCompleted = userDetails.getExercisesCompleted();
+        for(ExerciseCompleted exerciseCompleted : exercisesCompleted){
+            if(id.equals(exerciseCompleted.getId())){
+                exercisesCompleted.remove(exerciseCompleted);
+                userDetails.setExercisesCompleted(exercisesCompleted);
+                userDetailsRepository.save(userDetails);
+                break;
+            }
+        }
+    }
 }

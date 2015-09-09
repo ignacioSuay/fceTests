@@ -5,6 +5,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +18,7 @@ import java.util.Map;
 public class ExerciseCompleted {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     @Field
@@ -38,6 +41,19 @@ public class ExerciseCompleted {
 
     @Field
     String score;
+
+    public ExerciseCompleted(){}
+
+    public ExerciseCompleted(Integer id, ObjectId exerciseId, Date when, String examName, int time, ExerciseType exerciseType, List<UserResponse> userResponses, String score) {
+        this.id = id;
+        this.exerciseId = exerciseId;
+        this.when = when;
+        this.examName = examName;
+        this.time = time;
+        this.exerciseType = exerciseType;
+        this.userResponses = userResponses;
+        this.score = score;
+    }
 
     public Integer getId() {
         return id;

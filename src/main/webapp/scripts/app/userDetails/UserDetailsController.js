@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('firstcertificatetestsApp')
-    .controller('UserDetailsController', function ($scope, $state, $location, Principal, UserDetails, History) {
+    .controller('UserDetailsController', function ($scope, $state, $location,$http, Principal, UserDetails, History) {
 
         $scope.totalExams = 1;
         $scope.examDisabled = false;
@@ -98,16 +98,21 @@ angular.module('firstcertificatetestsApp')
         }
 
         $scope.delete = function (exercise) {
+            $scope.exercise = exercise;
             $('#deleteHistoryConfirmation').modal('show');
         };
 
         $scope.confirmDelete = function (id) {
-            MarkerType.delete({id: id},
-                function () {
-                    $scope.reset();
-                    $('#deleteMarkerTypeConfirmation').modal('hide');
-                    $scope.clear();
-                });
+            //UserDetails.deleteExercise({login:$scope.account.login, id: id},
+            //    function () {
+            //        $scope.reset();
+            //        $('#deleteMarkerTypeConfirmation').modal('hide');
+            //        $scope.clear();
+            //    });
+
+            $http.delete("api/userDetails/"+$scope.account.login+"/delete/"+id).then(function(){
+                alert("Deleted!!!!!!");
+            }, function(response){ alert("Error saving data" + response)});
         };
 
         $scope.clear = function () {
