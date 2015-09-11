@@ -481,13 +481,12 @@ db.exercise.insert({
         }
     ]
 });
-
-
 db.exercise.insert(
     {
         "title": "",
-        "content":  "<b> Every country in the world has problems with pollution and damage to the environment. Do you think these problems can be solved? </b>" +
-        "<br/><b> Notes </b><br/> Write about <br/> 1. transport <br/> 2. rivers and seas <br/> 3...",
+        "content":  "<b> Several surveys point out that kids are more and more exposed to technology, it's easy to find two year old babies with iPads in their hands.  Most western families have broadband internet connection which is also used by their underaged children.</b>" +
+        "<br/><b>Do you think this is good for kids?</b>"+
+        "<br/><b> Notes </b><br/> Write about <br/> 1. Pros and cons of kids accesing internet and technology. <br/> 2. Suggest how you would control and limit internet and technology access on kids.  <br/> 3...",
         "exerciseType": "WRITING_1",
         "examName": "fce1"
     });
@@ -495,18 +494,17 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "",
-        "content":  "<b>You see this announcement in your college English-language magazine.</b>" +
-        "<div class='well'> <p>Book reviews wanted</p><p>Have you read a book in which the main character behaved in a surprising way?</p><p>Write us a review of the book, explaining what the main character did and why it was surprising. Tell us whether or not you would recommend this book to other people.</p><p>The best reviews will be published in the magazine.</p> </div> " +
-        "<b> Write your review. </b>",
+        "content":  "<b>  Your friend Fred wants to know about the most boring character of a movie that you've watched.</b>" +
+        "<div class='well'> <p>Send him an email, explaining what that character was like, and what made him so boring.  Tell him if the movie is still worth watching and why, despite that character.</p> </div> ",
         "exerciseType": "WRITING_2",
-        "examName": "fce1"
-    });
+    "examName": "fce1"
+});
 
 db.exercise.insert(
     {
         "title": "",
-        "content":  "<b> You see this announcement on an English-language website.</b>" +
-        "<div class='well'><p>Articles wanted</p><p>The most useful thing I have ever learned.</p><p>What is the most useful thing you have learned?Who did you learn it from? Why is it useful?<p>Write us an article answering these questions.</p><p>We will publish the best articles on our website.</p> </div>" +
+        "content":  "<b> Your English teacher has asked you to write an article about your biggest project.</b>" +
+        "<div class='well'><p>He needs you to answer these questions:</p><p>What is the biggest project you ever got yourself involved in?</p><p>How did it come up?<p>Did you manage to finish it?</p><p>What did you learn from it?</p> </div>" +
         "<b> Write your article. </b>",
         "exerciseType": "WRITING_3",
         "examName": "fce1"
@@ -514,24 +512,24 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "",
-        "content":  "<b> You have received this email from your English-speaking friend David.</b>" +
-        "<div class='well'><p>From: David <br/> Subject: touring holiday</p><p>Some college friends of mine are visiting your area soon for a week’s touring holiday. They would like to travel around and learn about your local area and its history.</p><p>Can you tell me about some of the places they could visit? What’s the best way to travel around – car, bike or coach?</p><p>Thanks</p><p>David</p></div>" +
-        "<b> Write your email </b>",
+        "content":  "<b>You have just received a postcard from your friend John.</b>" +
+        "<div class='well'><p>Some warm days we've been having over here in your home town! But the problem is we've been getting a bit bored in the evenings.</p><p>We would like to know if you still remember some interesting routes to travel around and learn a bit about its history and see some nice views.</p><p>  Do you think you could tell me some of the places we could visit? And how would you find it more convenient to reach them (bicycle, train, car or walking)</p><p> Thanks </p><p> John</p></div>" +
+        "<b> Write your response </b>",
         "exerciseType": "WRITING_4",
         "examName": "fce1"
     });
 
 db.exercise.insert(
     {
-        "title": "Part 1 (2 minutes)",
-        "content":  "<h3> Introduction </h3><p> Good morning/afternoon/evening. My name is ..... and this is my colleague......</p>" +
-        "<p> And your names are? Can I have yor mark sheets, please?<br/> Thank you.</p>" +
-        "<p> Where are you from (Candidate A)? and you, (candidate B)?</p>" +
-        "<h3>Likes and dislikes / Special occasions / Media  </h3>" +
-        "<p> First we would like to know something about you " +
-        "Do you like reading? Tell us about a book you really like </p>" +
+        "title": " 2 Part 1 (2 minutes)",
+        "content":  "<h3> Introduction </h3><p> Present yourself and the other candidate to the examiner using these lines</p>" +
+        "<p> Good morning/afternoon/evening.  My name is … and this is my colleague …</p>" +
+        "<p>State where you are from and where you are living now, you can also ask your colleague where he lives and what he's from</p>" +
+        "<h3>Interests</h3>" +
+        "<p> Do you like listening to music?  Tell us a musician or band you really like" +
+        "When was the last time you went to a concert?  </p>" +
         "<p> What did you do on your last holiday?</p>" +
-        "<p> Tell us about a film you have seen recently.</p>",
+        "<p> Tell us about a book that you've read recently</p>",
         "exerciseType": "SPEAKING_1",
         "examName": "fce1"
     });
@@ -539,15 +537,12 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "Part 2 (4 minutes)",
-        "content":  "<p> In this part of the test, I'm going to give each of you 2 photographs. I'd like you to talk about your photographs on your own for about a minute, and also to answer a question about your partner's photograph </p>" +
-        "<p> (candidate A), it's your turn first. Here are your photographs. They show people who are helping other people in different situations</p>" +
-        "<p> I would  like you to compare the photographs, and say how important it is to help people in these situations. <br/><br/>" +
-        "<img src='assets/speaking/fce1/help.jpg'/> <img src='assets/speaking/fce1/save.jpg'/></p>" +
-        "<p> (candidate B) do you find easy to ask for help when you have a problem? (Why / Why not? )</p>" +
-        "<p> Now, (candidate B), here are your photographs. they show people spending time in different gardens <br/><br/>" +
-        "<img src='assets/speaking/fce1/garden.jpg'/> <img src='assets/speaking/fce1/gardening-475350_640.jpg'/></p>" +
-        "<p> I would  like speaking to compare the photographs, and say what you think the people are enjoying about spending in these gardens </p>" +
-        "<p> (Candidate A) which garden would you prefer to spend time in? ... (Why?)</p>" +
+        "content":  "<p>In this part of the test, each candidate will be given 2 photographs.  We'd like you to talk about your photographs on your own for a minute, and you will also need to answer a question about your partner's photograph.</p>" +
+        "<p> (candidate A), it's your turn first. It's your turn first, your photographs show a dog in one and a cat in the other.</p>" +
+        "<p> We would like you to compare the photos and tell us the main differences between cats and dogs and which one would you prefer to have and why.<br/><br/>" +
+        "<img src='assets/speaking/fce1/cat-793276_1280.jpg'/> <img src='assets/speaking/fce1/dog-833957_1280.jpg'/></p>" +
+        "<p> (Now we would ask Candidate B a question about your pictures)</p>" +
+        "<p> Candidate B has photographs of country houses and apartment blocks, he has already spoken about them for a minute and we would like you to tell us if you would find it easier to live in a country house or in an apartment, and why? <br/><br/>" +
         "<p> Thank you </p>",
         "exerciseType": "SPEAKING_2",
         "examName": "fce1"
@@ -555,11 +550,11 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "Part 3 (4 minutes)",
-        "content": "<p> Now I'd like to you to talk about something together for about 2 minutes</p>" +
-        "<p> I'd like you to imagine that a town wants more tourists to visit. Here ae some ideas they're thinking about and a question for you to discuss. First you have some time to look at the task.</p>" +
-        "<p> Now, talk to each other about why these ideas would attract more tourists to the town</p>" +
+        "content": "<p> Now you would have to talk with your partner for about 2 minutes</p>" +
+        "<p>Try imagining a business that needs to attract more customers, they are deciding if they should invest in publicity, put down their prices or do both.</p>" +
+        "<p>Figure out what they should do and imagine your partner thinks the opposite</p>" +
         "<p> (You have 2 minutes to discuss with the other candidate)</p>" +
-        "<p> Thank you. Now you have a minute to decide which idea would be best for the town.</p>",
+        "<p> Ok, now you have a minute to agree on which idea would be best for the business.</p>",
         "exerciseType": "SPEAKING_3",
         "examName": "fce1"
     });
@@ -567,15 +562,108 @@ db.exercise.insert(
 db.exercise.insert(
     {
         "title": "Part 4 (4 minutes)",
-        "content":  "<p> Please discuss with the other candidate </p>" +
-        "<p> Do you think you have to spend a lot of money to have a good holiday? ... (Why?/ Why not?)</p> " +
-        "<p> Some people say we travel too much these days and shouldn't go on so many holidays. What do you think? </p>" +
-        "<p> Do you think people have enough time for holidays these days?... (Why? / Why not? </p>" +
-        "<p> Why do you think people like to go away on holiday? </p>" +
-        "<p> What do you think is the biggest advantage of living in a place where there are a lot of tourists? </p>",
+        "content":  "<p> Once again, you will discuss a subject with the other candidate</p>" +
+        "<p> Do you think private universities are better than public ones? (Why / Why not?)</p> " +
+        "<p>Many people think private universities are better because less people can get in to them and teacher have more time for pupils.  What do you think? </p>" +
+        "<p>Why is it important for everyone to be able to access public universities?</p>" +
+        "<p>What do you think is the bigger advantage of having a University degree?</p>",
         "exerciseType": "SPEAKING_4",
         "examName": "fce1"
     });
+
+//db.exercise.insert(
+//    {
+//        "title": "",
+//        "content":  "<b> Every country in the world has problems with pollution and damage to the environment. Do you think these problems can be solved? </b>" +
+//        "<br/><b> Notes </b><br/> Write about <br/> 1. transport <br/> 2. rivers and seas <br/> 3...",
+//        "exerciseType": "WRITING_1",
+//        "examName": "fce1"
+//    });
+//
+//db.exercise.insert(
+//    {
+//        "title": "",
+//        "content":  "<b>You see this announcement in your college English-language magazine.</b>" +
+//        "<div class='well'> <p>Book reviews wanted</p><p>Have you read a book in which the main character behaved in a surprising way?</p><p>Write us a review of the book, explaining what the main character did and why it was surprising. Tell us whether or not you would recommend this book to other people.</p><p>The best reviews will be published in the magazine.</p> </div> " +
+//        "<b> Write your review. </b>",
+//        "exerciseType": "WRITING_2",
+//        "examName": "fce1"
+//    });
+//
+//db.exercise.insert(
+//    {
+//        "title": "",
+//        "content":  "<b> You see this announcement on an English-language website.</b>" +
+//        "<div class='well'><p>Articles wanted</p><p>The most useful thing I have ever learned.</p><p>What is the most useful thing you have learned?Who did you learn it from? Why is it useful?<p>Write us an article answering these questions.</p><p>We will publish the best articles on our website.</p> </div>" +
+//        "<b> Write your article. </b>",
+//        "exerciseType": "WRITING_3",
+//        "examName": "fce1"
+//    });
+//db.exercise.insert(
+//    {
+//        "title": "",
+//        "content":  "<b> You have received this email from your English-speaking friend David.</b>" +
+//        "<div class='well'><p>From: David <br/> Subject: touring holiday</p><p>Some college friends of mine are visiting your area soon for a week’s touring holiday. They would like to travel around and learn about your local area and its history.</p><p>Can you tell me about some of the places they could visit? What’s the best way to travel around – car, bike or coach?</p><p>Thanks</p><p>David</p></div>" +
+//        "<b> Write your email </b>",
+//        "exerciseType": "WRITING_4",
+//        "examName": "fce1"
+//    });
+//
+//db.exercise.insert(
+//    {
+//        "title": "Part 1 (2 minutes)",
+//        "content":  "<h3> Introduction </h3><p> Good morning/afternoon/evening. My name is ..... and this is my colleague......</p>" +
+//        "<p> And your names are? Can I have yor mark sheets, please?<br/> Thank you.</p>" +
+//        "<p> Where are you from (Candidate A)? and you, (candidate B)?</p>" +
+//        "<h3>Likes and dislikes / Special occasions / Media  </h3>" +
+//        "<p> First we would like to know something about you " +
+//        "Do you like reading? Tell us about a book you really like </p>" +
+//        "<p> What did you do on your last holiday?</p>" +
+//        "<p> Tell us about a film you have seen recently.</p>",
+//        "exerciseType": "SPEAKING_1",
+//        "examName": "fce1"
+//    });
+//
+//db.exercise.insert(
+//    {
+//        "title": "Part 2 (4 minutes)",
+//        "content":  "<p> In this part of the test, I'm going to give each of you 2 photographs. I'd like you to talk about your photographs on your own for about a minute, and also to answer a question about your partner's photograph </p>" +
+//        "<p> (candidate A), it's your turn first. Here are your photographs. They show people who are helping other people in different situations</p>" +
+//        "<p> I would  like you to compare the photographs, and say how important it is to help people in these situations. <br/><br/>" +
+//        "<img src='assets/speaking/fce1/help.jpg'/> <img src='assets/speaking/fce1/save.jpg'/></p>" +
+//        "<p> (candidate B) do you find easy to ask for help when you have a problem? (Why / Why not? )</p>" +
+//        "<p> Now, (candidate B), here are your photographs. they show people spending time in different gardens <br/><br/>" +
+//        "<img src='assets/speaking/fce1/garden.jpg'/> <img src='assets/speaking/fce1/gardening-475350_640.jpg'/></p>" +
+//        "<p> I would  like speaking to compare the photographs, and say what you think the people are enjoying about spending in these gardens </p>" +
+//        "<p> (Candidate A) which garden would you prefer to spend time in? ... (Why?)</p>" +
+//        "<p> Thank you </p>",
+//        "exerciseType": "SPEAKING_2",
+//        "examName": "fce1"
+//    });
+//db.exercise.insert(
+//    {
+//        "title": "Part 3 (4 minutes)",
+//        "content": "<p> Now I'd like to you to talk about something together for about 2 minutes</p>" +
+//        "<p> I'd like you to imagine that a town wants more tourists to visit. Here ae some ideas they're thinking about and a question for you to discuss. First you have some time to look at the task.</p>" +
+//        "<p> Now, talk to each other about why these ideas would attract more tourists to the town</p>" +
+//        "<p> (You have 2 minutes to discuss with the other candidate)</p>" +
+//        "<p> Thank you. Now you have a minute to decide which idea would be best for the town.</p>",
+//        "exerciseType": "SPEAKING_3",
+//        "examName": "fce1"
+//    });
+//
+//db.exercise.insert(
+//    {
+//        "title": "Part 4 (4 minutes)",
+//        "content":  "<p> Please discuss with the other candidate </p>" +
+//        "<p> Do you think you have to spend a lot of money to have a good holiday? ... (Why?/ Why not?)</p> " +
+//        "<p> Some people say we travel too much these days and shouldn't go on so many holidays. What do you think? </p>" +
+//        "<p> Do you think people have enough time for holidays these days?... (Why? / Why not? </p>" +
+//        "<p> Why do you think people like to go away on holiday? </p>" +
+//        "<p> What do you think is the biggest advantage of living in a place where there are a lot of tourists? </p>",
+//        "exerciseType": "SPEAKING_4",
+//        "examName": "fce1"
+//    });
 
 
 
