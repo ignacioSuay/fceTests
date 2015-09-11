@@ -7,12 +7,16 @@ angular.module('firstcertificatetestsApp')
         $scope.examDisabled = false;
         $scope.nextExam = 1;
 
-        Principal.identity().then(function(account) {
-            $scope.account = account;
-            $scope.isAuthenticated = Principal.isAuthenticated;
-            $scope.loadHistory();
-            $scope.loadUserDetails();
-        });
+        $scope.init = function(){
+            Principal.identity().then(function(account) {
+                $scope.account = account;
+                $scope.isAuthenticated = Principal.isAuthenticated;
+                $scope.loadHistory();
+                $scope.loadUserDetails();
+            });
+        };
+
+        $scope.init();
 
         $scope.loadUserDetails = function() {
             UserDetails.data.get({login:$scope.account.login}, function(result) {
@@ -103,16 +107,10 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.confirmDelete = function (id) {
-            //UserDetails.deleteExercise({login:$scope.account.login, id: id},
-            //    function () {
-            //        $scope.reset();
-            //        $('#deleteMarkerTypeConfirmation').modal('hide');
-            //        $scope.clear();
-            //    });
-
             $http.delete("api/userDetails/"+$scope.account.login+"/delete/"+id).then(function(){
-                alert("Deleted!!!!!!");
-            }, function(response){ alert("Error saving data" + response)});
+                $scope.init();
+                $('#deleteHistoryConfirmation').modal('hide');
+            }, function(response){ alert("Error deleting data" + response)});
         };
 
         $scope.clear = function () {

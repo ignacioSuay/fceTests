@@ -4,6 +4,7 @@ import com.codahale.metrics.annotation.Timed;
 import com.firstcertificatetests.domain.ExerciseCompleted;
 import com.firstcertificatetests.domain.UserDetails;
 import com.firstcertificatetests.repository.UserDetailsRepository;
+import org.bson.types.ObjectId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -38,7 +39,9 @@ public class UserDetailsResource {
     public void create(@RequestBody UserDetails userDetails) {
         log.debug("REST request to save userDetails : {}", userDetails);
         try {
+
             UserDetails userDetailsSaved = userDetailsRepository.findByLogin(userDetails.getLogin());
+            addExerciseCompletedId(userDetails,userDetailsSaved);
 
             if (userDetailsSaved == null) {
                 userDetailsRepository.save(userDetails);
@@ -49,6 +52,24 @@ public class UserDetailsResource {
         }catch (Exception e){
             log.error("Error saving userdetails for login:" + userDetails.getLogin());
             e.printStackTrace();
+        }
+    }
+
+    private void addExerciseCompletedId(UserDetails userDetails, UserDetails userDetailsSaved){
+
+        int idCount;
+
+        if(userDetailsSaved == null ){
+            idCount = 0;
+        }else{
+            idCount = userDetailsSaved.getExercisesCompleted().size();
+        }
+
+        for(ExerciseCompleted exerciseCompleted : userDetails.getExercisesCompleted()){
+            if(exerciseCompleted.getId() == null) {
+                exerciseCompleted.setId(idCount);
+                idCount++;
+            }
         }
     }
 
