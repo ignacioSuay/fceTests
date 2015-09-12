@@ -14,7 +14,7 @@ Run first time in Dev mode
 
 
 
-Apache Reverse proxy;
+Apache Reverse proxy: /etc/apache2/sites-enabled
 --------------------------
 <VirtualHost *:80>
 
@@ -41,6 +41,10 @@ Apache Reverse proxy;
         Allow from all
     </Location>
 
+</VirtualHost>
+<VirtualHost *:80>
+    ServerName testfce.com
+    Redirect permanent / http://www.testfce.com/
 </VirtualHost>
 
 
