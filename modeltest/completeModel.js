@@ -521,7 +521,7 @@ db.exercise.insert(
 
 db.exercise.insert(
     {
-        "title": " 2 Part 1 (2 minutes)",
+        "title": "Part 1 (2 minutes)",
         "content":  "<h3> Introduction </h3><p> Present yourself and the other candidate to the examiner using these lines</p>" +
         "<p> Good morning/afternoon/evening.  My name is … and this is my colleague …</p>" +
         "<p>State where you are from and where you are living now, you can also ask your colleague where he lives and what he's from</p>" +
