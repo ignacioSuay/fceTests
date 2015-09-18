@@ -12169,3 +12169,9 @@ form .row:first-child .floating-label-form-group {
 .r1Question {
   font-size: 1.2em;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003665}}
+.r3Answers label {
+  margin-right: 20px;
+  font-size: 1.2em;
+}

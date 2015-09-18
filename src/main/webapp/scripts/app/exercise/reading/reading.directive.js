@@ -115,11 +115,13 @@ angular.module('firstcertificatetestsApp')
         var getQuestions = function(exercise){
             var responses = "<div>";
             exercise.responses.forEach(function(response){
-                responses += "<div class='well'>"+ response.id+ ". " + response.statement + ".<br/> " +
-                "<input type='radio' name='radioR-"+response.id+"' value='A'/> Paragraph A </input>" +
-                "<input type='radio' name='radioR-"+response.id+"' value='B'/> Paragraph B </input>" +
-                "<input type='radio' name='radioR-"+response.id+"' value='C'/> Paragraph C </input>" +
-                "<input type='radio' name='radioR-"+response.id+"' value='D'/> Paragraph D </input>" +
+                responses += "<div class='well'><b class='r1Question'>"+ response.id+ ". " + response.statement + ".</b><br/> " +
+                "<div class='r3Answers'>" +
+                "<label><input type='radio' name='radioR-"+response.id+"' value='A'/> Paragraph A </label>" +
+                "<label><input type='radio' name='radioR-"+response.id+"' value='B'/> Paragraph B </label>" +
+                "<label><input type='radio' name='radioR-"+response.id+"' value='C'/> Paragraph C </label>" +
+                "<label><input type='radio' name='radioR-"+response.id+"' value='D'/> Paragraph D </label>" +
+                "</div>" +
                 "<span id=\'span3R-"+response.id +"\' />"+
                 "<br/></div>";
             });
