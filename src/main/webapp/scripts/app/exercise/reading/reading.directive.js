@@ -8,11 +8,11 @@ angular.module('firstcertificatetestsApp')
             exercise.responses.forEach(function(response){
 
                 var responseId = response.id;
-                var auxtemplate = "<div><b>" + response.id +". "+ response.statement +"</b><span id='spanR-"+responseId+"'/><br> <div class='form-group'>";
+                var auxtemplate = "<div><b class='r1Question'>" + response.id +". "+ response.statement +"</b><span id='spanR-"+responseId+"'/><br> <div class='form-group'>";
 
                 var rowRes = 0;
                 response.answers.forEach(function(answer){
-                    auxtemplate += "<input type='radio' name='radio-"+response.id+"' value='"+rowRes+"'/> "+answer +"<br/>";
+                    auxtemplate += "<label><input type='radio' name='radio-"+response.id+"' value='"+rowRes+"'/> "+answer +"</label><br/>";
                     rowRes++;
                 });
                 template += auxtemplate + "</div></div>";
@@ -36,7 +36,8 @@ angular.module('firstcertificatetestsApp')
 
         var loadAnswers = function(data){
             data.forEach(function(answer){
-                $('input:radio[name=radio-'+answer.id+']').filter('[value='+answer.response+']').prop('checked', true);
+                if(answer.response)
+                    $('input:radio[name=radio-'+answer.id+']').filter('[value='+answer.response+']').prop('checked', true);
             })
         };
         return {
