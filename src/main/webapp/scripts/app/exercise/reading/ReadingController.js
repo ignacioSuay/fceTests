@@ -50,6 +50,7 @@ angular.module('firstcertificatetestsApp')
         };
 
         $scope.check = function(){
+            $scope.isChecked = true;
             $scope.userResponsesFormat = [];
             $scope.score = 0;
             if($scope.part === 1){
@@ -116,5 +117,7 @@ angular.module('firstcertificatetestsApp')
             });
         };
 
-
+        $scope.clear = function(){
+            $state.reload();
+        }
     });
