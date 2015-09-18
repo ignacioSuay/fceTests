@@ -21,7 +21,8 @@
 <div id="exParts" class="row margin-vert-40">
 
     <div class="pull-right">
-        <button class="btn btn-success" ng-click="check()">Check Now</button>
+        <button class="btn btn-success" ng-click="clear()" ng-show="isChecked">Clear</button>
+        <button class="btn btn-success" ng-click="check()" ng-disabled="isChecked">Check Now</button>
         <!--<button class="btn btn-success">Continue & Check later</button>-->
     </div>
 

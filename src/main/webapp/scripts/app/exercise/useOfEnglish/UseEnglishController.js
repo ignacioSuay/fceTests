@@ -43,6 +43,7 @@ angular.module('firstcertificatetestsApp')
 
 
         $scope.check = function(){
+            $scope.isChecked = true;
             $scope.userResponsesFormat = [];
             $scope.score = 0;
             $scope.options.stopTimer();
@@ -157,6 +158,10 @@ angular.module('firstcertificatetestsApp')
             posibleSolutions = posibleSolutions.substring(0, posibleSolutions.length - 1);
             return {isCorrect: isCorrect, posibleSolutions: posibleSolutions};
         };
+
+        $scope.clear = function(){
+            $state.reload();
+        }
 
 
     });
