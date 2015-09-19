@@ -227,11 +227,13 @@ ul#strength {
 .footer{
     position: relative;
     margin-top: 40px;
-    padding-top: 40px;
+//    padding-top: 10px;
     padding-bottom: 40px;
     color: #767676;
     .footerText{
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin-left: -40px;
+        text-align: center;
     }
     li {
         display: inline-block;
