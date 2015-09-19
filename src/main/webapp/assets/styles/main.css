@@ -12030,9 +12030,9 @@ ul#strength {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003535}}
-.joinText {
+.joinText, .bigText {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 800;
   font-size: 36px;
   letter-spacing: 0.3px;
@@ -12041,6 +12041,11 @@ ul#strength {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003545}}
+.bigText {
+  color: #2c3e50;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003550}}
 hr.star-light,
 hr.star-primary {
   margin: 25px auto 30px;
@@ -12051,7 +12056,7 @@ hr.star-primary {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003555}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003560}}
 hr.star-light:after,
 hr.star-primary:after {
   content: "\f005";
@@ -12063,46 +12068,67 @@ hr.star-primary:after {
   font-size: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003571}}
 hr.star-light {
   border-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003570}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003575}}
 hr.star-light:after {
   color: #fff;
   background-color: #18bc9c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003580}}
 hr.star-primary {
   border-color: #2c3e50;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003584}}
 hr.star-primary:after {
   color: #2c3e50;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003584}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003589}}
 section.success {
-  color: #fff;
-  background: #18bc9c;
+  color: #2c3e50;
   height: 400px;
   margin-top: 30px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003596}}
+section.takeit {
+  color: #ffffff;
+  height: 400px;
+  margin-top: 30px;
+  background: #00ceaf;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00ceaf 0%, #45d1be 36%, #77d1c5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00ceaf), color-stop(36%, #45d1be), color-stop(100%, #77d1c5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00ceaf 0%, #45d1be 36%, #77d1c5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00ceaf 0%, #45d1be 36%, #77d1c5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00ceaf 0%, #45d1be 36%, #77d1c5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #00ceaf 0%, #45d1be 36%, #77d1c5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ceaf', endColorstr='#77d1c5',GradientType=0 );
+}
+
 /***************************************/
 /***************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003595}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003614}}
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003600}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003619}}
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
@@ -12116,7 +12142,7 @@ section.success {
   box-shadow: none !important;
   resize: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003613}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003632}}
 .floating-label-form-group label {
   display: block;
   z-index: 0;
@@ -12133,29 +12159,29 @@ section.success {
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003629}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003648}}
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003636}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003655}}
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003662}}
 .floating-label-form-group-with-focus label {
   color: #337ab7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003648}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003667}}
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003652}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003671}}
 .contactTitle {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   color: #2c3e50;
@@ -12166,12 +12192,12 @@ form .row:first-child .floating-label-form-group {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003662}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003681}}
 .r1Question {
   font-size: 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003667}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003686}}
 .r3Answers label {
   margin-right: 20px;
   font-size: 1.2em;
