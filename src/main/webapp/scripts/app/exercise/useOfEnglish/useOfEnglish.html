@@ -9,6 +9,14 @@
         <timer class="pull-right timerClass"/>
     </div>
     <br/>
+    <div>
+        <p class="uoeQuestion" ng-show="part === 1">1. Read the text below and decide which answer best fits each gap. </p>
+        <p class="uoeQuestion" ng-show="part === 2">2. Read the text below and think of <i>one</i> word which best fits each gap. Use only one word in each gap. </p>
+        <p class="uoeQuestion" ng-show="part === 3">3. Read the text below. Use one word given in capitals to form a word that fits in the gap. </p>
+        <p class="uoeQuestion" ng-show="part === 4">4. Complete the second sentence so that it has a similar meaning to the first sentence, using the word given.
+        You must use between two to five words, including the word given.</p>
+    </div>
+
     <h2>{{exercise.title}}</h2>
     <div>
         <exercise-content1 ng-show="part === 1"></exercise-content1>

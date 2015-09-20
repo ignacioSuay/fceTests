@@ -8,7 +8,13 @@
         <timer class="pull-right"/>
     </div>
     <br/>
-
+    <br/>
+    <div>
+        <p class="uoeQuestion" ng-show="part === 1">1. Read the text below and choose the answer which you think fits best according to the text. </p>
+        <p class="uoeQuestion" ng-show="part === 2">2. Read the text below and choose from the sentences 1 - 7 the one which fits each gap.
+            There is one extra sentence which you don't need to use. </p>
+        <p class="uoeQuestion" ng-show="part === 3">3. Read the text below and choose from the sections (A - D). The sections may be chosen more than once.</p>
+    </div>
     <h2>{{exercise.title}}</h2>
     <reading-content1 ng-show="isPart(1)"></reading-content1>
     <reading-content2 ng-show="isPart(2)"></reading-content2>

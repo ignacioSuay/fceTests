@@ -12211,3 +12211,11 @@ form .row:first-child .floating-label-form-group {
     width: 100%;
   }
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003700}}
+.uoeQuestion {
+  margin-top: 10px;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
