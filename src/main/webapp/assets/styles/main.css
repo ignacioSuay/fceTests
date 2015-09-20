@@ -12202,3 +12202,12 @@ form .row:first-child .floating-label-form-group {
   margin-right: 20px;
   font-size: 1.2em;
 }
+
+@media (max-width: 430px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/natxo\/dev\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003692}}
+  .timerClass {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

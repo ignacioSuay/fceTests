@@ -689,3 +689,10 @@ form .row:first-child .floating-label-form-group {
     }
 }
 
+.timerClass{
+ @media (max-width: 430px) {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     width: 100%;
+ }
+}
