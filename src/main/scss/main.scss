@@ -596,7 +596,7 @@ section.success {
 section.takeit{
     color: #ffffff;
 //    background: #83d3c9;
-    height: 400px;
+//    height: 400px;
     margin-top: 30px;
     background: #00ceaf; /* Old browsers */
     background: -moz-linear-gradient(top, #00ceaf 0%, #45d1be 36%, #77d1c5 100%); /* FF3.6+ */
@@ -702,4 +702,10 @@ form .row:first-child .floating-label-form-group {
     font-size: 1.1em;
     line-height: 1.4em;
     font-weight: bold;
+}
+
+.iphoneImg{
+    text-align: center;
+    float: right;
+    margin: 40px 0 40px;
 }
