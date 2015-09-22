@@ -17,4 +17,31 @@ angular.module('firstcertificatetestsApp')
                     }
                 }
             })
+            .state('about', {
+                parent: 'home',
+                url: 'about',
+                data: {
+                    roles: [],
+                    pageTitle: 'FCE TEST'
+                },
+                views: {
+                    'content@': {
+                        templateUrl: 'scripts/app/footer/aboutUs.html'
+                    }
+                }
+            })
+            .state('team', {
+                parent: 'home',
+                url: 'team',
+                data: {
+                    roles: [],
+                    pageTitle: 'FCE TEST'
+                },
+                views: {
+                    'content@': {
+                        templateUrl: 'scripts/app/footer/team.html'
+                    }
+                }
+            })
+
     });
