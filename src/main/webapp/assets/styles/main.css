@@ -11512,123 +11512,108 @@ header .header-content .header-content-inner p {
     font-size: 18px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003100}}
-.navbar-default {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003101}}
+.headerNav .navbar-default {
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   background-color: #fff;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003109}}
-.navbar-default .navbar-header .navbar-brand {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003110}}
+.headerNav .navbar-default .navbar-header .navbar-brand {
   text-transform: uppercase;
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   color: #499BEA;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003116}}
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003117}}
+.headerNav .navbar-default .navbar-header .navbar-brand:hover,
+.headerNav .navbar-default .navbar-header .navbar-brand:focus {
   color: #3E79BD;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003121}}
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003122}}
+.headerNav .navbar-default .nav > li > a,
+.headerNav .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
   color: #222;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003129}}
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003130}}
+.headerNav .navbar-default .nav > li > a:hover,
+.headerNav .navbar-default .nav > li > a:focus:hover {
   color: #499BEA;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003134}}
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003135}}
+.headerNav .navbar-default .nav > li.active > a,
+.headerNav .navbar-default .nav > li.active > a:focus {
   color: #499BEA !important;
   background-color: transparent;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003140}}
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003141}}
+.headerNav .navbar-default .nav > li.active > a:hover,
+.headerNav .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
-
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003146}}
-  .navbar-default {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003147}}
+  .headerNav .navbar-default {
     background-color: rgba(0, 0, 0, 0.35);
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003151}}
-  .navbar-default .navbar-header .navbar-brand {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003152}}
+  .headerNav .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.9);
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003155}}
-  .navbar-default .navbar-header .navbar-brand:hover,
-  .navbar-default .navbar-header .navbar-brand:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003156}}
+  .headerNav .navbar-default .navbar-header .navbar-brand:hover,
+  .headerNav .navbar-default .navbar-header .navbar-brand:focus {
     color: #fff;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003160}}
-  .navbar-default .nav > li > a,
-  .navbar-default .nav > li > a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003161}}
+  .headerNav .navbar-default .nav > li > a,
+  .headerNav .navbar-default .nav > li > a:focus {
     color: rgba(255, 255, 255, 0.7);
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003165}}
-  .navbar-default .nav > li > a:hover,
-  .navbar-default .nav > li > a:focus:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003166}}
+  .headerNav .navbar-default .nav > li > a:hover,
+  .headerNav .navbar-default .nav > li > a:focus:hover {
     color: #fff;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003170}}
-  .navbar-default.affix {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003171}}
+  .headerNav .navbar-default.affix {
     border-color: rgba(34, 34, 34, 0.05);
     background-color: #fff;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003175}}
-  .navbar-default.affix .navbar-header .navbar-brand {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003176}}
+  .headerNav .navbar-default.affix .navbar-header .navbar-brand {
     font-size: 14px;
     color: #499BEA;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003180}}
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003181}}
+  .headerNav .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .headerNav .navbar-default.affix .navbar-header .navbar-brand:focus {
     color: #3E79BD;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003185}}
-  .navbar-default.affix .nav > li > a,
-  .navbar-default.affix .nav > li > a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003186}}
+  .headerNav .navbar-default.affix .nav > li > a,
+  .headerNav .navbar-default.affix .nav > li > a:focus {
     color: #222;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003190}}
-  .navbar-default.affix .nav > li > a:hover,
-  .navbar-default.affix .nav > li > a:focus:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003191}}
+  .headerNav .navbar-default.affix .nav > li > a:hover,
+  .headerNav .navbar-default.affix .nav > li > a:focus:hover {
     color: #499BEA;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003196}}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003198}}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003202}}
 .development {
   position: absolute;
   width: 149px;
@@ -11642,13 +11627,13 @@ header .header-content .header-content-inner p {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003215}}
 .navbar-version {
   font-size: 10px;
   color: #ccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003220}}
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -11656,7 +11641,7 @@ header .header-content .header-content-inner p {
   padding: 0.2em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003227}}
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -11668,20 +11653,20 @@ header .header-content .header-content-inner p {
   padding: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003238}}
 .hero-unit h1 {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003244}}
 .error {
   color: white;
   background-color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003249}}
 .hipster {
   display: inline-block;
   width: 347px;
@@ -11692,20 +11677,20 @@ header .header-content .header-content-inner p {
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003265}}
   .hipster {
     background: url("../images/hipster2x.png") no-repeat center top;
     background-size: contain;
   }
 }
 /* make sure browsers use the pointer cursor for anchors, even with no href */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003272}}
 a:hover {
   cursor: pointer;
 }
 
 /* start Password strength bar style */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003278}}
 ul#strength {
   display: inline;
   list-style: none;
@@ -11715,12 +11700,12 @@ ul#strength {
   vertical-align: 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003287}}
 .point:last {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003290}}
 .point {
   background: #DDD;
   border-radius: 2px;
@@ -11730,43 +11715,43 @@ ul#strength {
   width: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003299}}
 .well {
   margin-top: 10px;
 }
 
 /* end Password strength bar style */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003308}}
 .margin-vert-20 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003313}}
 .margin-vert-40 {
   margin: 40px 0px 40px 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003324}}
 .social-icons {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003329}}
 .social-icons li {
   display: inline-block;
   margin: 0 0.25em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003334}}
 .social-icons span {
   display: block;
   width: 0;
   height: 0;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003340}}
 .social-icons a {
   display: inline-block;
   width: 2.5em;
@@ -11776,106 +11761,106 @@ ul#strength {
   color: white;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003349}}
 .social-icons a:before {
   font: 1.5em/1.75 "FontAwesome";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="twitter"] {
   background-color: #55acee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="twitter"]:before {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="google"] {
   background-color: #dd4b39;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="google"]:before {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="facebook"] {
   background-color: #3b5998;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="facebook"]:before {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="github"] {
   background-color: #231f20;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="github"]:before {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="linkedin"] {
   background-color: #0977b5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="linkedin"]:before {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="dribbble"] {
   background-color: #ea4c89;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="dribbble"]:before {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003366}}
 .social-icons a[href*="rss"] {
   background-color: #ff6600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003369}}
 .social-icons a[href*="rss"]:before {
   content: "";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003379}}
 .jumbotron2 {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003384}}
 .nav li .signup {
   padding-top: 9px !important;
   padding-bottom: 9px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003390}}
 .footer {
   position: relative;
   margin-top: 40px;
   padding-bottom: 40px;
   color: #767676;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003396}}
 .footer .footerText {
   font-size: 1.1em;
   margin-left: -40px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003401}}
 .footer li {
   display: inline-block;
   margin-right: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003407}}
 #features, #impact, #signup {
   padding-top: 36px;
   padding-top: 36px;
   padding-bottom: 48px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003411}}
 #features h1, #impact h1, #signup h1 {
   font-size: 5em;
   line-height: 1.3;
@@ -11883,22 +11868,22 @@ ul#strength {
 }
 
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003419}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003421}}
   #features, #impact, #signup {
     margin-left: 30px;
     margin-right: 30px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003424}}
   #features h1, #impact h1, #signup h1 {
     font-size: 3em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003485}}
 #features .features-item {
   text-align: center;
   padding: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003487}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003489}}
 #features .features-item .icon {
   font-size: 50px;
   border-radius: 50%;
@@ -11909,12 +11894,12 @@ ul#strength {
   color: white;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003497}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003499}}
 #features .features-item .icon:before {
   font: 1.5em/1.6em "FontAwesome";
 }
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003485}}
   #features .features-item {
     max-width: 320px;
     display: block;
@@ -11923,13 +11908,13 @@ ul#strength {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003511}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003513}}
 #impact .hreview {
   position: relative;
   padding: 0 10px;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003516}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003518}}
 #impact .caption {
   position: absolute;
   top: auto;
@@ -11939,13 +11924,13 @@ ul#strength {
   line-height: 1.1;
   background: rgba(26, 26, 26, 0.55);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003524}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003526}}
 #impact .caption blockquote,
 #impact .caption .reviewer {
   margin: 0 6px;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003531}}
 #impact .caption blockquote {
   margin-top: 4px;
   border: none;
@@ -11953,80 +11938,80 @@ ul#strength {
   font-size: 18px;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003536}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003538}}
 #impact .caption .reviewer {
   margin-top: 2px;
   margin-bottom: 4px;
   text-align: right;
   color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003543}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003545}}
 #impact .review-item-1 .caption {
   top: 0;
   left: 10px;
   right: 20%;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003551}}
 #impact .review-item-2 .caption {
   top: auto;
   left: 10px;
   right: 17%;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003555}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003557}}
 #impact .review-item-3 .caption {
   top: auto;
   left: 17%;
   right: 10px;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003561}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003563}}
 #impact .review-item-4 .caption {
   top: 0;
   left: 62%;
   right: 10px;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003568}}
 #impact .review-item-4 .caption .reviewer {
   margin-top: 6px;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003573}}
 #impact .review-item-5 .caption {
   top: 0;
   left: 17%;
   right: 10px;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003577}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003579}}
 #impact .review-item-6 .caption {
   top: 0;
   left: 10px;
   right: 63%;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003582}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003584}}
 #impact .review-item-6 .caption .reviewer {
   margin-top: 6px;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003587}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003589}}
 #impact .review-item-7 .caption {
   top: 0;
   left: 62%;
   right: 10px;
   bottom: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003592}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003594}}
 #impact .review-item-7 .caption .reviewer {
   margin-top: 6px;
   text-align: left;
 }
 
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003601}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003603}}
   #impact .reviews {
     max-width: 400px;
     display: block;
@@ -12035,29 +12020,29 @@ ul#strength {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003607}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003609}}
   #impact .review-item-5 {
     height: 474px;
     overflow: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003612}}
   #impact .review-item-5 img {
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003618}}
   #impact .review-item-4 {
     display: none;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003623}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003625}}
 #features h1 {
   font-size: 3em !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003628}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003630}}
 .shareSection {
   background-color: #336799;
   margin: 40px 0 0 0;
@@ -12065,12 +12050,12 @@ ul#strength {
   color: #ffffff;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003636}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003638}}
 .shareSection .img {
   background: #336799 url("../images/share3.png") center center no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003641}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003643}}
 .friendsSection {
   background-color: #e0e0e0;
   color: #ffffff;
@@ -12078,12 +12063,12 @@ ul#strength {
   padding: 20px 0 20px 0;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003647}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003649}}
 .friendsSection .img {
   background: #e0e0e0 url("../images/friends.png") center center no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003652}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003654}}
 .professionalSection {
   background-color: #fda939;
   color: #ffffff;
@@ -12091,46 +12076,46 @@ ul#strength {
   padding: 20px 0 20px 0;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003658}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003660}}
 .professionalSection .img {
   background: #fda939 url("../images/education2.png") center center no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003663}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003665}}
 .imgHeight {
   height: 300px;
 }
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003663}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003665}}
   .imgHeight {
     height: 350px;
   }
 }
 @media (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003663}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003665}}
   .imgHeight {
     height: 350px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003675}}
 .sectionContainer {
   height: 500px;
 }
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003675}}
   .sectionContainer {
     height: 400px;
   }
 }
 @media (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003675}}
   .sectionContainer {
     height: 400px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003684}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003686}}
 .joinSection {
   height: 150px;
   background: #499bea;
@@ -12143,7 +12128,7 @@ ul#strength {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003696}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003698}}
 .joinText, .bigText {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   color: #ffffff;
@@ -12154,12 +12139,12 @@ ul#strength {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003706}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003708}}
 .bigText {
   color: #2c3e50;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003711}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003713}}
 hr.star-light,
 hr.star-primary {
   margin: 25px auto 30px;
@@ -12170,7 +12155,7 @@ hr.star-primary {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003721}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003723}}
 hr.star-light:after,
 hr.star-primary:after {
   content: "\f005";
@@ -12182,36 +12167,36 @@ hr.star-primary:after {
   font-size: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003732}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003734}}
 hr.star-light {
   border-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003736}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003738}}
 hr.star-light:after {
   color: #fff;
   background-color: #18bc9c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003741}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003743}}
 hr.star-primary {
   border-color: #2c3e50;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003745}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003747}}
 hr.star-primary:after {
   color: #2c3e50;
   background-color: #fafafa;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003750}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003752}}
 section.success {
   color: #2c3e50;
   height: 400px;
   margin-top: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003757}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003759}}
 section.takeit {
   color: #ffffff;
   margin-top: 30px;
@@ -12234,14 +12219,14 @@ section.takeit {
 
 /***************************************/
 /***************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003775}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003777}}
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003780}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003782}}
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
@@ -12255,7 +12240,7 @@ section.takeit {
   box-shadow: none !important;
   resize: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003793}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003795}}
 .floating-label-form-group label {
   display: block;
   z-index: 0;
@@ -12272,29 +12257,29 @@ section.takeit {
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003809}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003811}}
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003816}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003818}}
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003823}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003825}}
 .floating-label-form-group-with-focus label {
   color: #337ab7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003828}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003830}}
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003832}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003834}}
 .contactTitle {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   color: #2c3e50;
@@ -12305,19 +12290,19 @@ form .row:first-child .floating-label-form-group {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003842}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003844}}
 .r1Question {
   font-size: 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003847}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003849}}
 .r3Answers label {
   margin-right: 20px;
   font-size: 1.2em;
 }
 
 @media (max-width: 430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003853}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003855}}
   .timerClass {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -12325,7 +12310,7 @@ form .row:first-child .floating-label-form-group {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003861}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003863}}
 .uoeQuestion {
   margin-top: 10px;
   font-size: 1.1em;
@@ -12333,7 +12318,7 @@ form .row:first-child .floating-label-form-group {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003868}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/suay\/ignacioSuay\/fceTests\/src\/main\/scss\/main\.scss}line{font-family:\00003870}}
 .iphoneImg {
   text-align: center;
   float: right;

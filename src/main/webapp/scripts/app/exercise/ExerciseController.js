@@ -9,6 +9,8 @@ angular.module('firstcertificatetestsApp')
             $(this).parent().addClass("active");
         });
 
+
+
         if(Principal.isAuthenticated) {
             Principal.identity().then(function (account) {
                 $scope.account = account;
