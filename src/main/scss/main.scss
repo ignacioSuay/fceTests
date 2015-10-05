@@ -35,7 +35,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../images/bridge-898753_1280.jpg);
+    background-image: url(../images/technology-792177_1920.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -65,12 +65,13 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+//    color: rgba(255,255,255,.95);
+
 }
 
 @media(min-width:$screen-sm) {
     header {
-        min-height: 100%;
+        min-height: 70%;
     }
 
     header .header-content {
