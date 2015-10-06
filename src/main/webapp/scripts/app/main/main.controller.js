@@ -20,8 +20,16 @@ angular.module('firstcertificatetestsApp')
         $('#navo').addClass("headerNav");
         $('#mainNav').addClass("navbar-fixed-top");
 
+        $('#mainNav').affix({
+            offset: {
+                top: 100
+            }
+        });
+
         $scope.$on("$destroy", function() {
+            $(window).off('.affix');
             $('#navo').removeClass("headerNav");
             $('#mainNav').removeClass("navbar-fixed-top");
+            $('#mainNav').removeClass("affix affix-top affix-bottom").removeData("bs.affix");
         });
     });
