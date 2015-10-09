@@ -8,6 +8,7 @@ import com.mongodb.ServerAddress;
 import org.mongeez.Mongeez;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
@@ -37,6 +38,8 @@ public class DatabaseConfiguration extends AbstractMongoConfiguration {
 
     private final Logger log = LoggerFactory.getLogger(DatabaseConfiguration.class);
 
+    @Autowired
+    Environment env;
 
     @Value("${spring.data.mongodb.host}")
     private String host;
@@ -76,7 +79,7 @@ public class DatabaseConfiguration extends AbstractMongoConfiguration {
 
     @Override
     public String getDatabaseName() {
-        return "fcetests";
+        return database;
     }
 
 //    @Override
@@ -87,6 +90,10 @@ public class DatabaseConfiguration extends AbstractMongoConfiguration {
     @Override
     @Bean
     public Mongo mongo() throws Exception {
+
+        if(Constants.SPRING_PROFILE_DEVELOPMENT.equals(env.getActiveProfiles()[0])){
+            return new MongoClient(singletonList(new ServerAddress(host, port)));
+        }
 
         return new MongoClient(singletonList(new ServerAddress(host, port)),
                 singletonList(MongoCredential.createCredential(username,database, password.toCharArray())));
